@@ -1,0 +1,16 @@
+PC_reg_pIF
+IR_reg_pID
+sext_imm
+Rs, Rt, Rd, Funct
+RegWrite , Rs_equals_Rt
+GPR_rd_data1
+GPR_rd_data2
+ALUSrcB,ALUOP_pEX, Funct_pEX
+A_reg
+B_reg
+sext_imm_reg
+ALU_output
+ALUout_reg
+Rd, RegWrite_pWB
+---
+---

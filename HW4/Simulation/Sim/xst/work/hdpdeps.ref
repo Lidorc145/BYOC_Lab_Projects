@@ -1,0 +1,60 @@
+V3 33
+FL C:/Users/Sherman/HW4_sim/BYOC_Clock_driver_4sim.vhd 2017/09/02.10:15:24 P.20131013
+EN work/Clock_Driver 1529048304 \
+      FL C:/Users/Sherman/HW4_sim/BYOC_Clock_driver_4sim.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/NUMERIC_STD 1381692181
+AR work/Clock_Driver/clock_divider 1529048305 \
+      FL C:/Users/Sherman/HW4_sim/BYOC_Clock_driver_4sim.vhd EN work/Clock_Driver 1529048304
+FL C:/Users/Sherman/HW4_sim/BYOC_Host_Intf_4sim.vhd 2017/09/02.10:25:14 P.20131013
+EN work/BYOC_Host_Intf 1529048306 \
+      FL C:/Users/Sherman/HW4_sim/BYOC_Host_Intf_4sim.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB std/TEXTIO 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PH work/BYOC_filenames 1529048303
+AR work/BYOC_Host_Intf/Behavioral 1529048307 \
+      FL C:/Users/Sherman/HW4_sim/BYOC_Host_Intf_4sim.vhd EN work/BYOC_Host_Intf 1529048306
+FL C:/Users/Sherman/HW4_sim/dual_port_memory.vhd 2018/06/07.09:41:46 P.20131013
+EN work/dual_port_memory_no_ck_read 1529048301 \
+      FL C:/Users/Sherman/HW4_sim/dual_port_memory.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177
+AR work/dual_port_memory_no_CK_read/dual_port_memory 1529048302 \
+      FL C:/Users/Sherman/HW4_sim/dual_port_memory.vhd \
+      EN work/dual_port_memory_no_ck_read 1529048301
+FL C:/Users/Sherman/HW4_sim/Fetch_Unit.vhd 2018/06/15.09:26:34 P.20131013
+EN work/Fetch_Unit 1529048308 FL C:/Users/Sherman/HW4_sim/Fetch_Unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Fetch_Unit/Behavioral 1529048309 \
+      FL C:/Users/Sherman/HW4_sim/Fetch_Unit.vhd EN work/Fetch_Unit 1529048308
+FL C:/Users/Sherman/HW4_sim/GPR.vhd 2018/06/14.07:59:51 P.20131013
+EN work/GPR 0 FL C:/Users/Sherman/HW4_sim/GPR.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/GPR/Behavioral 0 \
+      FL C:/Users/Sherman/HW4_sim/GPR.vhd EN work/GPR 0 \
+      CP dual_port_memory_no_CK_read
+FL C:/Users/Sherman/HW4_sim/HW4_top_4sim.vhd 2018/06/15.09:39:30 P.20131013
+EN work/HW4_top 0 FL C:/Users/Sherman/HW4_sim/HW4_top_4sim.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/HW4_top/Behavioral 0 \
+      FL C:/Users/Sherman/HW4_sim/HW4_top_4sim.vhd EN work/HW4_top 0 \
+      CP Clock_Driver CP BYOC_Host_intf CP Fetch_Unit CP GPR CP MIPS_ALU
+FL C:/Users/Sherman/HW4_sim/MIPS_ALU.vhd 2018/06/08.09:53:50 P.20131013
+EN work/MIPS_ALU 0 FL C:/Users/Sherman/HW4_sim/MIPS_ALU.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/MIPS_ALU/Behavioral 0 \
+      FL C:/Users/Sherman/HW4_sim/MIPS_ALU.vhd EN work/MIPS_ALU 0
+FL C:/Users/Sherman/HW4_sim/SIM_HW4_filenames.vhd 2018/06/15.10:36:22 P.20131013
+PH work/BYOC_filenames 1529048303 \
+      FL C:/Users/Sherman/HW4_sim/SIM_HW4_filenames.vhd PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/std_logic_1164 1381692176 \
+      PB std/TEXTIO 1381692176 PB ieee/NUMERIC_STD 1381692181
+FL C:/Users/Sherman/HW4_sim/SIM_HW4_TB.vhd 2017/09/02.14:41:48 P.20131013
+EN work/BYOC_TB_for_students 0 FL C:/Users/Sherman/HW4_sim/SIM_HW4_TB.vhd \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_1164 1381692176 PB std/TEXTIO 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 PH work/BYOC_filenames 1529048303
+AR work/BYOC_TB_for_students/Testing 0 \
+      FL C:/Users/Sherman/HW4_sim/SIM_HW4_TB.vhd EN work/BYOC_TB_for_students 0 \
+      CP HW4_top

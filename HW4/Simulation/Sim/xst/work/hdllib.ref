@@ -1,0 +1,10 @@
+PH byoc_filenames NULL C:/Users/Sherman/HW4_sim/SIM_HW4_filenames.vhd sub00/vhpl02 1529048303
+EN clock_driver NULL C:/Users/Sherman/HW4_sim/BYOC_Clock_driver_4sim.vhd sub00/vhpl03 1529048304
+EN dual_port_memory_no_ck_read NULL C:/Users/Sherman/HW4_sim/dual_port_memory.vhd sub00/vhpl00 1529048301
+EN byoc_host_intf NULL C:/Users/Sherman/HW4_sim/BYOC_Host_Intf_4sim.vhd sub00/vhpl05 1529048306
+AR fetch_unit behavioral C:/Users/Sherman/HW4_sim/Fetch_Unit.vhd sub00/vhpl08 1529048309
+EN fetch_unit NULL C:/Users/Sherman/HW4_sim/Fetch_Unit.vhd sub00/vhpl07 1529048308
+AR dual_port_memory_no_ck_read dual_port_memory C:/Users/Sherman/HW4_sim/dual_port_memory.vhd sub00/vhpl01 1529048302
+AR byoc_host_intf behavioral C:/Users/Sherman/HW4_sim/BYOC_Host_Intf_4sim.vhd sub00/vhpl06 1529048307
+EN gpr NULL C:/Users/Sherman/HW4_sim/GPR.vhd sub00/vhpl09 1529048310
+AR clock_driver clock_divider C:/Users/Sherman/HW4_sim/BYOC_Clock_driver_4sim.vhd sub00/vhpl04 1529048305

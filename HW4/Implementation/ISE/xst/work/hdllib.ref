@@ -1,0 +1,12 @@
+AR hw4_top behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/HW4_top.vhd" sub00/vhpl11 1529045691
+EN clock_driver NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/BYOC_Clock_driver.vhd" sub00/vhpl02 1529048441
+EN dual_port_memory_no_ck_read NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/dual_port_memory.vhd" sub00/vhpl00 1529048439
+EN mips_alu NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/MIPS_ALU.vhd" sub00/vhpl08 1529048447
+AR fetch_unit behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/Fetch_Unit.vhd" sub00/vhpl05 1529048444
+EN fetch_unit NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/Fetch_Unit.vhd" sub00/vhpl04 1529048443
+AR gpr behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/GPR.vhd" sub00/vhpl07 1529048446
+AR mips_alu behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/MIPS_ALU.vhd" sub00/vhpl09 1529048448
+AR dual_port_memory_no_ck_read dual_port_memory "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/dual_port_memory.vhd" sub00/vhpl01 1529048440
+EN gpr NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/GPR.vhd" sub00/vhpl06 1529048445
+EN hw4_top NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/HW4_top.vhd" sub00/vhpl10 1529048449
+AR clock_driver clock_divider "C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/BYOC_Clock_driver.vhd" sub00/vhpl03 1529048442

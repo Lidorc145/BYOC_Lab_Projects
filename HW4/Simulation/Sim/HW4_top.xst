@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Sherman/HW4_sim/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Sherman/HW4_sim/xst"
+elaborate
+-ifn HW4_top.prj
+-ifmt mixed

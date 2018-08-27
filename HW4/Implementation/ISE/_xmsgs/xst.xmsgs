@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="164" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/HW4_top.vhd</arg>&quot; Line <arg fmt="%d" index="2">624</arg>. <arg fmt="%s" index="3">parse error, unexpected AFFECT, expecting OPENPAR or TICK or LSQBRACK</arg>
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/HW4_top.vhd</arg>&quot; Line <arg fmt="%d" index="2">627</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">count_data_reset</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Lidor Cohen/Desktop/BYOC-HW4-LIDOR/HW4-Implementation/HW4_top.vhd</arg>&quot; Line <arg fmt="%d" index="2">627</arg>. <arg fmt="%s" index="3">count_data_reset</arg>: Undefined symbol (last report in this block)
+</msg>
+
+</messages>
+

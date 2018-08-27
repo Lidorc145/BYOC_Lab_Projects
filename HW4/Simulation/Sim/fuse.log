@@ -1,0 +1,40 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Sherman/HW4_sim/BYOC_TB_for_students_isim_beh.exe -prj C:/Users/Sherman/HW4_sim/BYOC_TB_for_students_beh.prj work.BYOC_TB_for_students 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Sherman/HW4_sim/SIM_HW4_filenames.vhd" into library work
+Parsing VHDL file "C:/Users/Sherman/HW4_sim/dual_port_memory.vhd" into library work
+Parsing VHDL file "C:/Users/Sherman/HW4_sim/MIPS_ALU.vhd" into library work
+Parsing VHDL file "C:/Users/Sherman/HW4_sim/GPR.vhd" into library work
+WARNING:HDLCompiler:946 - "C:/Users/Sherman/HW4_sim/GPR.vhd" Line 70: Actual for formal port wr_en is neither a static name nor a globally static expression
+Parsing VHDL file "C:/Users/Sherman/HW4_sim/Fetch_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/Sherman/HW4_sim/BYOC_Host_Intf_4sim.vhd" into library work
+Parsing VHDL file "C:/Users/Sherman/HW4_sim/BYOC_Clock_driver_4sim.vhd" into library work
+Parsing VHDL file "C:/Users/Sherman/HW4_sim/HW4_top_4sim.vhd" into library work
+Parsing VHDL file "C:/Users/Sherman/HW4_sim/SIM_HW4_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package numeric_std
+Compiling package byoc_filenames
+Compiling architecture clock_divider of entity Clock_Driver [clock_driver_default]
+Compiling architecture behavioral of entity BYOC_Host_Intf [byoc_host_intf_default]
+Compiling architecture behavioral of entity Fetch_Unit [fetch_unit_default]
+Compiling architecture dual_port_memory of entity dual_port_memory_no_ck_read [\dual_port_memory_no_ck_read(32,...]
+Compiling architecture behavioral of entity GPR [gpr_default]
+WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd" Line 2278: Warning: "There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es)."
+WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd" Line 2281: Warning: "CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0."
+Compiling architecture behavioral of entity MIPS_ALU [mips_alu_default]
+Compiling architecture behavioral of entity HW4_top [hw4_top_default]
+Compiling architecture testing of entity byoc_tb_for_students
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+Compiled 22 VHDL Units
+Built simulation executable C:/Users/Sherman/HW4_sim/BYOC_TB_for_students_isim_beh.exe
+Fuse Memory Usage: 38052 KB
+Fuse CPU Usage: 609 ms

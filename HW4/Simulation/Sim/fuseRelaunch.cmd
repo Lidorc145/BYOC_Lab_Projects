@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Sherman/HW4_sim/BYOC_TB_for_students_isim_beh.exe" -prj "C:/Users/Sherman/HW4_sim/BYOC_TB_for_students_beh.prj" "work.BYOC_TB_for_students" 

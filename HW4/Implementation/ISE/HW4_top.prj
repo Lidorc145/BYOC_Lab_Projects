@@ -1,0 +1,6 @@
+vhdl work "dual_port_memory.vhd"
+vhdl work "MIPS_ALU.vhd"
+vhdl work "GPR.vhd"
+vhdl work "Fetch_Unit.vhd"
+vhdl work "BYOC_Clock_driver.vhd"
+vhdl work "HW4_top.vhd"

@@ -1,0 +1,718 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml HW4_top.twx HW4_top.ncd -o HW4_top.twr HW4_top.pcf -ucf
+BYOC.ucf
+
+Design file:              HW4_top.ncd
+Physical constraint file: HW4_top.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_CK_50MHz = PERIOD TIMEGRP "CK_50MHz" 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.596ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_CK_50MHz = PERIOD TIMEGRP "CK_50MHz" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 18.404ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 0.798ns (Tcl)
+  Physical resource: clock_divider/half_ck_signal/CLK
+  Logical resource: clock_divider/half_ck_signal/CK
+  Location pin: SLICE_X45Y91.CLK
+  Clock network: CK_50MHz_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.404ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 0.798ns (Tch)
+  Physical resource: clock_divider/half_ck_signal/CLK
+  Logical resource: clock_divider/half_ck_signal/CK
+  Location pin: SLICE_X45Y91.CLK
+  Clock network: CK_50MHz_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.404ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.596ns (626.566MHz) (Tcp)
+  Physical resource: clock_divider/half_ck_signal/CLK
+  Logical resource: clock_divider/half_ck_signal/CK
+  Location pin: SLICE_X45Y91.CLK
+  Clock network: CK_50MHz_BUFGP
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clock_divider_half_ck_signal = PERIOD TIMEGRP         
+"clock_divider/half_ck_signal" 30 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 398468 paths analyzed, 4618 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  21.944ns.
+--------------------------------------------------------------------------------
+
+Paths for end point hostintf/Tx_data_reg_0 (SLICE_X17Y50.F1), 3834 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     8.056ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A (RAM)
+  Destination:          hostintf/Tx_data_reg_0 (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      21.894ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.050ns (0.090 - 0.140)
+  Source Clock:         CK rising at 0.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A to hostintf/Tx_data_reg_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X0Y4.DOA1     Tbcko                 2.812   hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2
+                                                       hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A
+    SLICE_X12Y60.F1      net (fanout=1)        1.770   hostintf/IMem_in_host_intf/MIPS_IMem_rd_data_regular<19>
+    SLICE_X12Y60.X       Tilo                  0.759   Rt_pEX<3>
+                                                       hostintf/IMem_in_host_intf/Mmux_MIPS_IMem_rd_data111
+    SLICE_X48Y83.F4      net (fanout=71)       4.944   IMem_rd_data<19>
+    SLICE_X48Y83.X       Tilo                  0.759   GPR_file/N115
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren56.SLICEM_F
+    SLICE_X49Y83.F3      net (fanout=1)        0.023   GPR_file/N115
+    SLICE_X49Y83.X       Tilo                  0.704   B_reg<27>
+                                                       GPR_file/GPR_data_out2<27>1
+    SLICE_X29Y79.G1      net (fanout=2)        2.234   GPR_rd_data2<27>
+    SLICE_X29Y79.COUT    Topcyg                1.001   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_lut<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X19Y68.G2      net (fanout=8)        1.572   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X19Y68.F5      Tif5                  0.875   hostintf/Mmux_Host_RDBK_data_5_f51
+                                                       hostintf/Mmux_Host_RDBK_data_71
+                                                       hostintf/Mmux_Host_RDBK_data_5_f5_0
+    SLICE_X19Y68.FXINA   net (fanout=1)        0.000   hostintf/Mmux_Host_RDBK_data_5_f51
+    SLICE_X19Y68.FX      Tinafx                0.463   hostintf/Mmux_Host_RDBK_data_5_f51
+                                                       hostintf/Mmux_Host_RDBK_data_4_f6
+    SLICE_X18Y69.FXINB   net (fanout=1)        0.000   hostintf/Mmux_Host_RDBK_data_4_f6
+    SLICE_X18Y69.Y       Tif6y                 0.409   hostintf/Host_RDBK_data<0>
+                                                       hostintf/Mmux_Host_RDBK_data_2_f7
+    SLICE_X17Y50.G1      net (fanout=1)        1.434   hostintf/Host_RDBK_data<0>
+    SLICE_X17Y50.Y       Tilo                  0.704   hostintf/Tx_data_reg<0>
+                                                       hostintf/Host_MIPS_rd_data<0>_SW0_SW0
+    SLICE_X17Y50.F1      net (fanout=1)        0.476   hostintf/Host_MIPS_rd_data<0>_SW0_SW0/O
+    SLICE_X17Y50.CLK     Tfck                  0.837   hostintf/Tx_data_reg<0>
+                                                       hostintf/Host_MIPS_rd_data<0>
+                                                       hostintf/Tx_data_reg_0
+    -------------------------------------------------  ---------------------------
+    Total                                     21.894ns (9.441ns logic, 12.453ns route)
+                                                       (43.1% logic, 56.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.056ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A (RAM)
+  Destination:          hostintf/Tx_data_reg_0 (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      21.894ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.050ns (0.090 - 0.140)
+  Source Clock:         CK rising at 0.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A to hostintf/Tx_data_reg_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X0Y4.DOA1     Tbcko                 2.812   hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2
+                                                       hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A
+    SLICE_X12Y60.F1      net (fanout=1)        1.770   hostintf/IMem_in_host_intf/MIPS_IMem_rd_data_regular<19>
+    SLICE_X12Y60.X       Tilo                  0.759   Rt_pEX<3>
+                                                       hostintf/IMem_in_host_intf/Mmux_MIPS_IMem_rd_data111
+    SLICE_X48Y82.F4      net (fanout=71)       4.944   IMem_rd_data<19>
+    SLICE_X48Y82.X       Tilo                  0.759   GPR_file/N113
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren55.SLICEM_F
+    SLICE_X49Y83.F4      net (fanout=1)        0.023   GPR_file/N113
+    SLICE_X49Y83.X       Tilo                  0.704   B_reg<27>
+                                                       GPR_file/GPR_data_out2<27>1
+    SLICE_X29Y79.G1      net (fanout=2)        2.234   GPR_rd_data2<27>
+    SLICE_X29Y79.COUT    Topcyg                1.001   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_lut<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X19Y68.G2      net (fanout=8)        1.572   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X19Y68.F5      Tif5                  0.875   hostintf/Mmux_Host_RDBK_data_5_f51
+                                                       hostintf/Mmux_Host_RDBK_data_71
+                                                       hostintf/Mmux_Host_RDBK_data_5_f5_0
+    SLICE_X19Y68.FXINA   net (fanout=1)        0.000   hostintf/Mmux_Host_RDBK_data_5_f51
+    SLICE_X19Y68.FX      Tinafx                0.463   hostintf/Mmux_Host_RDBK_data_5_f51
+                                                       hostintf/Mmux_Host_RDBK_data_4_f6
+    SLICE_X18Y69.FXINB   net (fanout=1)        0.000   hostintf/Mmux_Host_RDBK_data_4_f6
+    SLICE_X18Y69.Y       Tif6y                 0.409   hostintf/Host_RDBK_data<0>
+                                                       hostintf/Mmux_Host_RDBK_data_2_f7
+    SLICE_X17Y50.G1      net (fanout=1)        1.434   hostintf/Host_RDBK_data<0>
+    SLICE_X17Y50.Y       Tilo                  0.704   hostintf/Tx_data_reg<0>
+                                                       hostintf/Host_MIPS_rd_data<0>_SW0_SW0
+    SLICE_X17Y50.F1      net (fanout=1)        0.476   hostintf/Host_MIPS_rd_data<0>_SW0_SW0/O
+    SLICE_X17Y50.CLK     Tfck                  0.837   hostintf/Tx_data_reg<0>
+                                                       hostintf/Host_MIPS_rd_data<0>
+                                                       hostintf/Tx_data_reg_0
+    -------------------------------------------------  ---------------------------
+    Total                                     21.894ns (9.441ns logic, 12.453ns route)
+                                                       (43.1% logic, 56.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.214ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A (RAM)
+  Destination:          hostintf/Tx_data_reg_0 (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      21.736ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.050ns (0.090 - 0.140)
+  Source Clock:         CK rising at 0.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A to hostintf/Tx_data_reg_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X0Y4.DOA1     Tbcko                 2.812   hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2
+                                                       hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A
+    SLICE_X12Y60.F1      net (fanout=1)        1.770   hostintf/IMem_in_host_intf/MIPS_IMem_rd_data_regular<19>
+    SLICE_X12Y60.X       Tilo                  0.759   Rt_pEX<3>
+                                                       hostintf/IMem_in_host_intf/Mmux_MIPS_IMem_rd_data111
+    SLICE_X42Y77.F4      net (fanout=71)       4.594   IMem_rd_data<19>
+    SLICE_X42Y77.X       Tilo                  0.759   GPR_file/N85
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren41.SLICEM_F
+    SLICE_X44Y77.G2      net (fanout=1)        0.434   GPR_file/N85
+    SLICE_X44Y77.Y       Tilo                  0.759   B_reg<21>
+                                                       GPR_file/GPR_data_out2<20>1
+    SLICE_X29Y78.F1      net (fanout=2)        1.681   GPR_rd_data2<20>
+    SLICE_X29Y78.COUT    Topcyf                1.162   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_lut<10>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<10>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>
+    SLICE_X29Y79.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>
+    SLICE_X29Y79.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<12>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X19Y68.G2      net (fanout=8)        1.572   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X19Y68.F5      Tif5                  0.875   hostintf/Mmux_Host_RDBK_data_5_f51
+                                                       hostintf/Mmux_Host_RDBK_data_71
+                                                       hostintf/Mmux_Host_RDBK_data_5_f5_0
+    SLICE_X19Y68.FXINA   net (fanout=1)        0.000   hostintf/Mmux_Host_RDBK_data_5_f51
+    SLICE_X19Y68.FX      Tinafx                0.463   hostintf/Mmux_Host_RDBK_data_5_f51
+                                                       hostintf/Mmux_Host_RDBK_data_4_f6
+    SLICE_X18Y69.FXINB   net (fanout=1)        0.000   hostintf/Mmux_Host_RDBK_data_4_f6
+    SLICE_X18Y69.Y       Tif6y                 0.409   hostintf/Host_RDBK_data<0>
+                                                       hostintf/Mmux_Host_RDBK_data_2_f7
+    SLICE_X17Y50.G1      net (fanout=1)        1.434   hostintf/Host_RDBK_data<0>
+    SLICE_X17Y50.Y       Tilo                  0.704   hostintf/Tx_data_reg<0>
+                                                       hostintf/Host_MIPS_rd_data<0>_SW0_SW0
+    SLICE_X17Y50.F1      net (fanout=1)        0.476   hostintf/Host_MIPS_rd_data<0>_SW0_SW0/O
+    SLICE_X17Y50.CLK     Tfck                  0.837   hostintf/Tx_data_reg<0>
+                                                       hostintf/Host_MIPS_rd_data<0>
+                                                       hostintf/Tx_data_reg_0
+    -------------------------------------------------  ---------------------------
+    Total                                     21.736ns (9.775ns logic, 11.961ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point fetch_unit_imp/PC_reg_30 (SLICE_X45Y79.F4), 7226 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     8.288ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A (RAM)
+  Destination:          fetch_unit_imp/PC_reg_30 (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      21.679ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.033ns (0.107 - 0.140)
+  Source Clock:         CK rising at 0.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A to fetch_unit_imp/PC_reg_30
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X0Y4.DOA1     Tbcko                 2.812   hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2
+                                                       hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A
+    SLICE_X12Y60.F1      net (fanout=1)        1.770   hostintf/IMem_in_host_intf/MIPS_IMem_rd_data_regular<19>
+    SLICE_X12Y60.X       Tilo                  0.759   Rt_pEX<3>
+                                                       hostintf/IMem_in_host_intf/Mmux_MIPS_IMem_rd_data111
+    SLICE_X48Y83.F4      net (fanout=71)       4.944   IMem_rd_data<19>
+    SLICE_X48Y83.X       Tilo                  0.759   GPR_file/N115
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren56.SLICEM_F
+    SLICE_X49Y83.F3      net (fanout=1)        0.023   GPR_file/N115
+    SLICE_X49Y83.X       Tilo                  0.704   B_reg<27>
+                                                       GPR_file/GPR_data_out2<27>1
+    SLICE_X29Y79.G1      net (fanout=2)        2.234   GPR_rd_data2<27>
+    SLICE_X29Y79.COUT    Topcyg                1.001   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_lut<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.G3      net (fanout=8)        2.093   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.Y       Tilo                  0.759   fetch_unit_imp/PC_reg<1>
+                                                       fetch_unit_imp/PC_Source<0>
+    SLICE_X45Y79.G1      net (fanout=32)       2.139   fetch_unit_imp/PC_Source<0>
+    SLICE_X45Y79.Y       Tilo                  0.704   fetch_unit_imp/PC_reg<30>
+                                                       fetch_unit_imp/PC_mux_out<30>_SW0_SW0_SW0
+    SLICE_X45Y79.F4      net (fanout=1)        0.023   fetch_unit_imp/PC_mux_out<30>_SW0_SW0_SW0/O
+    SLICE_X45Y79.CLK     Tfck                  0.837   fetch_unit_imp/PC_reg<30>
+                                                       fetch_unit_imp/PC_mux_out<30>
+                                                       fetch_unit_imp/PC_reg_30
+    -------------------------------------------------  ---------------------------
+    Total                                     21.679ns (8.453ns logic, 13.226ns route)
+                                                       (39.0% logic, 61.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.288ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A (RAM)
+  Destination:          fetch_unit_imp/PC_reg_30 (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      21.679ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.033ns (0.107 - 0.140)
+  Source Clock:         CK rising at 0.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A to fetch_unit_imp/PC_reg_30
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X0Y4.DOA1     Tbcko                 2.812   hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2
+                                                       hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A
+    SLICE_X12Y60.F1      net (fanout=1)        1.770   hostintf/IMem_in_host_intf/MIPS_IMem_rd_data_regular<19>
+    SLICE_X12Y60.X       Tilo                  0.759   Rt_pEX<3>
+                                                       hostintf/IMem_in_host_intf/Mmux_MIPS_IMem_rd_data111
+    SLICE_X48Y82.F4      net (fanout=71)       4.944   IMem_rd_data<19>
+    SLICE_X48Y82.X       Tilo                  0.759   GPR_file/N113
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren55.SLICEM_F
+    SLICE_X49Y83.F4      net (fanout=1)        0.023   GPR_file/N113
+    SLICE_X49Y83.X       Tilo                  0.704   B_reg<27>
+                                                       GPR_file/GPR_data_out2<27>1
+    SLICE_X29Y79.G1      net (fanout=2)        2.234   GPR_rd_data2<27>
+    SLICE_X29Y79.COUT    Topcyg                1.001   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_lut<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.G3      net (fanout=8)        2.093   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.Y       Tilo                  0.759   fetch_unit_imp/PC_reg<1>
+                                                       fetch_unit_imp/PC_Source<0>
+    SLICE_X45Y79.G1      net (fanout=32)       2.139   fetch_unit_imp/PC_Source<0>
+    SLICE_X45Y79.Y       Tilo                  0.704   fetch_unit_imp/PC_reg<30>
+                                                       fetch_unit_imp/PC_mux_out<30>_SW0_SW0_SW0
+    SLICE_X45Y79.F4      net (fanout=1)        0.023   fetch_unit_imp/PC_mux_out<30>_SW0_SW0_SW0/O
+    SLICE_X45Y79.CLK     Tfck                  0.837   fetch_unit_imp/PC_reg<30>
+                                                       fetch_unit_imp/PC_mux_out<30>
+                                                       fetch_unit_imp/PC_reg_30
+    -------------------------------------------------  ---------------------------
+    Total                                     21.679ns (8.453ns logic, 13.226ns route)
+                                                       (39.0% logic, 61.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.446ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A (RAM)
+  Destination:          fetch_unit_imp/PC_reg_30 (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      21.521ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.033ns (0.107 - 0.140)
+  Source Clock:         CK rising at 0.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A to fetch_unit_imp/PC_reg_30
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X0Y4.DOA1     Tbcko                 2.812   hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2
+                                                       hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A
+    SLICE_X12Y60.F1      net (fanout=1)        1.770   hostintf/IMem_in_host_intf/MIPS_IMem_rd_data_regular<19>
+    SLICE_X12Y60.X       Tilo                  0.759   Rt_pEX<3>
+                                                       hostintf/IMem_in_host_intf/Mmux_MIPS_IMem_rd_data111
+    SLICE_X42Y77.F4      net (fanout=71)       4.594   IMem_rd_data<19>
+    SLICE_X42Y77.X       Tilo                  0.759   GPR_file/N85
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren41.SLICEM_F
+    SLICE_X44Y77.G2      net (fanout=1)        0.434   GPR_file/N85
+    SLICE_X44Y77.Y       Tilo                  0.759   B_reg<21>
+                                                       GPR_file/GPR_data_out2<20>1
+    SLICE_X29Y78.F1      net (fanout=2)        1.681   GPR_rd_data2<20>
+    SLICE_X29Y78.COUT    Topcyf                1.162   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_lut<10>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<10>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>
+    SLICE_X29Y79.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>
+    SLICE_X29Y79.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<12>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.G3      net (fanout=8)        2.093   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.Y       Tilo                  0.759   fetch_unit_imp/PC_reg<1>
+                                                       fetch_unit_imp/PC_Source<0>
+    SLICE_X45Y79.G1      net (fanout=32)       2.139   fetch_unit_imp/PC_Source<0>
+    SLICE_X45Y79.Y       Tilo                  0.704   fetch_unit_imp/PC_reg<30>
+                                                       fetch_unit_imp/PC_mux_out<30>_SW0_SW0_SW0
+    SLICE_X45Y79.F4      net (fanout=1)        0.023   fetch_unit_imp/PC_mux_out<30>_SW0_SW0_SW0/O
+    SLICE_X45Y79.CLK     Tfck                  0.837   fetch_unit_imp/PC_reg<30>
+                                                       fetch_unit_imp/PC_mux_out<30>
+                                                       fetch_unit_imp/PC_reg_30
+    -------------------------------------------------  ---------------------------
+    Total                                     21.521ns (8.787ns logic, 12.734ns route)
+                                                       (40.8% logic, 59.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point fetch_unit_imp/PC_reg_5 (SLICE_X42Y65.F3), 7204 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     8.507ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A (RAM)
+  Destination:          fetch_unit_imp/PC_reg_5 (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      21.448ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.045ns (0.095 - 0.140)
+  Source Clock:         CK rising at 0.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A to fetch_unit_imp/PC_reg_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X0Y4.DOA1     Tbcko                 2.812   hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2
+                                                       hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A
+    SLICE_X12Y60.F1      net (fanout=1)        1.770   hostintf/IMem_in_host_intf/MIPS_IMem_rd_data_regular<19>
+    SLICE_X12Y60.X       Tilo                  0.759   Rt_pEX<3>
+                                                       hostintf/IMem_in_host_intf/Mmux_MIPS_IMem_rd_data111
+    SLICE_X48Y83.F4      net (fanout=71)       4.944   IMem_rd_data<19>
+    SLICE_X48Y83.X       Tilo                  0.759   GPR_file/N115
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren56.SLICEM_F
+    SLICE_X49Y83.F3      net (fanout=1)        0.023   GPR_file/N115
+    SLICE_X49Y83.X       Tilo                  0.704   B_reg<27>
+                                                       GPR_file/GPR_data_out2<27>1
+    SLICE_X29Y79.G1      net (fanout=2)        2.234   GPR_rd_data2<27>
+    SLICE_X29Y79.COUT    Topcyg                1.001   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_lut<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.G3      net (fanout=8)        2.093   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.Y       Tilo                  0.759   fetch_unit_imp/PC_reg<1>
+                                                       fetch_unit_imp/PC_Source<0>
+    SLICE_X42Y65.G4      net (fanout=32)       1.798   fetch_unit_imp/PC_Source<0>
+    SLICE_X42Y65.Y       Tilo                  0.759   fetch_unit_imp/PC_reg<5>
+                                                       fetch_unit_imp/PC_mux_out<5>_SW0_SW0_SW0
+    SLICE_X42Y65.F3      net (fanout=1)        0.023   fetch_unit_imp/PC_mux_out<5>_SW0_SW0_SW0/O
+    SLICE_X42Y65.CLK     Tfck                  0.892   fetch_unit_imp/PC_reg<5>
+                                                       fetch_unit_imp/PC_mux_out<5>
+                                                       fetch_unit_imp/PC_reg_5
+    -------------------------------------------------  ---------------------------
+    Total                                     21.448ns (8.563ns logic, 12.885ns route)
+                                                       (39.9% logic, 60.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.507ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A (RAM)
+  Destination:          fetch_unit_imp/PC_reg_5 (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      21.448ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.045ns (0.095 - 0.140)
+  Source Clock:         CK rising at 0.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A to fetch_unit_imp/PC_reg_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X0Y4.DOA1     Tbcko                 2.812   hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2
+                                                       hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A
+    SLICE_X12Y60.F1      net (fanout=1)        1.770   hostintf/IMem_in_host_intf/MIPS_IMem_rd_data_regular<19>
+    SLICE_X12Y60.X       Tilo                  0.759   Rt_pEX<3>
+                                                       hostintf/IMem_in_host_intf/Mmux_MIPS_IMem_rd_data111
+    SLICE_X48Y82.F4      net (fanout=71)       4.944   IMem_rd_data<19>
+    SLICE_X48Y82.X       Tilo                  0.759   GPR_file/N113
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren55.SLICEM_F
+    SLICE_X49Y83.F4      net (fanout=1)        0.023   GPR_file/N113
+    SLICE_X49Y83.X       Tilo                  0.704   B_reg<27>
+                                                       GPR_file/GPR_data_out2<27>1
+    SLICE_X29Y79.G1      net (fanout=2)        2.234   GPR_rd_data2<27>
+    SLICE_X29Y79.COUT    Topcyg                1.001   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_lut<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.G3      net (fanout=8)        2.093   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.Y       Tilo                  0.759   fetch_unit_imp/PC_reg<1>
+                                                       fetch_unit_imp/PC_Source<0>
+    SLICE_X42Y65.G4      net (fanout=32)       1.798   fetch_unit_imp/PC_Source<0>
+    SLICE_X42Y65.Y       Tilo                  0.759   fetch_unit_imp/PC_reg<5>
+                                                       fetch_unit_imp/PC_mux_out<5>_SW0_SW0_SW0
+    SLICE_X42Y65.F3      net (fanout=1)        0.023   fetch_unit_imp/PC_mux_out<5>_SW0_SW0_SW0/O
+    SLICE_X42Y65.CLK     Tfck                  0.892   fetch_unit_imp/PC_reg<5>
+                                                       fetch_unit_imp/PC_mux_out<5>
+                                                       fetch_unit_imp/PC_reg_5
+    -------------------------------------------------  ---------------------------
+    Total                                     21.448ns (8.563ns logic, 12.885ns route)
+                                                       (39.9% logic, 60.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.665ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A (RAM)
+  Destination:          fetch_unit_imp/PC_reg_5 (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      21.290ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.045ns (0.095 - 0.140)
+  Source Clock:         CK rising at 0.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A to fetch_unit_imp/PC_reg_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X0Y4.DOA1     Tbcko                 2.812   hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2
+                                                       hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A
+    SLICE_X12Y60.F1      net (fanout=1)        1.770   hostintf/IMem_in_host_intf/MIPS_IMem_rd_data_regular<19>
+    SLICE_X12Y60.X       Tilo                  0.759   Rt_pEX<3>
+                                                       hostintf/IMem_in_host_intf/Mmux_MIPS_IMem_rd_data111
+    SLICE_X42Y77.F4      net (fanout=71)       4.594   IMem_rd_data<19>
+    SLICE_X42Y77.X       Tilo                  0.759   GPR_file/N85
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren41.SLICEM_F
+    SLICE_X44Y77.G2      net (fanout=1)        0.434   GPR_file/N85
+    SLICE_X44Y77.Y       Tilo                  0.759   B_reg<21>
+                                                       GPR_file/GPR_data_out2<20>1
+    SLICE_X29Y78.F1      net (fanout=2)        1.681   GPR_rd_data2<20>
+    SLICE_X29Y78.COUT    Topcyf                1.162   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_lut<10>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<10>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>
+    SLICE_X29Y79.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>
+    SLICE_X29Y79.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<12>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.CIN     net (fanout=1)        0.000   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>
+    SLICE_X29Y80.COUT    Tbyp                  0.118   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>
+                                                       Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.G3      net (fanout=8)        2.093   Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>
+    SLICE_X34Y67.Y       Tilo                  0.759   fetch_unit_imp/PC_reg<1>
+                                                       fetch_unit_imp/PC_Source<0>
+    SLICE_X42Y65.G4      net (fanout=32)       1.798   fetch_unit_imp/PC_Source<0>
+    SLICE_X42Y65.Y       Tilo                  0.759   fetch_unit_imp/PC_reg<5>
+                                                       fetch_unit_imp/PC_mux_out<5>_SW0_SW0_SW0
+    SLICE_X42Y65.F3      net (fanout=1)        0.023   fetch_unit_imp/PC_mux_out<5>_SW0_SW0_SW0/O
+    SLICE_X42Y65.CLK     Tfck                  0.892   fetch_unit_imp/PC_reg<5>
+                                                       fetch_unit_imp/PC_mux_out<5>
+                                                       fetch_unit_imp/PC_reg_5
+    -------------------------------------------------  ---------------------------
+    Total                                     21.290ns (8.897ns logic, 12.393ns route)
+                                                       (41.8% logic, 58.2% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clock_divider_half_ck_signal = PERIOD TIMEGRP
+        "clock_divider/half_ck_signal" 30 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point GPR_file/doul_port_memory/Mram_Memory_array_ren64.SLICEM_G (SLICE_X46Y83.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.728ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               ALUout_reg_31 (FF)
+  Destination:          GPR_file/doul_port_memory/Mram_Memory_array_ren64.SLICEM_G (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.725ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.003ns (0.008 - 0.011)
+  Source Clock:         CK rising at 30.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: ALUout_reg_31 to GPR_file/doul_port_memory/Mram_Memory_array_ren64.SLICEM_G
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X47Y84.XQ      Tcko                  0.473   ALUout_reg<31>
+                                                       ALUout_reg_31
+    SLICE_X46Y83.BY      net (fanout=5)        0.379   ALUout_reg<31>
+    SLICE_X46Y83.CLK     Tdh         (-Th)     0.127   GPR_file/N131
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren64.SLICEM_G
+    -------------------------------------------------  ---------------------------
+    Total                                      0.725ns (0.346ns logic, 0.379ns route)
+                                                       (47.7% logic, 52.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point GPR_file/doul_port_memory/Mram_Memory_array_ren64.SLICEM_F (SLICE_X46Y83.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.743ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               ALUout_reg_31 (FF)
+  Destination:          GPR_file/doul_port_memory/Mram_Memory_array_ren64.SLICEM_F (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.740ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.003ns (0.008 - 0.011)
+  Source Clock:         CK rising at 30.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: ALUout_reg_31 to GPR_file/doul_port_memory/Mram_Memory_array_ren64.SLICEM_F
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X47Y84.XQ      Tcko                  0.473   ALUout_reg<31>
+                                                       ALUout_reg_31
+    SLICE_X46Y83.BY      net (fanout=5)        0.379   ALUout_reg<31>
+    SLICE_X46Y83.CLK     Tdh         (-Th)     0.112   GPR_file/N131
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren64.SLICEM_F
+    -------------------------------------------------  ---------------------------
+    Total                                      0.740ns (0.361ns logic, 0.379ns route)
+                                                       (48.8% logic, 51.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point GPR_file/doul_port_memory/Mram_Memory_array_ren40.SLICEM_G (SLICE_X24Y83.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.754ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               ALUout_reg_19 (FF)
+  Destination:          GPR_file/doul_port_memory/Mram_Memory_array_ren40.SLICEM_G (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.751ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.003ns (0.009 - 0.012)
+  Source Clock:         CK rising at 30.000ns
+  Destination Clock:    CK rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: ALUout_reg_19 to GPR_file/doul_port_memory/Mram_Memory_array_ren40.SLICEM_G
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y85.XQ      Tcko                  0.473   ALUout_reg<19>
+                                                       ALUout_reg_19
+    SLICE_X24Y83.BY      net (fanout=5)        0.405   ALUout_reg<19>
+    SLICE_X24Y83.CLK     Tdh         (-Th)     0.127   GPR_file/N83
+                                                       GPR_file/doul_port_memory/Mram_Memory_array_ren40.SLICEM_G
+    -------------------------------------------------  ---------------------------
+    Total                                      0.751ns (0.346ns logic, 0.405ns route)
+                                                       (46.1% logic, 53.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clock_divider_half_ck_signal = PERIOD TIMEGRP
+        "clock_divider/half_ck_signal" 30 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 26.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 30.000ns
+  Low pulse: 15.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: fetch_unit_imp/PC_plus_4_pID<1>/SR
+  Logical resource: fetch_unit_imp/PC_plus_4_pID_1/SR
+  Location pin: SLICE_X34Y64.SR
+  Clock network: RESET
+--------------------------------------------------------------------------------
+Slack: 26.808ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 30.000ns
+  High pulse: 15.000ns
+  High pulse limit: 1.596ns (Trpw)
+  Physical resource: fetch_unit_imp/PC_plus_4_pID<1>/SR
+  Logical resource: fetch_unit_imp/PC_plus_4_pID_1/SR
+  Location pin: SLICE_X34Y64.SR
+  Clock network: RESET
+--------------------------------------------------------------------------------
+Slack: 26.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 30.000ns
+  Low pulse: 15.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: fetch_unit_imp/PC_plus_4_pID<1>/SR
+  Logical resource: fetch_unit_imp/PC_plus_4_pID_0/SR
+  Location pin: SLICE_X34Y64.SR
+  Clock network: RESET
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CK_50MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CK_50MHz       |    2.188|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 398468 paths, 0 nets, and 8825 connections
+
+Design statistics:
+   Minimum period:  21.944ns{1}   (Maximum frequency:  45.571MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri Jun 15 09:57:09 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 252 MB
+
+
+

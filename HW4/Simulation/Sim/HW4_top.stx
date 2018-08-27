@@ -1,0 +1,50 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Sherman/HW4_sim/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Sherman/HW4_sim/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Sherman/HW4_sim/dual_port_memory.vhd" in Library work.
+Entity <dual_port_memory_no_ck_read> compiled.
+Entity <dual_port_memory_no_ck_read> (Architecture <dual_port_memory>) compiled.
+Compiling vhdl file "C:/Users/Sherman/HW4_sim/SIM_HW4_filenames.vhd" in Library work.
+Package <BYOC_filenames> compiled.
+Compiling vhdl file "C:/Users/Sherman/HW4_sim/BYOC_Clock_driver_4sim.vhd" in Library work.
+Entity <Clock_Driver> compiled.
+Entity <Clock_Driver> (Architecture <clock_divider>) compiled.
+Compiling vhdl file "C:/Users/Sherman/HW4_sim/BYOC_Host_Intf_4sim.vhd" in Library work.
+Entity <BYOC_Host_Intf> compiled.
+Entity <BYOC_Host_Intf> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sherman/HW4_sim/Fetch_Unit.vhd" in Library work.
+Entity <Fetch_Unit> compiled.
+Entity <Fetch_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sherman/HW4_sim/GPR.vhd" in Library work.
+Entity <GPR> compiled.
+ERROR:HDLParsers:864 - "C:/Users/Sherman/HW4_sim/GPR.vhd" Line 70. Actual, result of operator, associated with Formal Signal, Signal 'wr_en', is not a Signal. (LRM 2.1.1)
+ERROR:HDLParsers:3298 - "C:/Users/Sherman/HW4_sim/GPR.vhd" line 75. Expression is not a static name.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> 
+
+Total memory usage is 303428 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
