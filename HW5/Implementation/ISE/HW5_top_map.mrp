@@ -1,0 +1,344 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'HW5_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o HW5_top_map.ncd HW5_top.ngd HW5_top.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Fri Jun 22 10:01:33 2018
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    9
+Logic Utilization:
+  Number of Slice Flip Flops:           990 out of   9,312   10%
+  Number of 4 input LUTs:             2,191 out of   9,312   23%
+Logic Distribution:
+  Number of occupied Slices:          1,401 out of   4,656   30%
+    Number of Slices containing only related logic:   1,401 out of   1,401 100%
+    Number of Slices containing unrelated logic:          0 out of   1,401   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       2,342 out of   9,312   25%
+    Number used as logic:             1,932
+    Number used as a route-thru:        151
+    Number used for Dual Port RAMs:     256
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:       3
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 88 out of     232   37%
+  Number of RAMB16s:                     13 out of      20   65%
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                3.58
+
+Peak Memory Usage:  373 MB
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   9 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal buttons_in<2> connected to top level port
+   buttons_in<2> has been removed.
+WARNING:MapLib:701 - Signal buttons_in<1> connected to top level port
+   buttons_in<1> has been removed.
+WARNING:MapLib:701 - Signal buttons_in<0> connected to top level port
+   buttons_in<0> has been removed.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.B>:<RAMB16_
+   RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.B>:<RAMB16_
+   RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.A>:<RAMB16_
+   RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.A>:<RAMB16_
+   RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.B>:<RAMB16_
+   RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.B>:<RAMB16_
+   RAMB16B>.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network buttons_in_0_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 130 more times for the
+   following (max. 5 shown):
+   buttons_in_1_IBUF,
+   buttons_in_2_IBUF,
+   GPR_file/doul_port_memory/Mram_Memory_array64/SPO,
+   GPR_file/doul_port_memory/Mram_Memory_array62/SPO,
+   GPR_file/doul_port_memory/Mram_Memory_array61/SPO
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   6 block(s) removed
+  27 block(s) optimized away
+   6 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "buttons_in<0>" is unused and has been removed.
+ Unused block "buttons_in<0>" (PAD) removed.
+The signal "buttons_in<1>" is unused and has been removed.
+ Unused block "buttons_in<1>" (PAD) removed.
+The signal "buttons_in<2>" is unused and has been removed.
+ Unused block "buttons_in<2>" (PAD) removed.
+The signal "buttons_in_0_IBUF" is unused and has been removed.
+ Unused block "buttons_in_0_IBUF" (BUF) removed.
+The signal "buttons_in_1_IBUF" is unused and has been removed.
+ Unused block "buttons_in_1_IBUF" (BUF) removed.
+The signal "buttons_in_2_IBUF" is unused and has been removed.
+ Unused block "buttons_in_2_IBUF" (BUF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+LUT3 		hostintf/Mmux_Host_RDBK_data_710
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_713
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_716
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_719
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_722
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_725
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_728
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_731
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_737
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_74
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_740
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_743
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_746
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_749
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_752
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_755
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_758
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_764
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_77
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_770
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_773
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_785
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_788
+   optimized to 0
+GND 		hostintf/XST_GND
+VCC 		hostintf/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CK_50MHz                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Flash_adrs<1>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<2>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<3>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<4>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<5>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<6>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<7>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<8>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<9>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<10>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<11>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<12>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<13>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<14>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<15>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<16>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<17>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<18>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<19>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<20>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<21>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<22>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<23>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_ce_n                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<0>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<1>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<2>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<3>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<4>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<5>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<6>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<7>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<8>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<9>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<10>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<11>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<12>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<13>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<14>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<15>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_oe_n                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_rp_n                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_sts                          | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Flash_we_n                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| MT_ce_n                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PS2C                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| PS2D                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| RS232_Rx                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| RS232_Tx                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_blu1                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_blu2                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_grn0                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_grn1                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_grn2                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_h_sync                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_red0                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_red1                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_red2                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_v_sync                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes_out<0>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes_out<1>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes_out<2>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes_out<3>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| buttons_in<3>                      | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| leds_out<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<0>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<1>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<2>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<3>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<4>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<5>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<6>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| switches_in<0>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<1>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<2>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<3>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<4>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<5>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<6>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<7>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

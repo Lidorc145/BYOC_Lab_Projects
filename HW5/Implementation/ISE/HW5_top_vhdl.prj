@@ -1,0 +1,6 @@
+vhdl work "C:\Users\Lidor Cohen\Desktop\BYOC-HW5-Lidor\HW5-Implementation\dual_port_memory.vhd"
+vhdl work "C:\Users\Lidor Cohen\Desktop\BYOC-HW5-Lidor\HW5-Implementation\MIPS_ALU.vhd"
+vhdl work "C:\Users\Lidor Cohen\Desktop\BYOC-HW5-Lidor\HW5-Implementation\GPR.vhd"
+vhdl work "C:\Users\Lidor Cohen\Desktop\BYOC-HW5-Lidor\HW5-Implementation\Fetch_Unit.vhd"
+vhdl work "C:\Users\Lidor Cohen\Desktop\BYOC-HW5-Lidor\HW5-Implementation\BYOC_Clock_driver.vhd"
+vhdl work "C:\Users\Lidor Cohen\Desktop\BYOC-HW5-Lidor\HW5-Implementation\HW5_MIPS.vhd"

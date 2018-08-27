@@ -1,0 +1,16 @@
+PC_reg
+IR_reg_pID
+sext_imm
+Rs, Rt, Rd, Funct
+RegWrite,Rs_equals_Rt
+ALUSrcB, ALUOP_pEX, Funct_pEX
+A_reg
+B_reg
+sext_imm_reg
+ALU output
+ALUout_reg
+B_reg_pMEM
+MemWrite,Mem2reg,RegWrite,Rd[MEM/WB]
+MDR_reg
+ALUout_reg_pWB
+GPR_wr_data

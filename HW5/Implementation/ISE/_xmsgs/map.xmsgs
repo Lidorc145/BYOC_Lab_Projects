@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">buttons_in_0_IBUF</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">130</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">buttons_in_1_IBUF,
+buttons_in_2_IBUF,
+GPR_file/doul_port_memory/Mram_Memory_array64/SPO,
+GPR_file/doul_port_memory/Mram_Memory_array62/SPO,
+GPR_file/doul_port_memory/Mram_Memory_array61/SPO</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">buttons_in&lt;2&gt;</arg> connected to top level port <arg fmt="%s" index="2">buttons_in&lt;2&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">buttons_in&lt;1&gt;</arg> connected to top level port <arg fmt="%s" index="2">buttons_in&lt;1&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">buttons_in&lt;0&gt;</arg> connected to top level port <arg fmt="%s" index="2">buttons_in&lt;0&gt;</arg> has been removed.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB14</arg>&gt; on block:&lt;<arg fmt="%s" index="2">hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.B</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16_RAMB16B</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB15</arg>&gt; on block:&lt;<arg fmt="%s" index="2">hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.B</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16_RAMB16B</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOA14</arg>&gt; on block:&lt;<arg fmt="%s" index="2">hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.A</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16_RAMB16A</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOA15</arg>&gt; on block:&lt;<arg fmt="%s" index="2">hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.A</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16_RAMB16A</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB14</arg>&gt; on block:&lt;<arg fmt="%s" index="2">hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.B</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16_RAMB16B</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOB15</arg>&gt; on block:&lt;<arg fmt="%s" index="2">hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.B</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16_RAMB16B</arg>&gt;.
+</msg>
+
+</messages>
+

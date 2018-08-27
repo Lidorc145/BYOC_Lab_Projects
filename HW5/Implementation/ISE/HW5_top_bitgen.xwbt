@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Lidor Cohen\Desktop\BYOC-HW5-Lidor\HW5-Implementation\HW5_top.ncd
+OUTFILE=C:\Users\Lidor Cohen\Desktop\BYOC-HW5-Lidor\HW5-Implementation\HW5_top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Lidor Cohen\Desktop\BYOC-HW5-Lidor\HW5-Implementation
+LICENSE=WebPack
+USER_INFO=211507243_0_0_659

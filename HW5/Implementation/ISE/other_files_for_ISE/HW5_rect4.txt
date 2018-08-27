@@ -1,0 +1,40 @@
+x00         # RESET CMD
+x2100000400C10   # load program from 400000h and on. Exactly 28 words (here lines 3 to 30, addresses 400000-400070h) = 1Ch
+04001002	#	400000	20010040	main:	addi  $1,$0,64	#	$1=64  (no.of lines to draw in drawlp)
+00022002	#	400004	20022000		addi $2,$0, 2000h	#	$2= 00002000h
+01004002	#	400008	20040010		addi $4,$0,16		#	$4=16 = initialize shift loop counter
+00000000	#	40000C	00000000		nop			#	
+00000000	#	400010	00000000		nop			#	
+02012400	#	400014	00421020       shft_lp:	add $2,$2,$2 #	multipl2 $2 by 2. Do that 16 times = shift left   (#1)
+FFFF4802	#	400018	2084FFFF		addi $4,$4,-1		#	decrement shift loop counter
+00000000	#	40001C	00000000		nop			#	
+00000000	#	400020	00000000		nop			#	
+00000000	#	400024	00000000		nop			#	
+AFFF0841	#	400028	1480FFFA		bne $4,$0, shft_lp	#	if not done 16 time, continue shifting
+00000000	#	40002C	00000000		nop			#	
+81002402	#	400030	20420018		addi $2,$2,18h		#	$2=20000018 = ptr points at the middle of screen
+FFFF3002	#	400034	2003FFFF		addi $3,$0,-1		#	$3=FFFFFFFFh
+00000000    #	400038	00000000		nop			#	
+00000000	#	40003C	00000000		nop			#	
+00000000	#	400040	00000000		nop			#	
+000034CA	#	400044	AC430000	drawlp:	sw $3, 0($2)	#	write to screen
+FFFF1202	#	400048	2021FFFF		addi $1,$1,-1		#	decrement counter
+43002402	#	40004C	20420034		addi $2,$2,52		#	increment ptr ($2)
+00000000	#	400050	00000000		nop			#	
+00000000	#	400054	00000000		nop			#	
+AFFF0241    #	400058	1420FFFA		bne $1,$0, drawlp	#	if cntr not 0 goto drawlp
+00000000	#	40005C	00000000		nop			#	
+81000180	#	400060	08100018	end:	j end			#	endless loop
+00000000	#	400064	00000000		nop			#	
+00000000	#	400068	00000000					#	
+00000000	#	40006C	00000000					#	
+00000000	#	400070	00000000   #last data written to memory
+yyyyyyyy    #   add a few "end of cmd" to make sure cmd is ended properly
+yyyyyyyy
+yyyyyyyy
+yyyyyyyy
+x2010       # set single clock mode    x,02,01
+yyyyyyyy    # add a few "end of cmd" to make sure cmd is ended properly
+yyyyyyyy
+yyyyyyyy
+yyyyyyyy 

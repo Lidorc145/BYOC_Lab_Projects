@@ -1,0 +1,1199 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jun 22 10:01:40 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "anodes_out<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "anodes_out<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "anodes_out<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "anodes_out<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "MT_ce_n" LOCATE = SITE "R6" LEVEL 1;
+COMP "VGA_blu1" LOCATE = SITE "U5" LEVEL 1;
+COMP "VGA_blu2" LOCATE = SITE "U4" LEVEL 1;
+COMP "VGA_grn0" LOCATE = SITE "N8" LEVEL 1;
+COMP "VGA_grn1" LOCATE = SITE "P8" LEVEL 1;
+COMP "VGA_grn2" LOCATE = SITE "P6" LEVEL 1;
+COMP "VGA_red0" LOCATE = SITE "R9" LEVEL 1;
+COMP "VGA_red1" LOCATE = SITE "T8" LEVEL 1;
+COMP "VGA_red2" LOCATE = SITE "R8" LEVEL 1;
+COMP "PS2C" LOCATE = SITE "R12" LEVEL 1;
+COMP "PS2D" LOCATE = SITE "P11" LEVEL 1;
+COMP "sevenseg_out<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "sevenseg_out<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "sevenseg_out<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "sevenseg_out<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "sevenseg_out<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "sevenseg_out<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "sevenseg_out<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "VGA_h_sync" LOCATE = SITE "T4" LEVEL 1;
+COMP "VGA_v_sync" LOCATE = SITE "U3" LEVEL 1;
+COMP "Flash_data<10>" LOCATE = SITE "M3" LEVEL 1;
+COMP "Flash_data<11>" LOCATE = SITE "M6" LEVEL 1;
+COMP "Flash_data<12>" LOCATE = SITE "L2" LEVEL 1;
+COMP "Flash_data<13>" LOCATE = SITE "N4" LEVEL 1;
+COMP "Flash_data<14>" LOCATE = SITE "R3" LEVEL 1;
+COMP "Flash_data<15>" LOCATE = SITE "T1" LEVEL 1;
+COMP "Flash_adrs<10>" LOCATE = SITE "G3" LEVEL 1;
+COMP "Flash_adrs<11>" LOCATE = SITE "G6" LEVEL 1;
+COMP "Flash_adrs<20>" LOCATE = SITE "D2" LEVEL 1;
+COMP "Flash_adrs<12>" LOCATE = SITE "G5" LEVEL 1;
+COMP "Flash_adrs<21>" LOCATE = SITE "K3" LEVEL 1;
+COMP "Flash_adrs<13>" LOCATE = SITE "G4" LEVEL 1;
+COMP "Flash_adrs<22>" LOCATE = SITE "D1" LEVEL 1;
+COMP "Flash_adrs<14>" LOCATE = SITE "F2" LEVEL 1;
+COMP "Flash_adrs<23>" LOCATE = SITE "K6" LEVEL 1;
+COMP "Flash_adrs<15>" LOCATE = SITE "E1" LEVEL 1;
+COMP "Flash_adrs<16>" LOCATE = SITE "M5" LEVEL 1;
+COMP "Flash_adrs<17>" LOCATE = SITE "E2" LEVEL 1;
+COMP "Flash_adrs<18>" LOCATE = SITE "C2" LEVEL 1;
+COMP "Flash_adrs<19>" LOCATE = SITE "C1" LEVEL 1;
+COMP "buttons_in<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "Flash_sts" LOCATE = SITE "D3" LEVEL 1;
+COMP "leds_out<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "leds_out<1>" LOCATE = SITE "J15" LEVEL 1;
+COMP "leds_out<2>" LOCATE = SITE "K15" LEVEL 1;
+COMP "leds_out<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "leds_out<4>" LOCATE = SITE "E17" LEVEL 1;
+COMP "leds_out<5>" LOCATE = SITE "P15" LEVEL 1;
+COMP "leds_out<6>" LOCATE = SITE "F4" LEVEL 1;
+COMP "leds_out<7>" LOCATE = SITE "R4" LEVEL 1;
+COMP "switches_in<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "switches_in<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "switches_in<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "switches_in<3>" LOCATE = SITE "K17" LEVEL 1;
+COMP "switches_in<4>" LOCATE = SITE "L14" LEVEL 1;
+COMP "switches_in<5>" LOCATE = SITE "L13" LEVEL 1;
+COMP "switches_in<6>" LOCATE = SITE "N17" LEVEL 1;
+COMP "switches_in<7>" LOCATE = SITE "R17" LEVEL 1;
+COMP "Flash_data<0>" LOCATE = SITE "L1" LEVEL 1;
+COMP "Flash_data<1>" LOCATE = SITE "L4" LEVEL 1;
+COMP "Flash_data<2>" LOCATE = SITE "L6" LEVEL 1;
+COMP "Flash_data<3>" LOCATE = SITE "M4" LEVEL 1;
+COMP "Flash_data<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "Flash_data<5>" LOCATE = SITE "P1" LEVEL 1;
+COMP "Flash_data<6>" LOCATE = SITE "P2" LEVEL 1;
+COMP "Flash_data<7>" LOCATE = SITE "R2" LEVEL 1;
+COMP "Flash_data<8>" LOCATE = SITE "L3" LEVEL 1;
+COMP "Flash_data<9>" LOCATE = SITE "L5" LEVEL 1;
+COMP "Flash_adrs<1>" LOCATE = SITE "J1" LEVEL 1;
+COMP "Flash_adrs<2>" LOCATE = SITE "J2" LEVEL 1;
+COMP "Flash_adrs<3>" LOCATE = SITE "H4" LEVEL 1;
+COMP "Flash_adrs<4>" LOCATE = SITE "H1" LEVEL 1;
+COMP "Flash_adrs<5>" LOCATE = SITE "H2" LEVEL 1;
+COMP "Flash_adrs<6>" LOCATE = SITE "J5" LEVEL 1;
+COMP "Flash_adrs<7>" LOCATE = SITE "H3" LEVEL 1;
+COMP "Flash_adrs<8>" LOCATE = SITE "H6" LEVEL 1;
+COMP "Flash_adrs<9>" LOCATE = SITE "F1" LEVEL 1;
+COMP "CK_50MHz" LOCATE = SITE "B8" LEVEL 1;
+COMP "RS232_Rx" LOCATE = SITE "U6" LEVEL 1;
+COMP "RS232_Tx" LOCATE = SITE "P9" LEVEL 1;
+COMP "Flash_ce_n" LOCATE = SITE "R5" LEVEL 1;
+COMP "Flash_oe_n" LOCATE = SITE "T2" LEVEL 1;
+COMP "Flash_we_n" LOCATE = SITE "N7" LEVEL 1;
+COMP "Flash_rp_n" LOCATE = SITE "T5" LEVEL 1;
+NET "CK_50MHz_BUFGP/IBUFG" BEL "CK_50MHz_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+PIN hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array1.A_pins<11> =
+        BEL "hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array1.A"
+        PINNAME CLKA;
+PIN hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array1.B_pins<11> =
+        BEL "hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array1.B"
+        PINNAME CLKB;
+PIN hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A_pins<11> =
+        BEL "hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A"
+        PINNAME CLKA;
+PIN hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.B_pins<11> =
+        BEL "hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.B"
+        PINNAME CLKB;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array7.A_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array7.A" PINNAME
+        CLKA;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array7.B_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array7.B" PINNAME
+        CLKB;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array6.A_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array6.A" PINNAME
+        CLKA;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array6.B_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array6.B" PINNAME
+        CLKB;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array8.A_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array8.A" PINNAME
+        CLKA;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array8.B_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array8.B" PINNAME
+        CLKB;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array4.A_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array4.A" PINNAME
+        CLKA;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array4.B_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array4.B" PINNAME
+        CLKB;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array3.A_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array3.A" PINNAME
+        CLKA;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array3.B_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array3.B" PINNAME
+        CLKB;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array5.A_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array5.A" PINNAME
+        CLKA;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array5.B_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array5.B" PINNAME
+        CLKB;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array1.A_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array1.A" PINNAME
+        CLKA;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array1.B_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array1.B" PINNAME
+        CLKB;
+PIN hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.A_pins<11> =
+        BEL "hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.A"
+        PINNAME CLKA;
+PIN hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.B_pins<11> =
+        BEL "hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.B"
+        PINNAME CLKB;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array2.A_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array2.A" PINNAME
+        CLKA;
+PIN hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array2.B_pins<13> = BEL
+        "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array2.B" PINNAME
+        CLKB;
+PIN hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array1.A_pins<11> =
+        BEL "hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array1.A"
+        PINNAME CLKA;
+PIN hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array1.B_pins<11> =
+        BEL "hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array1.B"
+        PINNAME CLKB;
+TIMEGRP clock_divider/half_ck_signal = BEL "Rd_pMEM_0" BEL "Rd_pMEM_1" BEL
+        "Rd_pMEM_2" BEL "Rd_pMEM_3" BEL "Rd_pMEM_4" BEL "B_reg_0" BEL
+        "B_reg_1" BEL "B_reg_2" BEL "B_reg_3" BEL "B_reg_4" BEL "B_reg_5" BEL
+        "B_reg_6" BEL "B_reg_7" BEL "B_reg_8" BEL "B_reg_9" BEL "B_reg_10" BEL
+        "B_reg_11" BEL "B_reg_12" BEL "B_reg_13" BEL "B_reg_14" BEL "B_reg_15"
+        BEL "B_reg_16" BEL "B_reg_17" BEL "B_reg_18" BEL "B_reg_19" BEL
+        "B_reg_20" BEL "B_reg_21" BEL "B_reg_22" BEL "B_reg_23" BEL "B_reg_24"
+        BEL "B_reg_25" BEL "B_reg_26" BEL "B_reg_27" BEL "B_reg_28" BEL
+        "B_reg_29" BEL "B_reg_30" BEL "B_reg_31" BEL "RegDst_pEX" BEL
+        "ALUsrcB_pEX" BEL "MemWrite_pEX" BEL "Funct_pEX_0" BEL "Funct_pEX_1"
+        BEL "Funct_pEX_2" BEL "Funct_pEX_3" BEL "Funct_pEX_4" BEL
+        "Funct_pEX_5" BEL "MemToReg_pEX" BEL "sext_imm_reg_0" BEL
+        "sext_imm_reg_1" BEL "sext_imm_reg_2" BEL "sext_imm_reg_3" BEL
+        "sext_imm_reg_4" BEL "sext_imm_reg_5" BEL "sext_imm_reg_6" BEL
+        "sext_imm_reg_7" BEL "sext_imm_reg_8" BEL "sext_imm_reg_9" BEL
+        "sext_imm_reg_10" BEL "sext_imm_reg_11" BEL "sext_imm_reg_12" BEL
+        "sext_imm_reg_13" BEL "sext_imm_reg_14" BEL "sext_imm_reg_15" BEL
+        "ALUOP_pEX_0" BEL "RegWrite_pEX" BEL "A_reg_0" BEL "A_reg_1" BEL
+        "A_reg_2" BEL "A_reg_3" BEL "A_reg_4" BEL "A_reg_5" BEL "A_reg_6" BEL
+        "A_reg_7" BEL "A_reg_8" BEL "A_reg_9" BEL "A_reg_10" BEL "A_reg_11"
+        BEL "A_reg_12" BEL "A_reg_13" BEL "A_reg_14" BEL "A_reg_15" BEL
+        "A_reg_16" BEL "A_reg_17" BEL "A_reg_18" BEL "A_reg_19" BEL "A_reg_20"
+        BEL "A_reg_21" BEL "A_reg_22" BEL "A_reg_23" BEL "A_reg_24" BEL
+        "A_reg_25" BEL "A_reg_26" BEL "A_reg_27" BEL "A_reg_28" BEL "A_reg_29"
+        BEL "A_reg_30" BEL "A_reg_31" BEL "Rd_pWB_0" BEL "Rd_pWB_1" BEL
+        "Rd_pWB_2" BEL "Rd_pWB_3" BEL "Rd_pWB_4" BEL "MemWrite_pMEM" BEL
+        "MemToReg_pMEM" BEL "RegWrite_pMEM" BEL "B_reg_pMEM_0" BEL
+        "B_reg_pMEM_1" BEL "B_reg_pMEM_2" BEL "B_reg_pMEM_3" BEL
+        "B_reg_pMEM_4" BEL "B_reg_pMEM_5" BEL "B_reg_pMEM_6" BEL
+        "B_reg_pMEM_7" BEL "B_reg_pMEM_8" BEL "B_reg_pMEM_9" BEL
+        "B_reg_pMEM_10" BEL "B_reg_pMEM_11" BEL "B_reg_pMEM_12" BEL
+        "B_reg_pMEM_13" BEL "B_reg_pMEM_14" BEL "B_reg_pMEM_15" BEL
+        "B_reg_pMEM_16" BEL "B_reg_pMEM_17" BEL "B_reg_pMEM_18" BEL
+        "B_reg_pMEM_19" BEL "B_reg_pMEM_20" BEL "B_reg_pMEM_21" BEL
+        "B_reg_pMEM_22" BEL "B_reg_pMEM_23" BEL "B_reg_pMEM_24" BEL
+        "B_reg_pMEM_25" BEL "B_reg_pMEM_26" BEL "B_reg_pMEM_27" BEL
+        "B_reg_pMEM_28" BEL "B_reg_pMEM_29" BEL "B_reg_pMEM_30" BEL
+        "B_reg_pMEM_31" BEL "MemToReg_pWB" BEL "RegWrite_pWB" BEL
+        "ALUout_reg_0" BEL "ALUout_reg_1" BEL "ALUout_reg_2" BEL
+        "ALUout_reg_3" BEL "ALUout_reg_4" BEL "ALUout_reg_5" BEL
+        "ALUout_reg_6" BEL "ALUout_reg_7" BEL "ALUout_reg_8" BEL
+        "ALUout_reg_9" BEL "ALUout_reg_10" BEL "ALUout_reg_11" BEL
+        "ALUout_reg_12" BEL "ALUout_reg_13" BEL "ALUout_reg_14" BEL
+        "ALUout_reg_15" BEL "ALUout_reg_16" BEL "ALUout_reg_17" BEL
+        "ALUout_reg_18" BEL "ALUout_reg_19" BEL "ALUout_reg_20" BEL
+        "ALUout_reg_21" BEL "ALUout_reg_22" BEL "ALUout_reg_23" BEL
+        "ALUout_reg_24" BEL "ALUout_reg_25" BEL "ALUout_reg_26" BEL
+        "ALUout_reg_27" BEL "ALUout_reg_28" BEL "ALUout_reg_29" BEL
+        "ALUout_reg_30" BEL "ALUout_reg_31" BEL "ALUout_reg_pWB_0" BEL
+        "ALUout_reg_pWB_1" BEL "ALUout_reg_pWB_2" BEL "ALUout_reg_pWB_3" BEL
+        "ALUout_reg_pWB_4" BEL "ALUout_reg_pWB_5" BEL "ALUout_reg_pWB_6" BEL
+        "ALUout_reg_pWB_7" BEL "ALUout_reg_pWB_8" BEL "ALUout_reg_pWB_9" BEL
+        "ALUout_reg_pWB_10" BEL "ALUout_reg_pWB_11" BEL "ALUout_reg_pWB_12"
+        BEL "ALUout_reg_pWB_13" BEL "ALUout_reg_pWB_14" BEL
+        "ALUout_reg_pWB_15" BEL "ALUout_reg_pWB_16" BEL "ALUout_reg_pWB_17"
+        BEL "ALUout_reg_pWB_18" BEL "ALUout_reg_pWB_19" BEL
+        "ALUout_reg_pWB_20" BEL "ALUout_reg_pWB_21" BEL "ALUout_reg_pWB_22"
+        BEL "ALUout_reg_pWB_23" BEL "ALUout_reg_pWB_24" BEL
+        "ALUout_reg_pWB_25" BEL "ALUout_reg_pWB_26" BEL "ALUout_reg_pWB_27"
+        BEL "ALUout_reg_pWB_28" BEL "ALUout_reg_pWB_29" BEL
+        "ALUout_reg_pWB_30" BEL "ALUout_reg_pWB_31" BEL "Rt_pEX_0" BEL
+        "Rt_pEX_1" BEL "Rt_pEX_2" BEL "Rt_pEX_3" BEL "Rt_pEX_4" BEL
+        "clock_divider/half_ck_signal" BEL "fetch_unit_imp/PC_reg_0" BEL
+        "fetch_unit_imp/PC_reg_1" BEL "fetch_unit_imp/PC_reg_2" BEL
+        "fetch_unit_imp/PC_reg_3" BEL "fetch_unit_imp/PC_reg_4" BEL
+        "fetch_unit_imp/PC_reg_5" BEL "fetch_unit_imp/PC_reg_6" BEL
+        "fetch_unit_imp/PC_reg_7" BEL "fetch_unit_imp/PC_reg_8" BEL
+        "fetch_unit_imp/PC_reg_9" BEL "fetch_unit_imp/PC_reg_10" BEL
+        "fetch_unit_imp/PC_reg_11" BEL "fetch_unit_imp/PC_reg_12" BEL
+        "fetch_unit_imp/PC_reg_13" BEL "fetch_unit_imp/PC_reg_14" BEL
+        "fetch_unit_imp/PC_reg_15" BEL "fetch_unit_imp/PC_reg_16" BEL
+        "fetch_unit_imp/PC_reg_17" BEL "fetch_unit_imp/PC_reg_18" BEL
+        "fetch_unit_imp/PC_reg_19" BEL "fetch_unit_imp/PC_reg_20" BEL
+        "fetch_unit_imp/PC_reg_21" BEL "fetch_unit_imp/PC_reg_22" BEL
+        "fetch_unit_imp/PC_reg_23" BEL "fetch_unit_imp/PC_reg_24" BEL
+        "fetch_unit_imp/PC_reg_25" BEL "fetch_unit_imp/PC_reg_26" BEL
+        "fetch_unit_imp/PC_reg_27" BEL "fetch_unit_imp/PC_reg_28" BEL
+        "fetch_unit_imp/PC_reg_29" BEL "fetch_unit_imp/PC_reg_30" BEL
+        "fetch_unit_imp/PC_reg_31" BEL "fetch_unit_imp/PC_plus_4_pID_31" BEL
+        "fetch_unit_imp/PC_plus_4_pID_30" BEL
+        "fetch_unit_imp/PC_plus_4_pID_29" BEL
+        "fetch_unit_imp/PC_plus_4_pID_28" BEL
+        "fetch_unit_imp/PC_plus_4_pID_27" BEL
+        "fetch_unit_imp/PC_plus_4_pID_26" BEL
+        "fetch_unit_imp/PC_plus_4_pID_25" BEL
+        "fetch_unit_imp/PC_plus_4_pID_24" BEL
+        "fetch_unit_imp/PC_plus_4_pID_23" BEL
+        "fetch_unit_imp/PC_plus_4_pID_22" BEL
+        "fetch_unit_imp/PC_plus_4_pID_21" BEL
+        "fetch_unit_imp/PC_plus_4_pID_20" BEL
+        "fetch_unit_imp/PC_plus_4_pID_19" BEL
+        "fetch_unit_imp/PC_plus_4_pID_18" BEL
+        "fetch_unit_imp/PC_plus_4_pID_17" BEL
+        "fetch_unit_imp/PC_plus_4_pID_16" BEL
+        "fetch_unit_imp/PC_plus_4_pID_15" BEL
+        "fetch_unit_imp/PC_plus_4_pID_14" BEL
+        "fetch_unit_imp/PC_plus_4_pID_13" BEL
+        "fetch_unit_imp/PC_plus_4_pID_12" BEL
+        "fetch_unit_imp/PC_plus_4_pID_11" BEL
+        "fetch_unit_imp/PC_plus_4_pID_10" BEL "fetch_unit_imp/PC_plus_4_pID_9"
+        BEL "fetch_unit_imp/PC_plus_4_pID_8" BEL
+        "fetch_unit_imp/PC_plus_4_pID_7" BEL "fetch_unit_imp/PC_plus_4_pID_6"
+        BEL "fetch_unit_imp/PC_plus_4_pID_5" BEL
+        "fetch_unit_imp/PC_plus_4_pID_4" BEL "fetch_unit_imp/PC_plus_4_pID_3"
+        BEL "fetch_unit_imp/PC_plus_4_pID_2" BEL
+        "fetch_unit_imp/PC_plus_4_pID_1" BEL "fetch_unit_imp/PC_plus_4_pID_0"
+        BEL "GPR_file/doul_port_memory/Mram_Memory_array64.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array64.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array62.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array62.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array61.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array61.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array63.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array63.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array59.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array59.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array58.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array58.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array60.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array60.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array56.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array56.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array55.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array55.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array57.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array57.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array53.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array53.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array52.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array52.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array54.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array54.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array50.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array50.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array49.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array49.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array51.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array51.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array47.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array47.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array46.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array46.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array48.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array48.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array44.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array44.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array43.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array43.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array45.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array45.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array41.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array41.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array40.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array40.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array42.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array42.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array38.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array38.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array37.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array37.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array39.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array39.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array35.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array35.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array34.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array34.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array36.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array36.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array32.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array32.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array31.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array31.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array33.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array33.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array29.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array29.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array28.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array28.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array30.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array30.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array26.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array26.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array25.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array25.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array27.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array27.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array23.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array23.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array22.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array22.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array24.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array24.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array20.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array20.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array19.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array19.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array21.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array21.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array17.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array17.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array16.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array16.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array18.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array18.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array14.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array14.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array13.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array13.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array15.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array15.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array11.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array11.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array10.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array10.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array12.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array12.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array8.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array8.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array7.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array7.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array9.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array9.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array5.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array5.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array4.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array4.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array6.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array6.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array3.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array3.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array2.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array2.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array1.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array1.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren64.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren64.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren62.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren62.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren61.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren61.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren63.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren63.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren59.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren59.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren58.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren58.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren60.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren60.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren56.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren56.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren55.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren55.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren57.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren57.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren53.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren53.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren52.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren52.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren54.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren54.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren50.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren50.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren49.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren49.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren51.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren51.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren47.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren47.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren46.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren46.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren48.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren48.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren44.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren44.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren43.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren43.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren45.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren45.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren41.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren41.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren40.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren40.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren42.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren42.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren38.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren38.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren37.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren37.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren39.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren39.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren35.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren35.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren34.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren34.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren36.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren36.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren32.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren32.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren31.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren31.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren33.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren33.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren29.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren29.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren28.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren28.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren30.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren30.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren26.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren26.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren25.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren25.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren27.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren27.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren23.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren23.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren22.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren22.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren24.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren24.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren20.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren20.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren19.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren19.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren21.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren21.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren17.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren17.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren16.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren16.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren18.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren18.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren14.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren14.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren13.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren13.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren15.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren15.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren11.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren11.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren10.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren10.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren12.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren12.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren8.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren8.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren7.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren7.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren9.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren9.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren5.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren5.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren4.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren4.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren6.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren6.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren3.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren3.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren2.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren2.SLICEM_G" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren1.SLICEM_F" BEL
+        "GPR_file/doul_port_memory/Mram_Memory_array_ren1.SLICEM_G" BEL
+        "hostintf/adrs_reg_10" BEL "hostintf/adrs_reg_11" BEL
+        "hostintf/adrs_reg_12" BEL "hostintf/adrs_reg_13" BEL
+        "hostintf/adrs_reg_14" BEL "hostintf/adrs_reg_15" BEL
+        "hostintf/adrs_reg_20" BEL "hostintf/adrs_reg_16" BEL
+        "hostintf/adrs_reg_21" BEL "hostintf/adrs_reg_22" BEL
+        "hostintf/adrs_reg_17" BEL "hostintf/adrs_reg_18" BEL
+        "hostintf/adrs_reg_23" BEL "hostintf/adrs_reg_24" BEL
+        "hostintf/adrs_reg_19" BEL "hostintf/adrs_reg_30" BEL
+        "hostintf/adrs_reg_25" BEL "hostintf/word_cntr_0" BEL
+        "hostintf/adrs_reg_31" BEL "hostintf/adrs_reg_26" BEL
+        "hostintf/word_cntr_1" BEL "hostintf/adrs_reg_27" BEL
+        "hostintf/word_cntr_3" BEL "hostintf/word_cntr_2" BEL
+        "hostintf/adrs_reg_28" BEL "hostintf/adrs_reg_29" BEL
+        "hostintf/word_cntr_4" BEL "hostintf/word_cntr_5" BEL
+        "hostintf/word_cntr_6" BEL "hostintf/word_cntr_7" BEL
+        "hostintf/word_cntr_8" BEL "hostintf/MIPS_Flash_accs_dlyd" BEL
+        "hostintf/word_cntr_9" BEL "hostintf/Tx_data_reg_0" BEL
+        "hostintf/Tx_data_reg_1" BEL "hostintf/Tx_data_reg_2" BEL
+        "hostintf/Tx_data_reg_3" BEL "hostintf/Tx_data_reg_4" BEL
+        "hostintf/Tx_data_reg_5" BEL "hostintf/Tx_data_reg_6" BEL
+        "hostintf/Tx_data_reg_7" BEL "hostintf/Tx_data_reg_8" BEL
+        "hostintf/Tx_data_reg_9" BEL "hostintf/Tx_data_reg_10" BEL
+        "hostintf/Tx_data_reg_11" BEL "hostintf/Tx_data_reg_12" BEL
+        "hostintf/Tx_data_reg_13" BEL "hostintf/Tx_data_reg_14" BEL
+        "hostintf/Tx_data_reg_15" BEL "hostintf/Tx_data_reg_16" BEL
+        "hostintf/Tx_data_reg_17" BEL "hostintf/Tx_data_reg_18" BEL
+        "hostintf/Tx_data_reg_19" BEL "hostintf/Tx_data_reg_20" BEL
+        "hostintf/Tx_data_reg_21" BEL "hostintf/Tx_data_reg_22" BEL
+        "hostintf/Tx_data_reg_23" BEL "hostintf/Tx_data_reg_24" BEL
+        "hostintf/Tx_data_reg_25" BEL "hostintf/Tx_data_reg_26" BEL
+        "hostintf/Tx_data_reg_27" BEL "hostintf/Tx_data_reg_28" BEL
+        "hostintf/Tx_data_reg_29" BEL "hostintf/Tx_data_reg_30" BEL
+        "hostintf/Tx_data_reg_31" BEL "hostintf/wr_data_reg_11" BEL
+        "hostintf/wr_data_reg_10" BEL "hostintf/wr_data_reg_12" BEL
+        "hostintf/wr_data_reg_13" BEL "hostintf/wr_data_reg_14" BEL
+        "hostintf/wr_data_reg_15" BEL "hostintf/wr_data_reg_20" BEL
+        "hostintf/wr_data_reg_16" BEL "hostintf/wr_data_reg_21" BEL
+        "hostintf/wr_data_reg_22" BEL "hostintf/wr_data_reg_17" BEL
+        "hostintf/wr_data_reg_18" BEL "hostintf/wr_data_reg_23" BEL
+        "hostintf/wr_data_reg_25" BEL "hostintf/wr_data_reg_19" BEL
+        "hostintf/wr_data_reg_24" BEL "hostintf/wr_data_reg_30" BEL
+        "hostintf/wr_data_reg_31" BEL "hostintf/wr_data_reg_26" BEL
+        "hostintf/wr_data_reg_27" BEL "hostintf/wr_data_reg_28" BEL
+        "hostintf/wr_data_reg_29" BEL "hostintf/word_cntr_10" BEL
+        "hostintf/word_cntr_11" BEL "hostintf/adrs_reg_0" BEL
+        "hostintf/adrs_reg_1" BEL "hostintf/wr_data_reg_0" BEL
+        "hostintf/adrs_reg_2" BEL "hostintf/adrs_reg_3" BEL
+        "hostintf/wr_data_reg_1" BEL "hostintf/wr_data_reg_2" BEL
+        "hostintf/adrs_reg_4" BEL "hostintf/wr_data_reg_3" BEL
+        "hostintf/adrs_reg_5" BEL "hostintf/wr_data_reg_4" BEL
+        "hostintf/adrs_reg_6" BEL "hostintf/wr_data_reg_5" BEL
+        "hostintf/adrs_reg_7" BEL "hostintf/wr_data_reg_6" BEL
+        "hostintf/adrs_reg_8" BEL "hostintf/wr_data_reg_7" BEL
+        "hostintf/adrs_reg_9" BEL "hostintf/wr_data_reg_8" BEL
+        "hostintf/wr_data_reg_9" BEL "hostintf/cmd_reg_0" BEL
+        "hostintf/cmd_reg_1" BEL "hostintf/cmd_reg_2" BEL "hostintf/cmd_reg_3"
+        BEL "hostintf/cmd_reg_4" BEL "hostintf/cmd_reg_5" BEL
+        "hostintf/cmd_reg_6" BEL "hostintf/cmd_reg_7" BEL
+        "hostintf/Rx_data_reg_0" BEL "hostintf/Rx_data_reg_1" BEL
+        "hostintf/Rx_data_reg_2" BEL "hostintf/Rx_data_reg_3" BEL
+        "hostintf/Rx_data_reg_4" BEL "hostintf/Rx_data_reg_5" BEL
+        "hostintf/Rx_data_reg_6" BEL "hostintf/Rx_data_reg_7" BEL
+        "hostintf/MIPS_ck_select_1" BEL "hostintf/MIPS_ck_select_2" BEL
+        "hostintf/MIPS_ck_select_3" BEL "hostintf/anodes_out_CKed_3" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_0" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_1" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_2" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_3" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_4" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_5" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_6" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_7" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_8" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_9" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_10" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_11" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_12" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_13" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_14" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_15" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_16" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_17" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_18" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_19" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_20" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_21" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_22" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_23" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_24" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_25" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_26" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_27" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_28" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_29" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_30" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_31" BEL
+        "hostintf/sevenseg_out_CKed_0" BEL "hostintf/sevenseg_out_CKed_1" BEL
+        "hostintf/sevenseg_out_CKed_2" BEL "hostintf/sevenseg_out_CKed_3" BEL
+        "hostintf/sevenseg_out_CKed_4" BEL "hostintf/sevenseg_out_CKed_5" BEL
+        "hostintf/sevenseg_out_CKed_6" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_0" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_1" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_2" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_3" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_4" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_5" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_6" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_7" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_8" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_9" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_10" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_11" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_12" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_13" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_14" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_15" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_16" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_17" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_18" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_19" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_20" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_21" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_22" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_23" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_24" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_25" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_26" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_27" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_28" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_29" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_30" BEL
+        "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_31" BEL
+        "hostintf/char_cntr_0" BEL "hostintf/char_cntr_1" BEL
+        "hostintf/char_cntr_2" BEL "hostintf/using_LED_monitor/cntr/cntr_0"
+        BEL "hostintf/using_LED_monitor/cntr/cntr_1" BEL
+        "hostintf/using_LED_monitor/cntr/cntr_2" BEL
+        "hostintf/using_LED_monitor/cntr/cntr_3" BEL
+        "hostintf/using_LED_monitor/cntr/cntr_4" BEL
+        "hostintf/using_LED_monitor/cntr/cntr_5" BEL
+        "hostintf/using_LED_monitor/cntr/cntr_6" BEL
+        "hostintf/using_LED_monitor/cntr/cntr_7" BEL
+        "hostintf/using_LED_monitor/cntr/cntr_8" BEL "hostintf/CrntState_34"
+        BEL "hostintf/CrntState_33" BEL "hostintf/CrntState_32" BEL
+        "hostintf/CrntState_31" BEL "hostintf/CrntState_30" BEL
+        "hostintf/CrntState_29" BEL "hostintf/CrntState_28" BEL
+        "hostintf/CrntState_27" BEL "hostintf/CrntState_26" BEL
+        "hostintf/CrntState_25" BEL "hostintf/CrntState_24" BEL
+        "hostintf/CrntState_23" BEL "hostintf/CrntState_22" BEL
+        "hostintf/CrntState_21" BEL "hostintf/CrntState_19" BEL
+        "hostintf/CrntState_18" BEL "hostintf/CrntState_20" BEL
+        "hostintf/CrntState_16" BEL "hostintf/CrntState_15" BEL
+        "hostintf/CrntState_14" BEL "hostintf/CrntState_12" BEL
+        "hostintf/CrntState_10" BEL "hostintf/CrntState_9" BEL
+        "hostintf/CrntState_11" BEL "hostintf/CrntState_8" BEL
+        "hostintf/CrntState_7" BEL "hostintf/CrntState_6" BEL
+        "hostintf/CrntState_5" BEL "hostintf/CrntState_4" BEL
+        "hostintf/CrntState_3" BEL "hostintf/CrntState_1" BEL
+        "hostintf/CrntState_0" BEL "hostintf/CrntState_2" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd44" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd45" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd46" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd47" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd48" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd69" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd49" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd29" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd8" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd70" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd50" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd30" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd9" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd71" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd51" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd31" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd10" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd72" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd52" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd32" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd11" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd73" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd53" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd33" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd12" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd74" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd54" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd34" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd13" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd75" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd55" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd35" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd14" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd76" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd56" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd36" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd15" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd77" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd57" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd37" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd16" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd78" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd63" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd58" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd38" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd23" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd17" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd2" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd79" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd64" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd59" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd39" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd24" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd18" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd3" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd80" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd65" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd60" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd40" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd25" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd19" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd4" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd81" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd66" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd61" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd41" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd26" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd20" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd5" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd82" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd67" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd62" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd42" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd27" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd21" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd6" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd1" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd87" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd86" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd84" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd83" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd85" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd68" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd43" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd28" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd22" BEL
+        "hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd7" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_23" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_22" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_21" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_20" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_19" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_18" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_17" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_16" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_15" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_14" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_13" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_12" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_11" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_10" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_9" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_8" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_7" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_6" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_5" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_4" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_3" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_cntr_2" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_cntr_9" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_cntr_8" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_cntr_7" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_cntr_6" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_cntr_5" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_cntr_4" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_cntr_3" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_cntr_2" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_cntr_1" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_cntr_0" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_0" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_1" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_15" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_13" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_12" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_14" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_11" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_10" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_8" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_7" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_9" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_5" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_4" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_6" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_2" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_3" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_23" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_22" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_21" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_20" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_19" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_18" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_17" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_16" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_15" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_14" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_13" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_12" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_11" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_10" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_9" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_8" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_7" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_6" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_5" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_4" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_3" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_adrs_reg_2" BEL
+        "hostintf/Flash_intf_in_host_intf/end_of_copy" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_status_reg_2" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_status_reg_0" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_29" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_28" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_27" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_31" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_25" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_26" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_19" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_24" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_30" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_23" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_17" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_18" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_22" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_16" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_20" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_to_MIPS_data_reg_21" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_31" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_30" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_29" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_28" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_27" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_26" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_25" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_24" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_23" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_22" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_21" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_20" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_19" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_18" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_17" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_16" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_15" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_14" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_13" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_12" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_11" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_10" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_9" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_8" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_7" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_6" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_5" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_4" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_3" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_cntr_2" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_31" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_30" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_29" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_28" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_27" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_26" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_25" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_24" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_23" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_22" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_21" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_20" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_19" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_18" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_17" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_16" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_15" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_14" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_13" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_12" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_11" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_10" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_9" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_8" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_7" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_6" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_5" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_4" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_3" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_2" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_1" BEL
+        "hostintf/Flash_intf_in_host_intf/MIPS_adrs_reg_0" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_count_reg_9" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_count_reg_8" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_count_reg_7" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_count_reg_6" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_count_reg_5" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_count_reg_4" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_count_reg_3" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_count_reg_2" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_count_reg_1" BEL
+        "hostintf/Flash_intf_in_host_intf/Flash_word_count_reg_0" BEL
+        "hostintf/IMem_in_host_intf/MIPS_adrs_is_BOOT_area_dlyd" BEL
+        "hostintf/IMem_in_host_intf/Host_adrs_is_400K_hex_dlyd" BEL
+        "hostintf/IMem_in_host_intf/MIPS_adrs_is_400K_hex_dlyd" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_data_filter_reg_7" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_ck_filter_reg_7" BEL
+        "hostintf/DMem_in_host_intf/kbintf/fall_detect" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_data_filter_reg_6" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_ck_filter_reg_6" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_data_filter_reg_5" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_ck_filter_reg_5" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_data_filter_reg_4" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_ck_filter_reg_4" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_data_filter_reg_3" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_29" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_ck_filter_reg_3" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_data_filter_reg_2" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_28" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_ck_filter_reg_2" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_data_filter_reg_1" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_27" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_ck_filter_reg_1" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_data_filter_reg_0" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_26" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_ck_filter_reg_0" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_25" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_24" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_23" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_18" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_17" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_16" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_15" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_14" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_13" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_12" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_7" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_6" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_5" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_4" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_3" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_2" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_1" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_cntr_0" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_cntr_1" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_0" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_1" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_2" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_3" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_4" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_5" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_6" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_7" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_8" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_9" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_10" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_11" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_watchdog_cntr_12" BEL
+        "hostintf/DMem_in_host_intf/kbintf/CrntState_FSM_FFd4" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_11" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_10" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_8" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_13" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_9" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_12" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_20" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_14" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_15" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_22" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_21" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_16" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_18" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_17" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_23" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_19" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_24" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_30" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_25" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_27" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_31" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_26" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_28" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_29" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_1" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/display_frame_sampled" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_0" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_2" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_3" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_6" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_4" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_5" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_shift_reg_7" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/video_on" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/shift_cntr_0" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/shift_cntr_1" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/shift_cntr_2" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/shift_cntr_3" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/shift_cntr_4" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_0" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_1" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_2" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_3" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_4" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_5" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_6" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_7" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_8" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_9" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_10" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/VGA_rd_cntr_11" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/V_cntr_0" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/V_cntr_1" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/V_cntr_2" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/V_cntr_3" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/V_cntr_4" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/V_cntr_5" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/V_cntr_6" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/V_cntr_7" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/V_cntr_8" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/V_cntr_9" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/H_cntr_0" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/H_cntr_1" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/H_cntr_2" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/H_cntr_3" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/H_cntr_4" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/H_cntr_5" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/H_cntr_6" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/H_cntr_7" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/H_cntr_8" BEL
+        "hostintf/DMem_in_host_intf/VGA_intf/H_cntr_9" BEL
+        "hostintf/DMem_in_host_intf/Host_adrs_is_20M_hex_dlyd" BEL
+        "hostintf/DMem_in_host_intf/MIPS_adrs_is_10M_hex_dlyd" BEL
+        "hostintf/DMem_in_host_intf/Host_adrs_is_10M_hex_dlyd" BEL
+        "hostintf/DMem_in_host_intf/MIPS_adrs_is_20M_hex_dlyd" BEL
+        "hostintf/DMem_in_host_intf/Host_accs_kbd_dlyd" BEL
+        "hostintf/DMem_in_host_intf/MIPS_accs_kbd_dlyd" BEL
+        "hostintf/UART_TOP/receiver_entity/dout_we_pulse_dlyd" BEL
+        "hostintf/UART_TOP/receiver_entity/din_filtered" BEL
+        "hostintf/UART_TOP/receiver_entity/filter_reg_9" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_in_reg_0" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_in_reg_1" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_in_reg_2" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_in_reg_3" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_in_reg_4" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_in_reg_5" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_in_reg_6" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_in_reg_7" BEL
+        "hostintf/UART_TOP/receiver_entity/filter_reg_8" BEL
+        "hostintf/UART_TOP/receiver_entity/filter_reg_7" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_out_reg_0" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_out_reg_1" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_out_reg_2" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_out_reg_3" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_out_reg_4" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_out_reg_5" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_out_reg_6" BEL
+        "hostintf/UART_TOP/receiver_entity/Data_out_reg_7" BEL
+        "hostintf/UART_TOP/receiver_entity/filter_reg_6" BEL
+        "hostintf/UART_TOP/receiver_entity/filter_reg_5" BEL
+        "hostintf/UART_TOP/receiver_entity/filter_reg_4" BEL
+        "hostintf/UART_TOP/receiver_entity/filter_reg_3" BEL
+        "hostintf/UART_TOP/receiver_entity/filter_reg_2" BEL
+        "hostintf/UART_TOP/receiver_entity/filter_reg_1" BEL
+        "hostintf/UART_TOP/receiver_entity/filter_reg_0" BEL
+        "hostintf/UART_TOP/receiver_entity/sub_bit_cntr_0" BEL
+        "hostintf/UART_TOP/receiver_entity/sub_bit_cntr_1" BEL
+        "hostintf/UART_TOP/receiver_entity/sub_bit_cntr_2" BEL
+        "hostintf/UART_TOP/receiver_entity/sub_bit_cntr_3" BEL
+        "hostintf/UART_TOP/receiver_entity/bit_cntr_0" BEL
+        "hostintf/UART_TOP/receiver_entity/bit_cntr_1" BEL
+        "hostintf/UART_TOP/receiver_entity/bit_cntr_2" BEL
+        "hostintf/UART_TOP/receiver_entity/bit_cntr_3" BEL
+        "hostintf/UART_TOP/receiver_entity/CrntState_FSM_FFd1" BEL
+        "hostintf/UART_TOP/receiver_entity/CrntState_FSM_FFd2" BEL
+        "hostintf/UART_TOP/transmitter_entity/busy" BEL
+        "hostintf/UART_TOP/transmitter_entity/Out_shift_reg_0" BEL
+        "hostintf/UART_TOP/transmitter_entity/Out_shift_reg_1" BEL
+        "hostintf/UART_TOP/transmitter_entity/Out_shift_reg_2" BEL
+        "hostintf/UART_TOP/transmitter_entity/Out_shift_reg_3" BEL
+        "hostintf/UART_TOP/transmitter_entity/Out_shift_reg_4" BEL
+        "hostintf/UART_TOP/transmitter_entity/Out_shift_reg_5" BEL
+        "hostintf/UART_TOP/transmitter_entity/Out_shift_reg_6" BEL
+        "hostintf/UART_TOP/transmitter_entity/Out_shift_reg_7" BEL
+        "hostintf/UART_TOP/transmitter_entity/Out_shift_reg_8" BEL
+        "hostintf/UART_TOP/transmitter_entity/CrntState_FSM_FFd1" BEL
+        "hostintf/UART_TOP/transmitter_entity/bit_cntr_0" BEL
+        "hostintf/UART_TOP/transmitter_entity/bit_cntr_1" BEL
+        "hostintf/UART_TOP/transmitter_entity/bit_cntr_2" BEL
+        "hostintf/UART_TOP/transmitter_entity/bit_cntr_3" BEL
+        "hostintf/UART_TOP/transmitter_entity/sub_bit_cntr_0" BEL
+        "hostintf/UART_TOP/transmitter_entity/sub_bit_cntr_1" BEL
+        "hostintf/UART_TOP/transmitter_entity/sub_bit_cntr_2" BEL
+        "hostintf/UART_TOP/transmitter_entity/sub_bit_cntr_3" BEL
+        "hostintf/UART_TOP/divider_entity/EN_FF" BEL
+        "hostintf/UART_TOP/divider_entity/ENx10_FF" BEL
+        "hostintf/UART_TOP/divider_entity/cntr_0" BEL
+        "hostintf/UART_TOP/divider_entity/cntr_1" BEL
+        "hostintf/UART_TOP/divider_entity/cntr_2" BEL
+        "hostintf/UART_TOP/divider_entity/cntr_3" BEL
+        "hostintf/UART_TOP/divider_entity/cntr_4" BEL
+        "hostintf/UART_TOP/divider_entity/cntr_5" BEL
+        "hostintf/UART_TOP/divider_entity/cntr_6" BEL
+        "hostintf/UART_TOP/divider_entity/cntr_7" BEL
+        "hostintf/UART_TOP/Tx_data_in_reg_6" BEL
+        "hostintf/UART_TOP/Tx_data_in_reg_5" BEL
+        "hostintf/UART_TOP/Tx_data_in_reg_3" BEL
+        "hostintf/UART_TOP/Tx_data_in_reg_2" BEL
+        "hostintf/UART_TOP/Tx_data_in_reg_1" BEL
+        "hostintf/UART_TOP/Tx_data_in_reg_0" BEL "hostintf/Host_RESET_CKed"
+        BEL "hostintf/VGA_grn_line_CKed" BEL "hostintf/VGA_v_sync_signal_CKed"
+        BEL "hostintf/VGA_h_sync_signal_CKed" BEL "hostintf/anodes_out_CKed_0"
+        BEL "hostintf/anodes_out_CKed_1" BEL "hostintf/anodes_out_CKed_2" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_data_filterd" BEL
+        "hostintf/DMem_in_host_intf/kbintf/kbd_ck_filterd" BEL
+        "hostintf/DMem_in_host_intf/kbintf/CrntState_FSM_FFd1" BEL
+        "hostintf/DMem_in_host_intf/kbintf/CrntState_FSM_FFd2" BEL
+        "hostintf/UART_TOP/transmitter_entity/CrntState_FSM_FFd2" BEL
+        "hostintf/DMem_in_host_intf/kbintf/CrntState_FSM_FFd3" BEL
+        "hostintf/Flash_intf_in_host_intf/end_of_copy_1" PIN
+        "hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array1.A_pins<11>"
+        PIN
+        "hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array1.B_pins<11>"
+        PIN
+        "hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.A_pins<11>"
+        PIN
+        "hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.B_pins<11>"
+        BEL
+        "hostintf/IMem_in_host_intf/BOOT_mem/Mrom_memory_rd_data_rom0000.A"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array7.A_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array7.B_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array6.A_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array6.B_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array8.A_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array8.B_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array4.A_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array4.B_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array3.A_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array3.B_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array5.A_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array5.B_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array1.A_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array1.B_pins<13>"
+        PIN
+        "hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.A_pins<11>"
+        PIN
+        "hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.B_pins<11>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array2.A_pins<13>"
+        PIN "hostintf/DMem_in_host_intf/VGA_mem/Mram_Memory_array2.B_pins<13>"
+        PIN
+        "hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array1.A_pins<11>"
+        PIN
+        "hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array1.B_pins<11>"
+        BEL "hostintf/DMem_in_host_intf/kbintf/Mshreg_scan_code_shift_reg_8"
+        BEL "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_8" BEL
+        "hostintf/DMem_in_host_intf/kbintf/Mshreg_scan_code_shift_reg_30" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_30" BEL
+        "hostintf/DMem_in_host_intf/kbintf/Mshreg_scan_code_shift_reg_19" BEL
+        "hostintf/DMem_in_host_intf/kbintf/scan_code_shift_reg_19" BEL
+        "clock_divider/CK_OUT_BUFG_INST.GCLKMUX" BEL
+        "clock_divider/CK_OUT_BUFG_INST";
+TIMEGRP CK_50MHz = BEL "clock_divider/half_ck_signal" BEL
+        "CK_50MHz_BUFGP/BUFG.GCLKMUX" BEL "CK_50MHz_BUFGP/BUFG";
+TS_CK_50MHz = PERIOD TIMEGRP "CK_50MHz" 20 ns HIGH 50%;
+TS_clock_divider_half_ck_signal = PERIOD TIMEGRP
+        "clock_divider/half_ck_signal" 30 ns HIGH 50%;
+SCHEMATIC END;
+
