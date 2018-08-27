@@ -1,0 +1,3 @@
+vhdl isim_temp "SIM_HW3_ALU_filenames.vhd"
+vhdl isim_temp "MIPS_ALU.VHD"
+vhdl isim_temp "SIM_MIPS_ALU_TB.vhd"

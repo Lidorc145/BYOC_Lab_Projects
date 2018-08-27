@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Sherman/HW3_GPR/GPR_TB.xst" -ofn "C:/Users/Sherman/HW3_GPR/GPR_TB.syr" 

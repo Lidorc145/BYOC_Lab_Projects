@@ -1,0 +1,4 @@
+vhdl work "dual_port_memory.vhd"
+vhdl work "SIM_HW3_GPR_filenames.vhd"
+vhdl work "GPR.vhd"
+vhdl work "SIM_GPR_TB.vhd"

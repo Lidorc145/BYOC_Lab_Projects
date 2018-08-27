@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Sherman/HW3_GPR/GPR_TB_isim_beh.exe" -prj "C:/Users/Sherman/HW3_GPR/GPR_TB_beh.prj" "work.GPR_TB" 

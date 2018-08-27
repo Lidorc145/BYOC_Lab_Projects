@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Sherman/HW3_MIPS_ALU/MIPS_ALU_TB_isim_beh.exe" -prj "C:/Users/Sherman/HW3_MIPS_ALU/MIPS_ALU_TB_beh.prj" "work.MIPS_ALU_TB" 
