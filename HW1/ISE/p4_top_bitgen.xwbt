@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\User\p4_Imp\p4_top.ncd
+OUTFILE=C:\Users\User\p4_Imp\p4_top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\User\p4_Imp
+LICENSE=WebPack
+USER_INFO=211507225_0_0_831

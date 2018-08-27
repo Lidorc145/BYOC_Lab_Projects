@@ -1,0 +1,6 @@
+work	"ck_divider.vhd"
+work	"counter_6bits.vhd"
+work	"decoder_2to4.vhd"
+work	"decoder_7seg.vhd"
+work	"mux_2to1.vhd"
+work	"p4_top.vhd"

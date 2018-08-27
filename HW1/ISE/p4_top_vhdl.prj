@@ -1,0 +1,6 @@
+vhdl work "C:\Users\User\p4_Imp\mux_2to1.vhd"
+vhdl work "C:\Users\User\p4_Imp\decoder_7seg.vhd"
+vhdl work "C:\Users\User\p4_Imp\decoder_2to4.vhd"
+vhdl work "C:\Users\User\p4_Imp\counter_6bits.vhd"
+vhdl work "C:\Users\User\p4_Imp\ck_divider.vhd"
+vhdl work "C:\Users\User\p4_Imp\p4_top.vhd"

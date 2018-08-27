@@ -1,0 +1,6 @@
+vhdl work "mux_2to1.vhd"
+vhdl work "decoder_7seg.vhd"
+vhdl work "decoder_2to4.vhd"
+vhdl work "counter_6bits.vhd"
+vhdl work "ck_divider.vhd"
+vhdl work "p4_top.vhd"

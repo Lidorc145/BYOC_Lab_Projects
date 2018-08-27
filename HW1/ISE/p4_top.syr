@@ -1,0 +1,476 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Reading design: p4_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "p4_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "p4_top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : p4_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/User/p4_Imp/ck_divider.vhd" in Library work.
+Entity <ck_divider> compiled.
+Entity <ck_divider> (Architecture <divider>) compiled.
+Compiling vhdl file "C:/Users/User/p4_Imp/mux_2to1.vhd" in Library work.
+Entity <mux_2to1> compiled.
+Entity <mux_2to1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/User/p4_Imp/counter_6bits.vhd" in Library work.
+Entity <counter_6bits> compiled.
+Entity <counter_6bits> (Architecture <counter>) compiled.
+Compiling vhdl file "C:/Users/User/p4_Imp/decoder_7seg.vhd" in Library work.
+Entity <decoder_7seg> compiled.
+Entity <decoder_7seg> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/User/p4_Imp/decoder_2to4.vhd" in Library work.
+Entity <decoder_2to4> compiled.
+Entity <decoder_2to4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/User/p4_Imp/p4_top.vhd" in Library work.
+Entity <p4_top> compiled.
+Entity <p4_top> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <p4_top> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ck_divider> in library <work> (architecture <divider>).
+
+Analyzing hierarchy for entity <mux_2to1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <counter_6bits> in library <work> (architecture <counter>).
+
+Analyzing hierarchy for entity <decoder_7seg> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <decoder_2to4> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <p4_top> in library <work> (Architecture <Behavioral>).
+Entity <p4_top> analyzed. Unit <p4_top> generated.
+
+Analyzing Entity <ck_divider> in library <work> (Architecture <divider>).
+Entity <ck_divider> analyzed. Unit <ck_divider> generated.
+
+Analyzing Entity <mux_2to1> in library <work> (Architecture <Behavioral>).
+Entity <mux_2to1> analyzed. Unit <mux_2to1> generated.
+
+Analyzing Entity <counter_6bits> in library <work> (Architecture <counter>).
+Entity <counter_6bits> analyzed. Unit <counter_6bits> generated.
+
+Analyzing Entity <decoder_7seg> in library <work> (Architecture <Behavioral>).
+Entity <decoder_7seg> analyzed. Unit <decoder_7seg> generated.
+
+Analyzing Entity <decoder_2to4> in library <work> (Architecture <Behavioral>).
+Entity <decoder_2to4> analyzed. Unit <decoder_2to4> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ck_divider>.
+    Related source file is "C:/Users/User/p4_Imp/ck_divider.vhd".
+    Found 25-bit up counter for signal <cntr>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <ck_divider> synthesized.
+
+
+Synthesizing Unit <mux_2to1>.
+    Related source file is "C:/Users/User/p4_Imp/mux_2to1.vhd".
+Unit <mux_2to1> synthesized.
+
+
+Synthesizing Unit <counter_6bits>.
+    Related source file is "C:/Users/User/p4_Imp/counter_6bits.vhd".
+    Found 6-bit up counter for signal <cntr>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter_6bits> synthesized.
+
+
+Synthesizing Unit <decoder_7seg>.
+    Related source file is "C:/Users/User/p4_Imp/decoder_7seg.vhd".
+    Found 16x7-bit ROM for signal <sevenseg>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <decoder_7seg> synthesized.
+
+
+Synthesizing Unit <decoder_2to4>.
+    Related source file is "C:/Users/User/p4_Imp/decoder_2to4.vhd".
+    Found 1-of-4 decoder for signal <out_lines>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <decoder_2to4> synthesized.
+
+
+Synthesizing Unit <p4_top>.
+    Related source file is "C:/Users/User/p4_Imp/p4_top.vhd".
+WARNING:Xst:647 - Input <switches<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <p4_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 2
+ 25-bit up counter                                     : 1
+ 6-bit up counter                                      : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 2
+ 25-bit up counter                                     : 1
+ 6-bit up counter                                      : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <OSC_CLK/cntr_24> of sequential type is unconnected in block <p4_top>.
+
+Optimizing unit <p4_top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block p4_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : p4_top.ngr
+Top Level Output File Name         : p4_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 93
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 23
+#      LUT2                        : 6
+#      LUT3                        : 3
+#      LUT4                        : 8
+#      LUT4_D                      : 1
+#      MUXCY                       : 23
+#      VCC                         : 1
+#      XORCY                       : 24
+# FlipFlops/Latches                : 30
+#      FDC                         : 30
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 3
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       22  out of   4656     0%  
+ Number of Slice Flip Flops:             30  out of   9312     0%  
+ Number of 4 input LUTs:                 44  out of   9312     0%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  15  out of    232     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)       | Load  |
+-----------------------------------+-----------------------------+-------+
+CK                                 | BUFGP                       | 24    |
+cntr_CK(CNTR_CLK/out_y1:O)         | NONE(*)(display_cntr/cntr_0)| 6     |
+-----------------------------------+-----------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset(reset1_INV_0:O)              | NONE(OSC_CLK/cntr_0)   | 30    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.705ns (Maximum Frequency: 212.540MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.123ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK'
+  Clock period: 4.705ns (frequency: 212.540MHz)
+  Total number of paths / destination ports: 300 / 24
+-------------------------------------------------------------------------
+Delay:               4.705ns (Levels of Logic = 24)
+  Source:            OSC_CLK/cntr_1 (FF)
+  Destination:       OSC_CLK/cntr_23 (FF)
+  Source Clock:      CK rising
+  Destination Clock: CK rising
+
+  Data Path: OSC_CLK/cntr_1 to OSC_CLK/cntr_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.595  OSC_CLK/cntr_1 (OSC_CLK/cntr_1)
+     LUT1:I0->O            1   0.704   0.000  OSC_CLK/Mcount_cntr_cy<1>_rt (OSC_CLK/Mcount_cntr_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  OSC_CLK/Mcount_cntr_cy<1> (OSC_CLK/Mcount_cntr_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<2> (OSC_CLK/Mcount_cntr_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<3> (OSC_CLK/Mcount_cntr_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<4> (OSC_CLK/Mcount_cntr_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<5> (OSC_CLK/Mcount_cntr_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<6> (OSC_CLK/Mcount_cntr_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<7> (OSC_CLK/Mcount_cntr_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<8> (OSC_CLK/Mcount_cntr_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<9> (OSC_CLK/Mcount_cntr_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<10> (OSC_CLK/Mcount_cntr_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<11> (OSC_CLK/Mcount_cntr_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<12> (OSC_CLK/Mcount_cntr_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<13> (OSC_CLK/Mcount_cntr_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<14> (OSC_CLK/Mcount_cntr_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<15> (OSC_CLK/Mcount_cntr_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<16> (OSC_CLK/Mcount_cntr_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<17> (OSC_CLK/Mcount_cntr_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<18> (OSC_CLK/Mcount_cntr_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<19> (OSC_CLK/Mcount_cntr_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<20> (OSC_CLK/Mcount_cntr_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  OSC_CLK/Mcount_cntr_cy<21> (OSC_CLK/Mcount_cntr_cy<21>)
+     MUXCY:CI->O           0   0.059   0.000  OSC_CLK/Mcount_cntr_cy<22> (OSC_CLK/Mcount_cntr_cy<22>)
+     XORCY:CI->O           1   0.804   0.000  OSC_CLK/Mcount_cntr_xor<23> (Result<23>)
+     FDC:D                     0.308          OSC_CLK/cntr_23
+    ----------------------------------------
+    Total                      4.705ns (4.110ns logic, 0.595ns route)
+                                       (87.4% logic, 12.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'cntr_CK'
+  Clock period: 3.757ns (frequency: 266.170MHz)
+  Total number of paths / destination ports: 21 / 6
+-------------------------------------------------------------------------
+Delay:               3.757ns (Levels of Logic = 2)
+  Source:            display_cntr/cntr_3 (FF)
+  Destination:       display_cntr/cntr_5 (FF)
+  Source Clock:      cntr_CK rising
+  Destination Clock: cntr_CK rising
+
+  Data Path: display_cntr/cntr_3 to display_cntr/cntr_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.591   0.995  display_cntr/cntr_3 (display_cntr/cntr_3)
+     LUT4_D:I0->O          1   0.704   0.455  display_cntr/Mcount_cntr_xor<4>111 (N6)
+     LUT3:I2->O            1   0.704   0.000  display_cntr/Mcount_cntr_xor<5>11 (Result<5>1)
+     FDC:D                     0.308          display_cntr/cntr_5
+    ----------------------------------------
+    Total                      3.757ns (2.307ns logic, 1.450ns route)
+                                       (61.4% logic, 38.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'cntr_CK'
+  Total number of paths / destination ports: 36 / 11
+-------------------------------------------------------------------------
+Offset:              6.123ns (Levels of Logic = 2)
+  Source:            display_cntr/cntr_0 (FF)
+  Destination:       sevenseg_out<1> (PAD)
+  Source Clock:      cntr_CK rising
+
+  Data Path: display_cntr/cntr_0 to sevenseg_out<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.591   1.136  display_cntr/cntr_0 (display_cntr/cntr_0)
+     LUT4:I0->O            1   0.704   0.420  Digit_Decoder/Mrom_sevenseg111 (sevenseg_out_1_OBUF)
+     OBUF:I->O                 3.272          sevenseg_out_1_OBUF (sevenseg_out<1>)
+    ----------------------------------------
+    Total                      6.123ns (4.567ns logic, 1.556ns route)
+                                       (74.6% logic, 25.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.46 secs
+ 
+--> 
+
+Total memory usage is 355724 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

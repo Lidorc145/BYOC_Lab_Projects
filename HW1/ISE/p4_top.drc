@@ -1,0 +1,16 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Apr 20 14:51:47 2018
+
+drc -z p4_top.ncd p4_top.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net cntr_CK is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <switches<2>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <switches<3>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

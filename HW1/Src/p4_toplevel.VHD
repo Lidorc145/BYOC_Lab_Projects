@@ -1,0 +1,23 @@
+NET "anodes_out<0>" LOC= "H17" ;
+NET "anodes_out<1>" LOC= "F17" ;
+NET "anodes_out<2>" LOC= "C18" ;
+NET "anodes_out<3>" LOC= "F15" ;
+
+
+NET "sevenseg_out<0>" LOC= "L18" ;
+NET "sevenseg_out<1>" LOC= "F18" ;
+NET "sevenseg_out<2>" LOC= "D17" ;
+NET "sevenseg_out<3>" LOC= "D16" ;
+NET "sevenseg_out<4>" LOC= "H14" ;
+NET "sevenseg_out<5>" LOC= "J17" ;
+NET "sevenseg_out<6>" LOC= "G14" ;
+
+
+NET "switches<0>" LOC= "G18" ;
+NET "switches<1>" LOC= "H18" ;
+NET "switches<2>" LOC= "K18" ;
+NET "switches<3>" LOC= "K17" ;
+
+NET "pushbutton"  LOC= "H13" ;
+
+NET "CK"  		  LOC= "B8" ;

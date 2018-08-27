@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Apr 20 14:50:56 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "switches<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "CK" LOCATE = SITE "B8" LEVEL 1;
+COMP "switches<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "switches<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "switches<3>" LOCATE = SITE "K17" LEVEL 1;
+COMP "sevenseg_out<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "sevenseg_out<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "sevenseg_out<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "sevenseg_out<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "sevenseg_out<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "sevenseg_out<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "anodes_out<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "sevenseg_out<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "anodes_out<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "anodes_out<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "anodes_out<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "pushbutton" LOCATE = SITE "B18" LEVEL 1;
+NET "CK_BUFGP/IBUFG" BEL "CK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

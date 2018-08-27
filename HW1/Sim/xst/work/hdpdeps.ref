@@ -1,0 +1,38 @@
+V3 27
+FL C:/Users/User/p4/ck_divider.vhd 2017/09/02.08:59:16 P.20131013
+EN work/ck_divider 1523608134 FL C:/Users/User/p4/ck_divider.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ck_divider/divider 1523608135 \
+      FL C:/Users/User/p4/ck_divider.vhd EN work/ck_divider 1523608134
+FL C:/Users/User/p4/counter_6bits.vhd 2018/04/13.11:01:00 P.20131013
+EN work/counter_6bits 1523608138 FL C:/Users/User/p4/counter_6bits.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/counter_6bits/counter 1523608139 \
+      FL C:/Users/User/p4/counter_6bits.vhd EN work/counter_6bits 1523608138
+FL C:/Users/User/p4/decoder_2to4.vhd 2018/03/23.11:43:12 P.20131013
+EN work/decoder_2to4 1523608142 FL C:/Users/User/p4/decoder_2to4.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/decoder_2to4/Behavioral 1523608143 \
+      FL C:/Users/User/p4/decoder_2to4.vhd EN work/decoder_2to4 1523608142
+FL C:/Users/User/p4/decoder_7seg.vhd 2018/03/23.11:14:24 P.20131013
+EN work/decoder_7seg 1523608140 FL C:/Users/User/p4/decoder_7seg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/decoder_7seg/Behavioral 1523608141 \
+      FL C:/Users/User/p4/decoder_7seg.vhd EN work/decoder_7seg 1523608140
+FL C:/Users/User/p4/mux_2to1.vhd 2018/03/23.10:45:03 P.20131013
+EN work/mux_2to1 1523608136 FL C:/Users/User/p4/mux_2to1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux_2to1/Behavioral 1523608137 \
+      FL C:/Users/User/p4/mux_2to1.vhd EN work/mux_2to1 1523608136
+FL C:/Users/User/p4/p4_TB.vhd 2017/09/02.09:12:54 P.20131013
+EN work/p4_TB 0 FL C:/Users/User/p4/p4_TB.vhd PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/std_logic_1164 1381692176
+AR work/p4_TB/Testing 0 \
+      FL C:/Users/User/p4/p4_TB.vhd EN work/p4_TB 0 CP p4_top
+FL C:/Users/User/p4/p4_top.vhd 2018/03/23.11:11:41 P.20131013
+EN work/p4_top 1523608144 FL C:/Users/User/p4/p4_top.vhd PB ieee/std_logic_1164 1381692176
+AR work/p4_top/Behavioral 1523608145 \
+      FL C:/Users/User/p4/p4_top.vhd EN work/p4_top 1523608144 CP ck_divider \
+      CP mux_2to1 CP counter_6bits CP decoder_7seg CP decoder_2to4

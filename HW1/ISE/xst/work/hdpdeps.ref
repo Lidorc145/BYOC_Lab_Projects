@@ -1,0 +1,34 @@
+V3 23
+FL C:/Users/User/p4_Imp/ck_divider.vhd 2018/04/20.12:19:23 P.20131013
+EN work/ck_divider 1524225006 FL C:/Users/User/p4_Imp/ck_divider.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ck_divider/divider 1524225007 \
+      FL C:/Users/User/p4_Imp/ck_divider.vhd EN work/ck_divider 1524225006
+FL C:/Users/User/p4_Imp/counter_6bits.vhd 2018/04/13.11:01:00 P.20131013
+EN work/counter_6bits 1524225010 FL C:/Users/User/p4_Imp/counter_6bits.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/counter_6bits/counter 1524225011 \
+      FL C:/Users/User/p4_Imp/counter_6bits.vhd EN work/counter_6bits 1524225010
+FL C:/Users/User/p4_Imp/decoder_2to4.vhd 2018/03/23.11:43:12 P.20131013
+EN work/decoder_2to4 1524225014 FL C:/Users/User/p4_Imp/decoder_2to4.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/decoder_2to4/Behavioral 1524225015 \
+      FL C:/Users/User/p4_Imp/decoder_2to4.vhd EN work/decoder_2to4 1524225014
+FL C:/Users/User/p4_Imp/decoder_7seg.vhd 2018/03/23.11:14:24 P.20131013
+EN work/decoder_7seg 1524225012 FL C:/Users/User/p4_Imp/decoder_7seg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/decoder_7seg/Behavioral 1524225013 \
+      FL C:/Users/User/p4_Imp/decoder_7seg.vhd EN work/decoder_7seg 1524225012
+FL C:/Users/User/p4_Imp/mux_2to1.vhd 2018/03/23.10:45:03 P.20131013
+EN work/mux_2to1 1524225008 FL C:/Users/User/p4_Imp/mux_2to1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux_2to1/Behavioral 1524225009 \
+      FL C:/Users/User/p4_Imp/mux_2to1.vhd EN work/mux_2to1 1524225008
+FL C:/Users/User/p4_Imp/p4_top.vhd 2018/03/23.11:11:41 P.20131013
+EN work/p4_top 1524225016 FL C:/Users/User/p4_Imp/p4_top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/p4_top/Behavioral 1524225017 \
+      FL C:/Users/User/p4_Imp/p4_top.vhd EN work/p4_top 1524225016 CP ck_divider \
+      CP mux_2to1 CP counter_6bits CP decoder_7seg CP decoder_2to4

@@ -1,0 +1,6 @@
+vhdl isim_temp "mux_2to1.vhd"
+vhdl isim_temp "decoder_7seg.vhd"
+vhdl isim_temp "decoder_2to4.vhd"
+vhdl isim_temp "counter_6bits.vhd"
+vhdl isim_temp "ck_divider.vhd"
+vhdl isim_temp "p4_top.vhd"

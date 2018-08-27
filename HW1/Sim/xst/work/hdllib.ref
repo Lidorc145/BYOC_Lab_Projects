@@ -1,0 +1,13 @@
+AR counter_6bits counter C:/Users/User/p4/counter_6bits.vhd sub00/vhpl05 1523608139
+EN p4_tb NULL C:/Users/User/p4/p4_TB.vhd sub00/vhpl12 1523608146
+EN decoder_2to4 NULL C:/Users/User/p4/decoder_2to4.vhd sub00/vhpl08 1523608142
+EN decoder_7seg NULL C:/Users/User/p4/decoder_7seg.vhd sub00/vhpl06 1523608140
+AR p4_top behavioral C:/Users/User/p4/p4_top.vhd sub00/vhpl11 1523608145
+EN counter_6bits NULL C:/Users/User/p4/counter_6bits.vhd sub00/vhpl04 1523608138
+AR decoder_2to4 behavioral C:/Users/User/p4/decoder_2to4.vhd sub00/vhpl09 1523608143
+AR mux_2to1 behavioral C:/Users/User/p4/mux_2to1.vhd sub00/vhpl03 1523608137
+EN mux_2to1 NULL C:/Users/User/p4/mux_2to1.vhd sub00/vhpl02 1523608136
+EN ck_divider NULL C:/Users/User/p4/ck_divider.vhd sub00/vhpl00 1523608134
+AR ck_divider divider C:/Users/User/p4/ck_divider.vhd sub00/vhpl01 1523608135
+EN p4_top NULL C:/Users/User/p4/p4_top.vhd sub00/vhpl10 1523608144
+AR decoder_7seg behavioral C:/Users/User/p4/decoder_7seg.vhd sub00/vhpl07 1523608141
