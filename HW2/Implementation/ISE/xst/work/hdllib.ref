@@ -1,0 +1,6 @@
+EN clock_driver NULL C:/Users/User/HW2Sim/BYOC_Clock_driver.vhd sub00/vhpl00 1527233596
+AR hw2_top behavioral C:/Users/User/HW2Sim/HW2_top.vhd sub00/vhpl05 1527233601
+EN hw2_top NULL C:/Users/User/HW2Sim/HW2_top.vhd sub00/vhpl04 1527233600
+AR fetch_unit behavioral C:/Users/User/HW2Sim/Fetch_Unit.vhd sub00/vhpl03 1527233599
+EN fetch_unit NULL C:/Users/User/HW2Sim/Fetch_Unit.vhd sub00/vhpl02 1527233598
+AR clock_driver clock_divider C:/Users/User/HW2Sim/BYOC_Clock_driver.vhd sub00/vhpl01 1527233597

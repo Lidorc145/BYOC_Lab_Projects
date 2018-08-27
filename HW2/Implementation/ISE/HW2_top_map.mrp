@@ -1,0 +1,1142 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'HW2_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o HW2_top_map.ncd HW2_top.ngd HW2_top.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Fri May 25 10:34:40 2018
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    7
+Logic Utilization:
+  Number of Slice Flip Flops:           714 out of   9,312    7%
+  Number of 4 input LUTs:             1,473 out of   9,312   15%
+Logic Distribution:
+  Number of occupied Slices:            974 out of   4,656   20%
+    Number of Slices containing only related logic:     974 out of     974 100%
+    Number of Slices containing unrelated logic:          0 out of     974   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,624 out of   9,312   17%
+    Number used as logic:             1,470
+    Number used as a route-thru:        151
+    Number used as Shift registers:       3
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 88 out of     232   37%
+  Number of RAMB16s:                     13 out of      20   65%
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                3.22
+
+Peak Memory Usage:  353 MB
+Total REAL time to MAP completion:  22 secs 
+Total CPU time to MAP completion:   10 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal buttons_in<2> connected to top level port
+   buttons_in<2> has been removed.
+WARNING:MapLib:701 - Signal buttons_in<1> connected to top level port
+   buttons_in<1> has been removed.
+WARNING:MapLib:701 - Signal buttons_in<0> connected to top level port
+   buttons_in<0> has been removed.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.B>:<RAMB16_
+   RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2.B>:<RAMB16_
+   RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.B>:<RAMB16_
+   RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<hostintf/DMem_in_host_intf/Regular_Dmem/Mram_Memory_array2.B>:<RAMB16_
+   RAMB16B>.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network buttons_in_0_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 34 more times for the
+   following (max. 5 shown):
+   buttons_in_1_IBUF,
+   buttons_in_2_IBUF,
+   hostintf/MIPS_DMem_rd_data<31>,
+   hostintf/MIPS_DMem_rd_data<30>,
+   hostintf/MIPS_DMem_rd_data<29>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 169 block(s) removed
+ 132 block(s) optimized away
+ 246 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "hostintf/MIPS_DMem_rd_data<31>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<30>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<29>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<28>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<27>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<26>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<25>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<24>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<23>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<22>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<21>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<20>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<19>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<18>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<17>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<16>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<15>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<14>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<13>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<12>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<11>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<10>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<9>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<8>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<7>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<6>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<5>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<4>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<3>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<2>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<1>" is sourceless and has been removed.
+The signal "hostintf/MIPS_DMem_rd_data<0>" is sourceless and has been removed.
+The signal "hostintf/MIPS_Flash_accs_dlyd" is sourceless and has been removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<7>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<6>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<5>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<4>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<3>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<2>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<25>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<24>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<23>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<22>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<21>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<20>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<1>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<19>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<18>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<17>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<16>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<15>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<14>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<13>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<12>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<11>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<10>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<0>34" (ROM) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<31>_f5" (MUX) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<30>_f5" (MUX) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<29>_f5" (MUX) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<28>_f5" (MUX) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<27>_f5" (MUX) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<26>_f5" (MUX) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<9>311" (ROM) removed.
+  The signal "hostintf/MIPS_DMem_rd_data<9>31" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<9>31_f5" (MUX) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<9>312" (ROM) removed.
+  The signal "hostintf/MIPS_DMem_rd_data<9>311" is sourceless and has been
+removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<8>311" (ROM) removed.
+  The signal "hostintf/MIPS_DMem_rd_data<8>31" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<8>31_f5" (MUX) removed.
+ Sourceless block "hostintf/MIPS_DMem_rd_data<8>312" (ROM) removed.
+  The signal "hostintf/MIPS_DMem_rd_data<8>311" is sourceless and has been
+removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<0>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_0" (FF) removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<0>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<1>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_1" (FF) removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<1>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<2>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_2" (FF) removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<2>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<3>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_3" (FF) removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<3>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<4>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_4" (FF) removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<4>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<5>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_5" (FF) removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<5>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<6>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_6" (FF) removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<6>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<7>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_7" (FF) removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<7>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<8>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_8" (FF) removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<8>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<9>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_9" (FF) removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<9>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<10>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_10" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<10>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<11>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_11" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<11>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<12>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_12" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<12>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<13>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_13" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<13>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<14>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_14" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<14>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<15>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_15" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<15>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<16>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_16" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<16>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<17>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_17" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<17>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<18>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_18" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<18>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<19>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_19" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<19>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<20>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_20" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<20>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<21>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_21" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<21>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<22>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_22" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<22>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<23>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_23" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<23>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<24>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_24" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<24>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<25>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_25" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<25>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<26>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_26" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<26>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<27>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_27" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<27>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<28>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_28" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<28>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<29>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_29" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<29>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<30>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_30" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<30>" is sourceless and
+has been removed.
+The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg<31>" is sourceless and
+has been removed.
+ Sourceless block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd_31" (FF)
+removed.
+  The signal "hostintf/Flash_Intf_regs_rd_data_to_MIPS_dlyd<31>" is sourceless and
+has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_adrs_is_10M_hex" is sourceless and
+has been removed.
+ Sourceless block "hostintf/DMem_in_host_intf/MIPS_adrs_is_10M_hex_dlyd" (FF)
+removed.
+  The signal "hostintf/DMem_in_host_intf/MIPS_adrs_is_10M_hex_dlyd" is sourceless
+and has been removed.
+   Sourceless block "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data<0>11" (ROM)
+removed.
+    The signal "hostintf/DMem_in_host_intf/N01" is sourceless and has been removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<7>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<7>10" is sourceless and has been removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<6>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<6>10" is sourceless and has been removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<5>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<5>10" is sourceless and has been removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<4>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<4>10" is sourceless and has been removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<3>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<3>10" is sourceless and has been removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<2>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<2>10" is sourceless and has been removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<25>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<25>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<24>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<24>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<23>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<23>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<22>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<22>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<21>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<21>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<20>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<20>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<1>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<1>10" is sourceless and has been removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<19>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<19>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<18>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<18>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<17>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<17>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<16>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<16>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<15>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<15>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<14>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<14>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<13>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<13>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<12>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<12>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<11>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<11>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<10>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<10>10" is sourceless and has been
+removed.
+     Sourceless block "hostintf/MIPS_DMem_rd_data<0>10" (ROM) removed.
+      The signal "hostintf/MIPS_DMem_rd_data<0>10" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<7>4" (ROM) removed.
+    The signal "hostintf/MIPS_DMem_rd_data<0>4" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<7>34_SW0" (ROM) removed.
+    The signal "hostintf/N485" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<6>34_SW0" (ROM) removed.
+    The signal "hostintf/N487" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<5>34_SW0" (ROM) removed.
+    The signal "hostintf/N489" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<4>34_SW0" (ROM) removed.
+    The signal "hostintf/N491" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<3>34_SW0" (ROM) removed.
+    The signal "hostintf/N493" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<2>34_SW0" (ROM) removed.
+    The signal "hostintf/N495" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<25>34_SW0" (ROM) removed.
+    The signal "hostintf/N497" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<24>34_SW0" (ROM) removed.
+    The signal "hostintf/N499" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<23>34_SW0" (ROM) removed.
+    The signal "hostintf/N501" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<22>34_SW0" (ROM) removed.
+    The signal "hostintf/N503" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<21>34_SW0" (ROM) removed.
+    The signal "hostintf/N505" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<20>34_SW0" (ROM) removed.
+    The signal "hostintf/N507" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<1>34_SW0" (ROM) removed.
+    The signal "hostintf/N509" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<19>34_SW0" (ROM) removed.
+    The signal "hostintf/N5111" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<18>34_SW0" (ROM) removed.
+    The signal "hostintf/N513" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<17>34_SW0" (ROM) removed.
+    The signal "hostintf/N515" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<16>34_SW0" (ROM) removed.
+    The signal "hostintf/N517" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<15>34_SW0" (ROM) removed.
+    The signal "hostintf/N519" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<14>34_SW0" (ROM) removed.
+    The signal "hostintf/N521" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<13>34_SW0" (ROM) removed.
+    The signal "hostintf/N523" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<12>34_SW0" (ROM) removed.
+    The signal "hostintf/N525" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<11>34_SW0" (ROM) removed.
+    The signal "hostintf/N527" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<10>34_SW0" (ROM) removed.
+    The signal "hostintf/N529" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<0>34_SW0" (ROM) removed.
+    The signal "hostintf/N531" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<31>1" (ROM) removed.
+    The signal "hostintf/MIPS_DMem_rd_data<31>1" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<30>1" (ROM) removed.
+    The signal "hostintf/MIPS_DMem_rd_data<30>1" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<29>1" (ROM) removed.
+    The signal "hostintf/MIPS_DMem_rd_data<29>1" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<28>1" (ROM) removed.
+    The signal "hostintf/MIPS_DMem_rd_data<28>1" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<27>1" (ROM) removed.
+    The signal "hostintf/MIPS_DMem_rd_data<27>1" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<26>1" (ROM) removed.
+    The signal "hostintf/MIPS_DMem_rd_data<26>1" is sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_adrs_is_20M_hex" is sourceless and
+has been removed.
+ Sourceless block "hostintf/DMem_in_host_intf/MIPS_adrs_is_20M_hex_dlyd" (FF)
+removed.
+  The signal "hostintf/DMem_in_host_intf/MIPS_adrs_is_20M_hex_dlyd" is sourceless
+and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<9>14_SW1" (ROM) removed.
+    The signal "hostintf/N561" is sourceless and has been removed.
+   Sourceless block "hostintf/MIPS_DMem_rd_data<8>14_SW1" (ROM) removed.
+    The signal "hostintf/N563" is sourceless and has been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<0>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<0>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<1>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<1>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<2>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<2>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<3>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<3>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<4>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<4>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<5>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<5>" is sourceless and has
+been removed.
+The signal "hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<6>" is sourceless and has
+been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<7>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<6>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<5>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<4>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<3>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<2>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<25>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<24>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<23>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<22>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<21>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<20>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<1>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<19>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<18>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<17>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<16>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<15>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<14>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<13>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<12>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<11>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<10>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<0>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<7>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<6>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<5>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<4>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<3>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<2>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<25>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<24>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<23>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<22>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<21>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<20>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<1>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<19>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<18>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<17>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<16>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<15>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<14>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<13>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<12>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<11>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<10>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<0>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<9>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<8>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<27>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<26>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<31>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<30>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<29>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_vga<28>" is sourceless
+and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<31>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<30>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<29>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<28>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<27>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<26>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<9>" is
+sourceless and has been removed.
+The signal "hostintf/DMem_in_host_intf/MIPS_DMem_rd_data_regular<8>" is
+sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "buttons_in<0>" is unused and has been removed.
+ Unused block "buttons_in<0>" (PAD) removed.
+The signal "buttons_in<1>" is unused and has been removed.
+ Unused block "buttons_in<1>" (PAD) removed.
+The signal "buttons_in<2>" is unused and has been removed.
+ Unused block "buttons_in<2>" (PAD) removed.
+The signal "buttons_in_0_IBUF" is unused and has been removed.
+ Unused block "buttons_in_0_IBUF" (BUF) removed.
+The signal "buttons_in_1_IBUF" is unused and has been removed.
+ Unused block "buttons_in_1_IBUF" (BUF) removed.
+The signal "buttons_in_2_IBUF" is unused and has been removed.
+ Unused block "buttons_in_2_IBUF" (BUF) removed.
+Unused block "hostintf/DMem_in_host_intf/MIPS_accs_kbd_cmp_eq00001" (ROM)
+removed.
+Unused block "hostintf/DMem_in_host_intf/MIPS_adrs_is_20M_hex1" (ROM) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_0" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_1" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_10" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_11" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_12" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_13" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_14" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_15" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_16" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_17" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_18" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_19" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_2" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_20" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_21" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_22" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_23" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_24" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_25" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_26" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_27" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_28" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_29" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_3" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_30" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_31" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_4" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_5" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_6" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_7" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_8" (FF) removed.
+Unused block "hostintf/Flash_Intf_regs_rd_data_to_MIPS_reg_9" (FF) removed.
+Unused block "hostintf/MIPS_Flash_accs_dlyd" (FF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+LUT4 		hostintf/DMem_in_host_intf/MIPS_DMem_we_VGA1
+   optimized to 0
+LUT3 		hostintf/DMem_in_host_intf/MIPS_DMem_we_regular1
+   optimized to 0
+LUT4 		hostintf/DMem_in_host_intf/MIPS_accs_kbd111
+   optimized to 0
+LUT4 		hostintf/DMem_in_host_intf/MIPS_accs_kbd1121
+   optimized to 1
+LUT4 		hostintf/DMem_in_host_intf/MIPS_accs_kbd125
+   optimized to 1
+LUT4 		hostintf/DMem_in_host_intf/MIPS_accs_kbd149
+   optimized to 1
+LUT4 		hostintf/DMem_in_host_intf/MIPS_accs_kbd162
+   optimized to 1
+LUT4 		hostintf/DMem_in_host_intf/MIPS_accs_kbd176
+   optimized to 1
+LUT4 		hostintf/DMem_in_host_intf/MIPS_accs_kbd210
+   optimized to 1
+LUT4 		hostintf/DMem_in_host_intf/MIPS_accs_kbd23
+   optimized to 0
+LUT2 		hostintf/DMem_in_host_intf/MIPS_accs_kbd27
+   optimized to 1
+LUT4 		hostintf/DMem_in_host_intf/MIPS_accs_kbd52
+   optimized to 0
+FDE 		hostintf/DMem_in_host_intf/MIPS_accs_kbd_dlyd
+   optimized to 0
+LUT3 		hostintf/DMem_in_host_intf/kbintf/clr_kbd_cntr6
+   optimized to 0
+LUT3 		hostintf/Flash_intf_in_host_intf/Flash_regs_rd_data<2>11_SW0
+   optimized to 1
+LUT3 		hostintf/Flash_intf_in_host_intf/Flash_regs_rd_data<2>21_SW0
+   optimized to 1
+LUT4 		hostintf/Host_Flash_accs_cmp_eq00001_SW7_F
+   optimized to 0
+LUT4 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<0>
+   optimized to 1
+LUT4 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<1>
+   optimized to 1
+LUT4 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<2>
+   optimized to 1
+LUT4 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<3>
+   optimized to 1
+LUT4 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<4>
+   optimized to 1
+LUT4 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<5>
+   optimized to 0
+LUT4 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_lut<6>
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_5
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_51
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_510
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_511
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_512
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_513
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_514
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_515
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_516
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_517
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_518
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_519
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_52
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_520
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_521
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_522
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_523
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_524
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_525
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_526
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_527
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_528
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_529
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_53
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_530
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_531
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_54
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_55
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_56
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_57
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_58
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_59
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_6
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_61
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_610
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_612
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_613
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_615
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_616
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_618
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_619
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_621
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_622
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_624
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_625
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_627
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_628
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_63
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_630
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_631
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_633
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_634
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_636
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_637
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_639
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_64
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_640
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_642
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_643
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_645
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_646
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_648
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_649
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_651
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_652
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_654
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_655
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_657
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_658
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_66
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_660
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_661
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_663
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_664
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_666
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_667
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_669
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_67
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_670
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_672
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_673
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_675
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_676
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_678
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_679
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_681
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_682
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_684
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_685
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_687
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_688
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_69
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_690
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_691
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_693
+   optimized to 0
+LUT3 		hostintf/Mmux_Host_RDBK_data_694
+   optimized to 0
+LUT2 		hostintf/Mmux_Host_or_MIPS_reg_adrs21_SW0
+   optimized to 0
+GND 		hostintf/XST_GND
+VCC 		hostintf/XST_VCC
+MUXCY 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<0>
+MUXCY 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<1>
+MUXCY 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<2>
+MUXCY 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<3>
+MUXCY 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<4>
+MUXCY 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<5>
+MUXCY 		hostintf/MIPS_Flash_accs_cmp_eq0000_wg_cy<6>
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CK_50MHz                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Flash_adrs<1>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<2>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<3>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<4>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<5>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<6>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<7>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<8>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<9>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<10>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<11>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<12>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<13>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<14>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<15>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<16>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<17>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<18>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<19>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<20>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<21>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<22>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_adrs<23>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_ce_n                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<0>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<1>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<2>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<3>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<4>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<5>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<6>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<7>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<8>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<9>                      | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<10>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<11>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<12>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<13>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<14>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_data<15>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_oe_n                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_rp_n                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Flash_sts                          | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Flash_we_n                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| MT_ce_n                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PS2C                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| PS2D                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| RS232_Rx                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| RS232_Tx                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_blu1                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_blu2                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_grn0                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_grn1                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_grn2                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_h_sync                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_red0                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_red1                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_red2                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| VGA_v_sync                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes_out<0>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes_out<1>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes_out<2>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anodes_out<3>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| buttons_in<3>                      | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| leds_out<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds_out<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<0>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<1>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<2>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<3>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<4>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<5>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sevenseg_out<6>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| switches_in<0>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<1>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<2>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<3>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<4>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<5>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<6>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| switches_in<7>                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

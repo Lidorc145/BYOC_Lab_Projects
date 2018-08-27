@@ -1,0 +1,6 @@
+vhdl isim_temp "SIM_HW2_filenames.vhd"
+vhdl isim_temp "Fetch_Unit.vhd"
+vhdl isim_temp "BYOC_Host_Intf_4sim.vhd"
+vhdl isim_temp "BYOC_Clock_driver_4sim.vhd"
+vhdl isim_temp "HW2_top_4sim.vhd"
+vhdl isim_temp "SIM_HW2_TB.vhd"

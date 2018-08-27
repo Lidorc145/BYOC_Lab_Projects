@@ -1,0 +1,31 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/User/HW2/BYOC_TB_for_students_isim_beh.exe" -prj "C:/Users/User/HW2/BYOC_TB_for_students_beh.prj" "work.BYOC_TB_for_students" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/User/HW2/SIM_HW2_filenames.vhd" into library work
+Parsing VHDL file "C:/Users/User/HW2/Fetch_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/User/HW2/BYOC_Host_Intf_4sim.vhd" into library work
+Parsing VHDL file "C:/Users/User/HW2/BYOC_Clock_driver_4sim.vhd" into library work
+Parsing VHDL file "C:/Users/User/HW2/HW2_top_4sim.vhd" into library work
+Parsing VHDL file "C:/Users/User/HW2/SIM_HW2_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package numeric_std
+Compiling package byoc_filenames
+Compiling architecture clock_divider of entity Clock_Driver [clock_driver_default]
+Compiling architecture behavioral of entity BYOC_Host_Intf [byoc_host_intf_default]
+Compiling architecture behavioral of entity Fetch_Unit [fetch_unit_default]
+Compiling architecture behavioral of entity HW2_top [hw2_top_default]
+Compiling architecture testing of entity byoc_tb_for_students
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 16 VHDL Units
+Built simulation executable C:/Users/User/HW2/BYOC_TB_for_students_isim_beh.exe
+Fuse Memory Usage: 38120 KB
+Fuse CPU Usage: 1499 ms

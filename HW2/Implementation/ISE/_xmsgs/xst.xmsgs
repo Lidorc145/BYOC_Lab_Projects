@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/HW2Sim/HW2_top.vhd</arg>&quot; line <arg fmt="%d" index="2">286</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">MIPS_DMem_rd_data</arg>&apos; of component &apos;<arg fmt="%s" index="4">BYOC_Host_intf</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/HW2Sim/HW2_top.vhd</arg>&quot; line <arg fmt="%d" index="2">286</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">BYOC_Host_intf</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/HW2Sim/Fetch_Unit.vhd</arg>&quot; line <arg fmt="%d" index="2">207</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;funct&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">sext_imm&lt;31:30&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">rdbk_vec2</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">leds_out_from_host_intf&lt;7&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Flash_intf_in_host_intf/end_of_copy</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hostintf</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Flash_intf_in_host_intf/end_of_copy_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Flash_intf_in_host_intf/end_of_copy</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hostintf</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Flash_intf_in_host_intf/end_of_copy_1&gt; </arg>
+</msg>
+
+</messages>
+

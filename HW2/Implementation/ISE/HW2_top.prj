@@ -1,0 +1,3 @@
+vhdl work "Fetch_Unit.vhd"
+vhdl work "BYOC_Clock_driver.vhd"
+vhdl work "HW2_top.vhd"

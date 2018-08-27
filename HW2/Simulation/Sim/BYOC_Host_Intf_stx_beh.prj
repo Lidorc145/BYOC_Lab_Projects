@@ -1,0 +1,2 @@
+vhdl isim_temp "SIM_HW2_filenames.vhd"
+vhdl isim_temp "BYOC_Host_Intf_4sim.vhd"

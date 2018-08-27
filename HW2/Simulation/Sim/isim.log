@@ -1,0 +1,142 @@
+ISim log file
+Running: C:\Users\User\HW2\BYOC_TB_for_students_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/User/HW2/BYOC_TB_for_students_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps: Note: ================= Start filling IMem from file ====================================== (/byoc_tb_for_students/Testing_BYOC_top/hostintf/).
+at 0 ps: Note: ================= Filling IMem from file done! ====================================== (/byoc_tb_for_students/Testing_BYOC_top/hostintf/).
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 1 ns: Note: ================= Start checking signals ======================== (/byoc_tb_for_students/).
+at 640 ns(6): Error: Error in value2 in CK cycle 0!!!  was 00400004 instead of 00000000
+at 640 ns(6): Error: Error in value5 in CK cycle 0!!!  was 00400004 instead of 00000000
+at 720 ns(6): Error: Error in value2 in CK cycle 2!!!  was 00401119 instead of 0040444C
+at 760 ns(6): Error: Error in value2 in CK cycle 3!!!  was 0040222E instead of 00408894
+at 800 ns(6): Error: Error in value2 in CK cycle 4!!!  was 00403343 instead of 0040CCDC
+at 840 ns(6): Error: Error in value2 in CK cycle 5!!!  was 00404458 instead of 00411124
+at 880 ns(6): Error: Error in value2 in CK cycle 6!!!  was 0040001A instead of 00400020
+at 880 ns(6): Error: Error in value8 in CK cycle 6!!!  was 0040001A instead of 00400020
+at 920 ns(6): Error: Error in value0 in CK cycle 7!!!  was 0040001A instead of 00400020
+at 920 ns(6): Error: Error in value1 in CK cycle 7!!!  was 0040001E instead of 00400024
+at 920 ns(6): Error: Error in value2 in CK cycle 7!!!  was 00406682 instead of 004199B4
+at 920 ns(6): Error: Error in value8 in CK cycle 7!!!  was 0040001E instead of 00400024
+at 960 ns(6): Error: Error in value0 in CK cycle 8!!!  was 0040001E instead of 00400024
+at 960 ns(6): Error: Error in value1 in CK cycle 8!!!  was 00400022 instead of 00400028
+at 960 ns(6): Error: Error in value2 in CK cycle 8!!!  was 00406684 instead of 003E2244
+at 960 ns(6): Error: Error in value4 in CK cycle 8!!!  was 00019998 instead of 02222220
+at 960 ns(6): Error: Error in value5 in CK cycle 8!!!  was 0040001E instead of 00400024
+at 960 ns(6): Error: Error in value6 in CK cycle 8!!!  was 00006666 instead of 88888888
+at 960 ns(6): Error: Error in value8 in CK cycle 8!!!  was 00400022 instead of 00400028
+at 1 us(6): Error: Error in value0 in CK cycle 9!!!  was 00400022 instead of 00400028
+at 1 us(6): Error: Error in value1 in CK cycle 9!!!  was 00400026 instead of 0040002C
+at 1 us(6): Error: Error in value2 in CK cycle 9!!!  was 00407799 instead of 003E668C
+at 1 us(6): Error: Error in value4 in CK cycle 9!!!  was 0001DDDC instead of 00026664
+at 1 us(6): Error: Error in value5 in CK cycle 9!!!  was 00400022 instead of 00400028
+at 1 us(6): Error: Error in value6 in CK cycle 9!!!  was 00007777 instead of 00009999
+at 1 us(6): Error: Error in value8 in CK cycle 9!!!  was 00400026 instead of 0040002C
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+at 0 ps: Note: ================= Start filling IMem from file ====================================== (/byoc_tb_for_students/Testing_BYOC_top/hostintf/).
+at 0 ps: Note: ================= Filling IMem from file done! ====================================== (/byoc_tb_for_students/Testing_BYOC_top/hostintf/).
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 1 ns: Note: ================= Start checking signals ======================== (/byoc_tb_for_students/).
+at 640 ns(6): Error: Error in value2 in CK cycle 0!!!  was 00400004 instead of 00000000
+at 640 ns(6): Error: Error in value5 in CK cycle 0!!!  was 00400004 instead of 00000000
+at 720 ns(6): Error: Error in value2 in CK cycle 2!!!  was 00401119 instead of 0040444C
+at 760 ns(6): Error: Error in value2 in CK cycle 3!!!  was 0040222E instead of 00408894
+at 800 ns(6): Error: Error in value2 in CK cycle 4!!!  was 00403343 instead of 0040CCDC
+at 840 ns(6): Error: Error in value2 in CK cycle 5!!!  was 00404458 instead of 00411124
+at 880 ns(6): Error: Error in value2 in CK cycle 6!!!  was 0040001A instead of 00400020
+at 880 ns(6): Error: Error in value8 in CK cycle 6!!!  was 0040001A instead of 00400020
+at 920 ns(6): Error: Error in value0 in CK cycle 7!!!  was 0040001A instead of 00400020
+at 920 ns(6): Error: Error in value1 in CK cycle 7!!!  was 0040001E instead of 00400024
+at 920 ns(6): Error: Error in value2 in CK cycle 7!!!  was 00406682 instead of 004199B4
+at 920 ns(6): Error: Error in value8 in CK cycle 7!!!  was 0040001E instead of 00400024
+at 960 ns(6): Error: Error in value0 in CK cycle 8!!!  was 0040001E instead of 00400024
+at 960 ns(6): Error: Error in value1 in CK cycle 8!!!  was 00400022 instead of 00400028
+at 960 ns(6): Error: Error in value2 in CK cycle 8!!!  was 00406684 instead of 003E2244
+at 960 ns(6): Error: Error in value4 in CK cycle 8!!!  was 00019998 instead of 02222220
+at 960 ns(6): Error: Error in value5 in CK cycle 8!!!  was 0040001E instead of 00400024
+at 960 ns(6): Error: Error in value6 in CK cycle 8!!!  was 00006666 instead of 88888888
+at 960 ns(6): Error: Error in value8 in CK cycle 8!!!  was 00400022 instead of 00400028
+at 1 us(6): Error: Error in value0 in CK cycle 9!!!  was 00400022 instead of 00400028
+at 1 us(6): Error: Error in value1 in CK cycle 9!!!  was 00400026 instead of 0040002C
+at 1 us(6): Error: Error in value2 in CK cycle 9!!!  was 00407799 instead of 003E668C
+at 1 us(6): Error: Error in value4 in CK cycle 9!!!  was 0001DDDC instead of 00026664
+at 1 us(6): Error: Error in value5 in CK cycle 9!!!  was 00400022 instead of 00400028
+at 1 us(6): Error: Error in value6 in CK cycle 9!!!  was 00007777 instead of 00009999
+at 1 us(6): Error: Error in value8 in CK cycle 9!!!  was 00400026 instead of 0040002C
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps: Note: ================= Start filling IMem from file ====================================== (/byoc_tb_for_students/Testing_BYOC_top/hostintf/).
+at 0 ps: Note: ================= Filling IMem from file done! ====================================== (/byoc_tb_for_students/Testing_BYOC_top/hostintf/).
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 1 ns: Note: ================= Start checking signals ======================== (/byoc_tb_for_students/).
+at 720 ns(6): Error: Error in value2 in CK cycle 2!!!  was 00401119 instead of 0040444C
+at 760 ns(6): Error: Error in value2 in CK cycle 3!!!  was 0040222E instead of 00408894
+at 800 ns(6): Error: Error in value2 in CK cycle 4!!!  was 00403343 instead of 0040CCDC
+at 840 ns(6): Error: Error in value2 in CK cycle 5!!!  was 00404458 instead of 00411124
+at 880 ns(6): Error: Error in value2 in CK cycle 6!!!  was 0040001A instead of 00400020
+at 880 ns(6): Error: Error in value8 in CK cycle 6!!!  was 0040001A instead of 00400020
+at 920 ns(6): Error: Error in value0 in CK cycle 7!!!  was 0040001A instead of 00400020
+at 920 ns(6): Error: Error in value1 in CK cycle 7!!!  was 0040001E instead of 00400024
+at 920 ns(6): Error: Error in value2 in CK cycle 7!!!  was 00406682 instead of 004199B4
+at 920 ns(6): Error: Error in value8 in CK cycle 7!!!  was 0040001E instead of 00400024
+at 960 ns(6): Error: Error in value0 in CK cycle 8!!!  was 0040001E instead of 00400024
+at 960 ns(6): Error: Error in value1 in CK cycle 8!!!  was 00400022 instead of 00400028
+at 960 ns(6): Error: Error in value2 in CK cycle 8!!!  was 00406684 instead of 003E2244
+at 960 ns(6): Error: Error in value4 in CK cycle 8!!!  was 00019998 instead of 02222220
+at 960 ns(6): Error: Error in value5 in CK cycle 8!!!  was 0040001E instead of 00400024
+at 960 ns(6): Error: Error in value6 in CK cycle 8!!!  was 00006666 instead of 88888888
+at 960 ns(6): Error: Error in value8 in CK cycle 8!!!  was 00400022 instead of 00400028
+at 1 us(6): Error: Error in value0 in CK cycle 9!!!  was 00400022 instead of 00400028
+at 1 us(6): Error: Error in value1 in CK cycle 9!!!  was 00400026 instead of 0040002C
+at 1 us(6): Error: Error in value2 in CK cycle 9!!!  was 00407799 instead of 003E668C
+at 1 us(6): Error: Error in value4 in CK cycle 9!!!  was 0001DDDC instead of 00026664
+at 1 us(6): Error: Error in value5 in CK cycle 9!!!  was 00400022 instead of 00400028
+at 1 us(6): Error: Error in value6 in CK cycle 9!!!  was 00007777 instead of 00009999
+at 1 us(6): Error: Error in value8 in CK cycle 9!!!  was 00400026 instead of 0040002C
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps: Note: ================= Start filling IMem from file ====================================== (/byoc_tb_for_students/Testing_BYOC_top/hostintf/).
+at 0 ps: Note: ================= Filling IMem from file done! ====================================== (/byoc_tb_for_students/Testing_BYOC_top/hostintf/).
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 1 ns: Note: ================= Start checking signals ======================== (/byoc_tb_for_students/).
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+at 5360 ns(6): Note:  ============ Test pass!! ===============  (/byoc_tb_for_students/).

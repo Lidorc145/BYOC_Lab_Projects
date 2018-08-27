@@ -1,0 +1,518 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.10 secs
+ 
+--> Reading design: HW2_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "HW2_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "HW2_top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : HW2_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/User/HW2Sim/BYOC_Clock_driver.vhd" in Library work.
+Entity <Clock_Driver> compiled.
+Entity <Clock_Driver> (Architecture <clock_divider>) compiled.
+Compiling vhdl file "C:/Users/User/HW2Sim/Fetch_Unit.vhd" in Library work.
+Entity <Fetch_Unit> compiled.
+Entity <Fetch_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/User/HW2Sim/HW2_top.vhd" in Library work.
+Entity <HW2_top> compiled.
+Entity <HW2_top> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <HW2_top> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Clock_Driver> in library <work> (architecture <clock_divider>).
+
+Analyzing hierarchy for entity <Fetch_Unit> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <HW2_top> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "C:/Users/User/HW2Sim/HW2_top.vhd" line 286: Unconnected output port 'MIPS_DMem_rd_data' of component 'BYOC_Host_intf'.
+WARNING:Xst:2211 - "C:/Users/User/HW2Sim/HW2_top.vhd" line 286: Instantiating black box module <BYOC_Host_intf>.
+Entity <HW2_top> analyzed. Unit <HW2_top> generated.
+
+Analyzing Entity <Clock_Driver> in library <work> (Architecture <clock_divider>).
+Entity <Clock_Driver> analyzed. Unit <Clock_Driver> generated.
+
+Analyzing Entity <Fetch_Unit> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "C:/Users/User/HW2Sim/Fetch_Unit.vhd" line 207: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <funct>
+Entity <Fetch_Unit> analyzed. Unit <Fetch_Unit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Fetch_Unit>.
+    Related source file is "C:/Users/User/HW2Sim/Fetch_Unit.vhd".
+WARNING:Xst:646 - Signal <sext_imm<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rdbk_vec2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit adder for signal <branch_adrs>.
+    Found 32-bit 4-to-1 multiplexer for signal <PC_mux_out>.
+    Found 32-bit adder for signal <PC_plus_4>.
+    Found 32-bit register for signal <PC_plus_4_pID>.
+    Found 32-bit register for signal <PC_reg>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <Fetch_Unit> synthesized.
+
+
+Synthesizing Unit <Clock_Driver>.
+    Related source file is "C:/Users/User/HW2Sim/BYOC_Clock_driver.vhd".
+    Found 1-bit register for signal <half_ck_signal>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Clock_Driver> synthesized.
+
+
+Synthesizing Unit <HW2_top>.
+    Related source file is "C:/Users/User/HW2Sim/HW2_top.vhd".
+WARNING:Xst:646 - Signal <leds_out_from_host_intf<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16-bit tristate buffer for signal <Flash_data>.
+    Summary:
+	inferred  16 Tristate(s).
+Unit <HW2_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 32-bit register                                       : 2
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+# Tristates                                            : 1
+ 16-bit tristate buffer                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <BYOC_Host_intf.ngc>.
+Loading core <BYOC_Host_intf> for timing and area information for instance <hostintf>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <HW2_top> ...
+
+Optimizing unit <Fetch_Unit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block HW2_top, actual ratio is 21.
+INFO:Xst:2260 - The FF/Latch <Flash_intf_in_host_intf/end_of_copy> in Unit <hostintf> is equivalent to the following FF/Latch : <Flash_intf_in_host_intf/end_of_copy_1> 
+INFO:Xst:2260 - The FF/Latch <Flash_intf_in_host_intf/end_of_copy> in Unit <hostintf> is equivalent to the following FF/Latch : <Flash_intf_in_host_intf/end_of_copy_1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : HW2_top.ngr
+Top Level Output File Name         : HW2_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 91
+
+Cell Usage :
+# BELS                             : 2587
+#      GND                         : 2
+#      INV                         : 36
+#      LUT1                        : 144
+#      LUT2                        : 148
+#      LUT2_D                      : 2
+#      LUT2_L                      : 8
+#      LUT3                        : 687
+#      LUT3_D                      : 14
+#      LUT3_L                      : 13
+#      LUT4                        : 590
+#      LUT4_D                      : 20
+#      LUT4_L                      : 97
+#      MUXCY                       : 269
+#      MUXF5                       : 225
+#      MUXF6                       : 72
+#      MUXF7                       : 32
+#      VCC                         : 2
+#      XORCY                       : 226
+# FlipFlops/Latches                : 782
+#      FD                          : 71
+#      FDC                         : 129
+#      FDCE                        : 242
+#      FDE                         : 236
+#      FDP                         : 2
+#      FDPE                        : 13
+#      FDR                         : 17
+#      FDRE                        : 62
+#      FDRS                        : 1
+#      FDS                         : 9
+# RAMS                             : 13
+#      RAMB16_S18_S18              : 4
+#      RAMB16_S36                  : 1
+#      RAMB16_S4_S4                : 8
+# Shift Registers                  : 3
+#      SRL16E                      : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 90
+#      IBUF                        : 16
+#      IOBUF                       : 16
+#      OBUF                        : 58
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                     1021  out of   4656    21%  
+ Number of Slice Flip Flops:            782  out of   9312     8%  
+ Number of 4 input LUTs:               1762  out of   9312    18%  
+    Number used as logic:              1759
+    Number used as Shift registers:       3
+ Number of IOs:                          91
+ Number of bonded IOBs:                  91  out of    232    39%  
+ Number of BRAMs:                        13  out of     20    65%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock_divider/half_ck_signal       | BUFG                   | 797   |
+CK_50MHz                           | BUFGP                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------+----------------------------------------------------------+-------+
+Control Signal                        | Buffer(FF name)                                          | Load  |
+--------------------------------------+----------------------------------------------------------+-------+
+hostintf/MIPS_reset(hostintf/RESET1:O)| NONE(hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd1)| 289   |
+RESET(RESET1:O)                       | NONE(Fetch_unit_imp/PC_plus_4_pID_0)                     | 64    |
+buttons_in<3>                         | IBUF                                                     | 33    |
+--------------------------------------+----------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 15.230ns (Maximum Frequency: 65.660MHz)
+   Minimum input arrival time before clock: 8.912ns
+   Maximum output required time after clock: 11.986ns
+   Maximum combinational path delay: 6.744ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_divider/half_ck_signal'
+  Clock period: 15.230ns (frequency: 65.660MHz)
+  Total number of paths / destination ports: 56867 / 1641
+-------------------------------------------------------------------------
+Delay:               15.230ns (Levels of Logic = 13)
+  Source:            hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array1 (RAM)
+  Destination:       hostintf/Tx_data_reg_10 (FF)
+  Source Clock:      clock_divider/half_ck_signal rising
+  Destination Clock: clock_divider/half_ck_signal rising
+
+  Data Path: hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array1 to hostintf/Tx_data_reg_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S18_S18:CLKA->DOA3    1   2.800   0.595  IMem_in_host_intf/Regular_IMem/Mram_Memory_array1 (IMem_in_host_intf/MIPS_IMem_rd_data_regular<3>)
+     LUT4:I0->O            5   0.704   0.808  IMem_in_host_intf/Mmux_MIPS_IMem_rd_data261 (MIPS_IMem_rd_data<3>)
+     end scope: 'hostintf'
+     LUT3:I0->O            2   0.704   0.451  Fetch_unit_imp/PC_Source<1>7 (Fetch_unit_imp/PC_Source<1>7)
+     LUT4:I3->O            4   0.704   0.591  Fetch_unit_imp/PC_Source<1>47_1 (Fetch_unit_imp/PC_Source<1>47)
+     LUT4_D:I3->O         12   0.704   1.136  Fetch_unit_imp/Mmux_PC_mux_out1021_1 (Fetch_unit_imp/Mmux_PC_mux_out1021)
+     LUT4:I0->O            1   0.704   0.000  Fetch_unit_imp/Mmux_PC_mux_out41 (Fetch_unit_imp/Mmux_PC_mux_out4)
+     MUXF5:I1->O           2   0.321   0.526  Fetch_unit_imp/Mmux_PC_mux_out4_f5 (rdbk8_line<10>)
+     begin scope: 'hostintf'
+     LUT3:I1->O            1   0.704   0.000  Mmux_Host_RDBK_data_73 (Mmux_Host_RDBK_data_73)
+     MUXF5:I0->O           1   0.321   0.000  Mmux_Host_RDBK_data_5_f5_1 (Mmux_Host_RDBK_data_5_f52)
+     MUXF6:I0->O           1   0.521   0.000  Mmux_Host_RDBK_data_3_f6_0 (Mmux_Host_RDBK_data_3_f61)
+     MUXF7:I1->O           1   0.521   0.424  Mmux_Host_RDBK_data_2_f7_0 (Host_RDBK_data<10>)
+     LUT4_L:I3->LO         1   0.704   0.275  Host_MIPS_rd_data<10>_SW0_SW0 (N425)
+     LUT4:I0->O            1   0.704   0.000  Host_MIPS_rd_data<10> (Host_MIPS_rd_data<10>)
+     FDE:D                     0.308          Tx_data_reg_10
+    ----------------------------------------
+    Total                     15.230ns (10.424ns logic, 4.806ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK_50MHz'
+  Clock period: 1.949ns (frequency: 513.084MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 0)
+  Source:            clock_divider/half_ck_signal (FF)
+  Destination:       clock_divider/half_ck_signal (FF)
+  Source Clock:      CK_50MHz rising
+  Destination Clock: CK_50MHz rising
+
+  Data Path: clock_divider/half_ck_signal to clock_divider/half_ck_signal
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.447  clock_divider/half_ck_signal (clock_divider/half_ck_signal)
+     FDR:R                     0.911          clock_divider/half_ck_signal
+    ----------------------------------------
+    Total                      1.949ns (1.502ns logic, 0.447ns route)
+                                       (77.1% logic, 22.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_divider/half_ck_signal'
+  Total number of paths / destination ports: 1703 / 167
+-------------------------------------------------------------------------
+Offset:              8.912ns (Levels of Logic = 9)
+  Source:            switches_in<0> (PAD)
+  Destination:       hostintf/sevenseg_out_CKed_0 (FF)
+  Destination Clock: clock_divider/half_ck_signal rising
+
+  Data Path: switches_in<0> to hostintf/sevenseg_out_CKed_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   1.218   1.447  switches_in_0_IBUF (switches_in_0_IBUF)
+     begin scope: 'hostintf'
+     LUT3:I0->O            1   0.704   0.000  switches_in<1>_2_f5_31 (switches_in<1>_2_f5_31)
+     MUXF5:I1->O           2   0.321   0.622  switches_in<1>_2_f5_2_f5_0 (switches_in<1>_mmx_out10)
+     LUT2:I0->O            1   0.704   0.455  using_LED_monitor/digit_mux/Mmux_out_y_9 (using_LED_monitor/digit_mux/Mmux_out_y_9)
+     LUT4:I2->O            1   0.704   0.000  using_LED_monitor/digit_mux/Mmux_out_y_4 (using_LED_monitor/digit_mux/Mmux_out_y_4)
+     MUXF5:I1->O           1   0.321   0.000  using_LED_monitor/digit_mux/Mmux_out_y_3_f5 (using_LED_monitor/digit_mux/Mmux_out_y_3_f5)
+     MUXF6:I1->O           7   0.521   0.883  using_LED_monitor/digit_mux/Mmux_out_y_2_f6 (using_LED_monitor/digit_value<0>1)
+     LUT4:I0->O            1   0.704   0.000  using_LED_monitor/disply_7seg_decoder/Mrom_sevenseg21 (sevenseg_out_signal<2>)
+     FD:D                      0.308          sevenseg_out_CKed_2
+    ----------------------------------------
+    Total                      8.912ns (5.505ns logic, 3.407ns route)
+                                       (61.8% logic, 38.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_divider/half_ck_signal'
+  Total number of paths / destination ports: 1431 / 64
+-------------------------------------------------------------------------
+Offset:              11.986ns (Levels of Logic = 8)
+  Source:            hostintf/DMem_in_host_intf/Host_adrs_is_20M_hex_dlyd (FF)
+  Destination:       Flash_data<6> (PAD)
+  Source Clock:      clock_divider/half_ck_signal rising
+
+  Data Path: hostintf/DMem_in_host_intf/Host_adrs_is_20M_hex_dlyd to Flash_data<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             33   0.591   1.342  DMem_in_host_intf/Host_adrs_is_20M_hex_dlyd (DMem_in_host_intf/Host_adrs_is_20M_hex_dlyd)
+     LUT3_D:I1->O         25   0.704   1.264  DMem_in_host_intf/Host_DMem_rd_data<0>11 (DMem_in_host_intf/N1)
+     LUT4_L:I3->LO         1   0.704   0.135  DMem_in_host_intf/Host_DMem_rd_data<22>_SW0 (N188)
+     LUT3:I2->O            2   0.704   0.622  DMem_in_host_intf/Host_DMem_rd_data<22> (Host_MIPS_DMem_rd_data<22>)
+     LUT3:I0->O            1   0.704   0.000  Flash_intf_in_host_intf/Flash_wr_data<6>101_SW0_G (N600)
+     MUXF5:I1->O           1   0.321   0.499  Flash_intf_in_host_intf/Flash_wr_data<6>101_SW0 (N533)
+     LUT4:I1->O            1   0.704   0.420  Flash_intf_in_host_intf/Flash_wr_data<6>101 (Flash_wr_data<6>)
+     end scope: 'hostintf'
+     IOBUF:I->IO               3.272          Flash_data_6_IOBUF (Flash_data<6>)
+    ----------------------------------------
+    Total                     11.986ns (7.704ns logic, 4.282ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               6.744ns (Levels of Logic = 3)
+  Source:            switches_in<4> (PAD)
+  Destination:       Flash_rp_n (PAD)
+
+  Data Path: switches_in<4> to Flash_rp_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.218   1.130  switches_in_4_IBUF (switches_in_4_IBUF)
+     LUT2:I1->O            1   0.704   0.420  Flash_rp_n1 (Flash_rp_n_OBUF)
+     OBUF:I->O                 3.272          Flash_rp_n_OBUF (Flash_rp_n)
+    ----------------------------------------
+    Total                      6.744ns (5.194ns logic, 1.550ns route)
+                                       (77.0% logic, 23.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 54.00 secs
+Total CPU time to Xst completion: 53.85 secs
+ 
+--> 
+
+Total memory usage is 420544 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

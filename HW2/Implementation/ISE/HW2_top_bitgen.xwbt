@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\User\HW2Sim\HW2_top.ncd
+OUTFILE=C:\Users\User\HW2Sim\HW2_top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\User\HW2Sim
+LICENSE=WebPack
+USER_INFO=211507225_0_0_831

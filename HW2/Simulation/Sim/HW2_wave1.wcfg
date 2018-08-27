@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/User/HW2/BYOC_TB_for_students_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="byoc_filenames" />
+            <top_module name="byoc_tb_for_students" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="62" />
+   <wvobject fp_name="/byoc_tb_for_students/tb_ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_ck</obj_property>
+      <obj_property name="ObjectShortName">tb_ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_ck_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_ck_out</obj_property>
+      <obj_property name="ObjectShortName">tb_ck_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_reset_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_reset_out</obj_property>
+      <obj_property name="ObjectShortName">tb_reset_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_hold_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_hold_out</obj_property>
+      <obj_property name="ObjectShortName">tb_hold_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rs232_tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rs232_tx</obj_property>
+      <obj_property name="ObjectShortName">tb_rs232_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk0[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk2[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk3[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk4[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk5[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk6[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk7[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk8" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk8[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk9" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk9[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk9[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk10" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk10[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk10[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk11" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk11[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk11[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk12" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk12[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk12[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk13" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk13[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk13[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk14" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk14[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk14[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/tb_rdbk15" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_rdbk15[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_rdbk15[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/ck_no_expected_val" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ck_no_expected_val</obj_property>
+      <obj_property name="ObjectShortName">ck_no_expected_val</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">temp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value0[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value2[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value3[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value4[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value5[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value6[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value7[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value8" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value8[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value9" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value9[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value9[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value10" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value10[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value10[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value11" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value11[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value11[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value12" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value12[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value12[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value13" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value13[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value13[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value14" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value14[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value14[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/expected_value15" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expected_value15[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_value15[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/err_cntr" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">err_cntr</obj_property>
+      <obj_property name="ObjectShortName">err_cntr</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider42" type="divider">
+      <obj_property name="label">Fetch unit signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/hold" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hold</obj_property>
+      <obj_property name="ObjectShortName">hold</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/imem_adrs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">imem_adrs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imem_adrs[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/imem_rd_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">imem_rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imem_rd_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/ir_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ir_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ir_reg[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/imm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">imm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/sext_imm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sext_imm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sext_imm[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/funct" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">funct[5:0]</obj_property>
+      <obj_property name="ObjectShortName">funct[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/pc_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_reg[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/pc_source" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_source[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_source[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/pc_plus_4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_plus_4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_plus_4[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/jump_adrs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">jump_adrs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">jump_adrs[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/branch_adrs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">branch_adrs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">branch_adrs[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/jr_adrs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">jr_adrs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">jr_adrs[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/pc_mux_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_mux_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_mux_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/pc_plus_4_pid" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_plus_4_pid[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_plus_4_pid[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/rdbk_vec1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdbk_vec1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdbk_vec1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/byoc_tb_for_students/Testing_BYOC_top/Fetch_unit_imp/rdbk_vec2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdbk_vec2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdbk_vec2[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
