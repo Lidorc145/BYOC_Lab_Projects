@@ -1,0 +1,16 @@
+AR hw6_top behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/HW6_top_4sim.vhd" sub00/vhpl14 1529525041
+PH byoc_filenames NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/SIM_HW6_filenames.vhd" sub00/vhpl02 1529525029
+EN clock_driver NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_Clock_driver_4sim.vhd" sub00/vhpl03 1529525030
+EN byoc_tb_for_students NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/SIM_HW6_TB.vhd" sub00/vhpl15 1529525042
+EN dual_port_memory_no_ck_read NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/dual_port_memory.vhd" sub00/vhpl00 1529525027
+EN hw6_top NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/HW6_top_4sim.vhd" sub00/vhpl13 1529525040
+EN mips_alu NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/MIPS_ALU.vhd" sub00/vhpl11 1529525038
+EN byoc_host_intf NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_Host_Intf_4sim.vhd" sub00/vhpl05 1529525032
+AR fetch_unit behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/Fetch_Unit.vhd" sub00/vhpl08 1529525035
+EN fetch_unit NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/Fetch_Unit.vhd" sub00/vhpl07 1529525034
+AR gpr behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/GPR.vhd" sub00/vhpl10 1529525037
+AR mips_alu behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/MIPS_ALU.vhd" sub00/vhpl12 1529525039
+AR dual_port_memory_no_ck_read dual_port_memory "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/dual_port_memory.vhd" sub00/vhpl01 1529525028
+AR byoc_host_intf behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_Host_Intf_4sim.vhd" sub00/vhpl06 1529525033
+EN gpr NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/GPR.vhd" sub00/vhpl09 1529525036
+AR clock_driver clock_divider "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_Clock_driver_4sim.vhd" sub00/vhpl04 1529525031

@@ -1,0 +1,129 @@
+# BYOC UCF
+# RS232 signals - to/from host interface - for access Host intf registers & BYOC rdbks 
+#  -- i.e., it is used to load program into IMem & read Rdbk signals from the design under test
+NET "RS232_Tx" LOC = "P9";
+NET "RS232_Rx" LOC = "U6";
+
+# main ck input to the FPGA
+NET "CK_50MHz"  	 LOC = "B8";
+
+# buttons controlling the Host Intf (or the design)
+NET "buttons_in<0>"   LOC = "B18"; 
+NET "buttons_in<1>"   LOC = "D18"; 
+NET "buttons_in<2>"   LOC = "E18"; 
+NET "buttons_in<3>"   LOC = "H13";
+
+# buttons to control the Host Intf (or the design)
+NET "switches_in<0>"  LOC = "G18";
+NET "switches_in<1>"  LOC = "H18";
+NET "switches_in<2>"  LOC = "K18";
+NET "switches_in<3>"  LOC = "K17";
+NET "switches_in<4>"  LOC = "L14";
+NET "switches_in<5>"  LOC = "L13";
+NET "switches_in<6>"  LOC = "N17";
+NET "switches_in<7>"  LOC = "R17";
+
+# VGA output signals - from VGA controller inside DMem
+NET "VGA_red0" LOC = "R9";
+NET "VGA_red1" LOC = "T8";
+NET "VGA_red2" LOC = "R8";
+NET "VGA_grn0" LOC = "N8";
+NET "VGA_grn1" LOC = "P8";
+NET "VGA_grn2" LOC = "P6";
+NET "VGA_blu1" LOC = "U5";
+NET "VGA_blu2" LOC = "U4";
+NET "VGA_h_sync" LOC = "T4";
+NET "VGA_v_sync" LOC = "U3";
+
+# The 7 segments LEDs are used for host intf rdbk signals
+NET "sevenseg_out<0>" LOC = "L18";
+NET "sevenseg_out<1>" LOC = "F18";
+NET "sevenseg_out<2>" LOC = "D17";
+NET "sevenseg_out<3>" LOC = "D16";
+NET "sevenseg_out<4>" LOC = "G14";
+NET "sevenseg_out<5>" LOC = "J17";
+NET "sevenseg_out<6>" LOC = "H14";
+
+NET "anodes_out<0>" LOC = "F17";
+NET "anodes_out<1>" LOC = "H17";
+NET "anodes_out<2>" LOC = "C18";
+NET "anodes_out<3>" LOC = "F15";
+
+# to 8 LEDs (leftmost = Flash status, 7 right ones = BYOC_Host_intf version number)
+NET "leds_out<0>"  LOC = "J14";
+NET "leds_out<1>"  LOC = "J15";
+NET "leds_out<2>"  LOC = "K15";
+NET "leds_out<3>"  LOC = "K14";
+NET "leds_out<4>"  LOC = "E17";
+NET "leds_out<5>"  LOC = "P15";
+NET "leds_out<6>"  LOC =  "F4";
+NET "leds_out<7>"  LOC = "R4"; # The Flash_stts signal
+
+
+# Flash signals - to be used with the final MIPS CPU - for boot purposes
+NET "Flash_adrs<1>" 	LOC =  "J1";
+NET "Flash_adrs<2>" 	LOC =  "J2";
+NET "Flash_adrs<3>" 	LOC =  "H4";
+NET "Flash_adrs<4>" 	LOC =  "H1";
+NET "Flash_adrs<5>" 	LOC =  "H2";
+NET "Flash_adrs<6>" 	LOC =  "J5";
+NET "Flash_adrs<7>" 	LOC =  "H3";
+NET "Flash_adrs<8>" 	LOC =  "H6";
+NET "Flash_adrs<9>" 	LOC =  "F1";
+NET "Flash_adrs<10>" 	LOC =  "G3";
+NET "Flash_adrs<11>" 	LOC =  "G6";
+NET "Flash_adrs<12>" 	LOC =  "G5";
+NET "Flash_adrs<13>" 	LOC =  "G4";
+NET "Flash_adrs<14>" 	LOC =  "F2";
+NET "Flash_adrs<15>" 	LOC =  "E1";
+NET "Flash_adrs<16>" 	LOC =  "M5";
+NET "Flash_adrs<17>" 	LOC =  "E2";
+NET "Flash_adrs<18>" 	LOC =  "C2";
+NET "Flash_adrs<19>" 	LOC =  "C1";
+NET "Flash_adrs<20>" 	LOC =  "D2";
+NET "Flash_adrs<21>" 	LOC =  "K3";
+NET "Flash_adrs<22>" 	LOC =  "D1";
+NET "Flash_adrs<23>" 	LOC =  "K6";
+ 
+NET "MT_ce_n"      LOC = "R6";
+ 
+NET "Flash_ce_n"      LOC = "R5";
+NET "Flash_we_n"      LOC = "N7";
+NET "Flash_oe_n"      LOC = "T2";
+NET "Flash_rp_n"      LOC = "T5";
+NET "Flash_sts"       LOC = "D3";
+
+NET "Flash_data<0>"  LOC = "L1"; 
+NET "Flash_data<1>"  LOC = "L4"; 
+NET "Flash_data<2>"  LOC = "L6"; 
+NET "Flash_data<3>"  LOC = "M4"; 
+NET "Flash_data<4>"  LOC = "N5"; 
+NET "Flash_data<5>"  LOC = "P1"; 
+NET "Flash_data<6>"  LOC = "P2"; 
+NET "Flash_data<7>"  LOC = "R2"; 
+NET "Flash_data<8>"  LOC = "L3"; 
+NET "Flash_data<9>"  LOC = "L5"; 
+NET "Flash_data<10>"  LOC = "M3"; 
+NET "Flash_data<11>"  LOC = "M6"; 
+NET "Flash_data<12>"  LOC = "L2"; 
+NET "Flash_data<13>"  LOC = "N4"; 
+NET "Flash_data<14>"  LOC = "R3"; 
+NET "Flash_data<15>"  LOC = "T1";
+ 
+
+# Keyboard signals - note that KBD intf is part of DMem
+NET "PS2C" LOC = "R12";
+NET "PS2D" LOC = "P11";
+
+#
+# Constraints Created by Constraints Editor (xc3s500e-fg320-4) -- 2016/01/02
+NET "CK_50MHz" TNM_NET = CK_50MHz;
+TIMESPEC TS_CK_50MHz = PERIOD "CK_50MHz" 20 ns HIGH 50%;
+NET "clock_divider/half_ck_signal" TNM_NET = clock_divider/half_ck_signal;
+#TIMESPEC TS_clock_divider_half_ck_signal = PERIOD "clock_divider/half_ck_signal" 40 ns HIGH 50% ;
+TIMESPEC TS_clock_divider_half_ck_signal = PERIOD "clock_divider/half_ck_signal" 30 ns HIGH 50%;
+
+ 
+  
+# ---- end of UCF ---- 
+   

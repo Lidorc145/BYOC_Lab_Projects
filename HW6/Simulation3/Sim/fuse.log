@@ -1,0 +1,39 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/BYOC_TB_for_students_isim_beh.exe -prj C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/BYOC_TB_for_students_beh.prj work.BYOC_TB_for_students 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/SIM_HW6_filenames.vhd" into library work
+Parsing VHDL file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/dual_port_memory.vhd" into library work
+Parsing VHDL file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/MIPS_ALU.vhd" into library work
+Parsing VHDL file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/GPR.vhd" into library work
+Parsing VHDL file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/Fetch_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/BYOC_Host_Intf_4sim.vhd" into library work
+Parsing VHDL file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/BYOC_Clock_driver_4sim.vhd" into library work
+Parsing VHDL file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/HW6_top_4sim.vhd" into library work
+Parsing VHDL file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/SIM_HW6_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package numeric_std
+Compiling package byoc_filenames
+Compiling architecture clock_divider of entity Clock_Driver [clock_driver_default]
+Compiling architecture behavioral of entity BYOC_Host_Intf [byoc_host_intf_default]
+Compiling architecture behavioral of entity Fetch_Unit [fetch_unit_default]
+Compiling architecture dual_port_memory of entity dual_port_memory_no_ck_read [\dual_port_memory_no_ck_read(32,...]
+Compiling architecture behavioral of entity GPR [gpr_default]
+WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd" Line 2278: Warning: "There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es)."
+WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd" Line 2281: Warning: "CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0."
+Compiling architecture behavioral of entity MIPS_ALU [mips_alu_default]
+Compiling architecture behavioral of entity HW6_top [hw6_top_default]
+Compiling architecture testing of entity byoc_tb_for_students
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 22 VHDL Units
+Built simulation executable C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/BYOC_TB_for_students_isim_beh.exe
+Fuse Memory Usage: 38016 KB
+Fuse CPU Usage: 2234 ms

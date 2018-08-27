@@ -1,0 +1,70 @@
+V3 33
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/BYOC_Clock_driver_4sim.vhd" 2017/09/02.10:15:24 P.20131013
+EN work/Clock_Driver 1529665796 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/BYOC_Clock_driver_4sim.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/NUMERIC_STD 1381692181
+AR work/Clock_Driver/clock_divider 1529665797 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/BYOC_Clock_driver_4sim.vhd" \
+      EN work/Clock_Driver 1529665796
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/BYOC_Host_Intf_4sim.vhd" 2017/09/02.10:25:14 P.20131013
+EN work/BYOC_Host_Intf 1529665798 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/BYOC_Host_Intf_4sim.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB std/TEXTIO 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 PH work/BYOC_filenames 1529665795
+AR work/BYOC_Host_Intf/Behavioral 1529665799 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/BYOC_Host_Intf_4sim.vhd" \
+      EN work/BYOC_Host_Intf 1529665798
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/dual_port_memory.vhd" 2018/06/07.09:41:46 P.20131013
+EN work/dual_port_memory_no_ck_read 1529665793 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/dual_port_memory.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/dual_port_memory_no_CK_read/dual_port_memory 1529665794 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/dual_port_memory.vhd" \
+      EN work/dual_port_memory_no_ck_read 1529665793
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/Fetch_Unit.vhd" 2018/06/21.20:06:29 P.20131013
+EN work/Fetch_Unit 1529665800 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/Fetch_Unit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Fetch_Unit/Behavioral 1529665801 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/Fetch_Unit.vhd" \
+      EN work/Fetch_Unit 1529665800
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/GPR.vhd" 2018/06/22.10:41:00 P.20131013
+EN work/GPR 1529665802 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/GPR.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/GPR/Behavioral 1529665803 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/GPR.vhd" \
+      EN work/GPR 1529665802 CP dual_port_memory_no_CK_read
+EN work/HW6_top 0 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/HW6_top_4sim.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/HW6_top/Behavioral 0 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/HW6_top_4sim.vhd" \
+      EN work/HW6_top 0 CP Clock_Driver CP BYOC_Host_intf CP Fetch_Unit CP GPR \
+      CP MIPS_ALU
+EN work/MIPS_ALU 0 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/MIPS_ALU.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/MIPS_ALU/Behavioral 0 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/MIPS_ALU.vhd" \
+      EN work/MIPS_ALU 0
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/SIM_HW6_filenames.vhd" 2018/06/21.22:55:55 P.20131013
+PH work/BYOC_filenames 1529665795 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/SIM_HW6_filenames.vhd" \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_1164 1381692176 PB std/TEXTIO 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181
+EN work/BYOC_TB_for_students 0 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/SIM_HW6_TB.vhd" \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_1164 1381692176 PB std/TEXTIO 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 PH work/BYOC_filenames 1529665795
+AR work/BYOC_TB_for_students/Testing 0 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/SIM_HW6_TB.vhd" \
+      EN work/BYOC_TB_for_students 0 CP HW6_top

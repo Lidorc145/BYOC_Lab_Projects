@@ -1,0 +1,29 @@
+Command line:
+   BYOC_TB_for_students_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  16389
+
+Sun Jun 24 23:03:31 2018
+
+
+ Elaboration Time: 0.15625 sec
+
+ Current Memory Usage: 1042.81 Meg
+
+ Total Signals          : 326
+ Total Nets             : 3685
+ Total Signal Drivers   : 201
+ Total Blocks           : 14
+ Total Primitive Blocks : 11
+ Total Processes        : 140
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 38157
+Total Line Count : 509
+
+ Total Simulation Time: 0.5 sec
+
+ Current Memory Usage: 885.527 Meg
+
+Sun Jun 24 23:05:56 2018
+

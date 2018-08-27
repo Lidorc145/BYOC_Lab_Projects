@@ -1,0 +1,12 @@
+AR hw6_top behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/HW6_top.vhd" sub00/vhpl11 1530251755
+EN clock_driver NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/BYOC_Clock_driver.vhd" sub00/vhpl02 1530251746
+EN dual_port_memory_no_ck_read NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/dual_port_memory.vhd" sub00/vhpl00 1530251744
+EN hw6_top NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/HW6_top.vhd" sub00/vhpl10 1530251754
+EN mips_alu NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/MIPS_ALU.vhd" sub00/vhpl08 1530251752
+AR fetch_unit behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/Fetch_Unit.vhd" sub00/vhpl05 1530251749
+EN fetch_unit NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/Fetch_Unit.vhd" sub00/vhpl04 1530251748
+AR gpr behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/GPR.vhd" sub00/vhpl07 1530251751
+AR mips_alu behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/MIPS_ALU.vhd" sub00/vhpl09 1530251753
+AR dual_port_memory_no_ck_read dual_port_memory "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/dual_port_memory.vhd" sub00/vhpl01 1530251745
+EN gpr NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/GPR.vhd" sub00/vhpl06 1530251750
+AR clock_driver clock_divider "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/BYOC_Clock_driver.vhd" sub00/vhpl03 1530251747

@@ -1,0 +1,12 @@
+PH byoc_filenames NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/SIM_HW6_filenames.vhd" sub00/vhpl02 1529665795
+EN clock_driver NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/BYOC_Clock_driver_4sim.vhd" sub00/vhpl03 1529665796
+EN dual_port_memory_no_ck_read NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/dual_port_memory.vhd" sub00/vhpl00 1529665793
+EN mips_alu NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/MIPS_ALU.vhd" sub00/vhpl11 1529665804
+EN byoc_host_intf NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/BYOC_Host_Intf_4sim.vhd" sub00/vhpl05 1529665798
+AR fetch_unit behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/Fetch_Unit.vhd" sub00/vhpl08 1529665801
+EN fetch_unit NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/Fetch_Unit.vhd" sub00/vhpl07 1529665800
+AR gpr behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/GPR.vhd" sub00/vhpl10 1529665803
+AR dual_port_memory_no_ck_read dual_port_memory "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/dual_port_memory.vhd" sub00/vhpl01 1529665794
+AR byoc_host_intf behavioral "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/BYOC_Host_Intf_4sim.vhd" sub00/vhpl06 1529665799
+EN gpr NULL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/GPR.vhd" sub00/vhpl09 1529665802
+AR clock_driver clock_divider "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation2/BYOC_Clock_driver_4sim.vhd" sub00/vhpl04 1529665797

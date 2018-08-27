@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="1015" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/SIM_HW6_TB.vhd</arg>&quot; Line <arg fmt="%d" index="2">289</arg>. Wait for statement unsupported.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1015" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/SIM_HW6_TB.vhd</arg>&quot; Line <arg fmt="%d" index="2">291</arg>. Wait for statement unsupported.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1015" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/SIM_HW6_TB.vhd</arg>&quot; Line <arg fmt="%d" index="2">354</arg>. Wait for statement unsupported.
+</msg>
+
+</messages>
+

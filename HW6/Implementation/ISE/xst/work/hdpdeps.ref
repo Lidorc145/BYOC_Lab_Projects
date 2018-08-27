@@ -1,0 +1,50 @@
+V3 26
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/BYOC_Clock_driver.vhd" 2017/09/02.11:47:16 P.20131013
+EN work/Clock_Driver 1530251746 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/BYOC_Clock_driver.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/NUMERIC_STD 1381692181 LB unisim \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Clock_Driver/clock_divider 1530251747 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/BYOC_Clock_driver.vhd" \
+      EN work/Clock_Driver 1530251746 CP BUFG
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/dual_port_memory.vhd" 2018/06/07.09:41:46 P.20131013
+EN work/dual_port_memory_no_ck_read 1530251744 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/dual_port_memory.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/dual_port_memory_no_CK_read/dual_port_memory 1530251745 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/dual_port_memory.vhd" \
+      EN work/dual_port_memory_no_ck_read 1530251744
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/Fetch_Unit.vhd" 2018/06/21.20:06:29 P.20131013
+EN work/Fetch_Unit 1530251748 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/Fetch_Unit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Fetch_Unit/Behavioral 1530251749 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/Fetch_Unit.vhd" \
+      EN work/Fetch_Unit 1530251748
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/GPR.vhd" 2018/06/22.10:41:00 P.20131013
+EN work/GPR 1530251750 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/GPR.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/GPR/Behavioral 1530251751 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/GPR.vhd" \
+      EN work/GPR 1530251750 CP dual_port_memory_no_CK_read
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/HW6_top.vhd" 2018/06/29.08:55:21 P.20131013
+EN work/HW6_top 1530251754 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/HW6_top.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/HW6_top/Behavioral 1530251755 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/HW6_top.vhd" \
+      EN work/HW6_top 1530251754 CP Clock_Driver CP BYOC_Host_intf CP Fetch_Unit \
+      CP GPR CP MIPS_ALU
+FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/MIPS_ALU.vhd" 2018/06/22.14:10:33 P.20131013
+EN work/MIPS_ALU 1530251752 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/MIPS_ALU.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/MIPS_ALU/Behavioral 1530251753 \
+      FL "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/MIPS_ALU.vhd" \
+      EN work/MIPS_ALU 1530251752

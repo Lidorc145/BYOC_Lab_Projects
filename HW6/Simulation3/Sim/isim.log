@@ -1,0 +1,47 @@
+ISim log file
+Running: C:\Users\Lidor Cohen\Desktop\BYOC-HW6-Lidor\HW6-Simulation3\BYOC_TB_for_students_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation3/BYOC_TB_for_students_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps: Note: ================= Start filling IMem from file ====================================== (/byoc_tb_for_students/Testing_BYOC_top/hostintf/).
+at 0 ps: Note: ================= Filling IMem from file done! ====================================== (/byoc_tb_for_students/Testing_BYOC_top/hostintf/).
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/hostintf/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/ALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /byoc_tb_for_students/Testing_BYOC_top/GPR_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1 ns: Note: ================= Start checking signals ======================== (/byoc_tb_for_students/).
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+at 7040 ns(6): Note:  ============ Test pass!! ===============  (/byoc_tb_for_students/).
+# run 1.00us
+# run 1.00us
+The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/HW6_top.xst" -ofn "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/HW6_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "HW6_top.ngc" HW6_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o HW6_top_map.ncd HW6_top.ngd HW6_top.pcf 
+par -w -intstyle ise -ol high -t 1 HW6_top_map.ncd HW6_top.ncd HW6_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml HW6_top.twx HW6_top.ncd -o HW6_top.twr HW6_top.pcf 
+bitgen -intstyle ise -f HW6_top.ut HW6_top.ncd 

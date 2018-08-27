@@ -1,0 +1,715 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Reading design: HW6_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "HW6_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "HW6_top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : HW6_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/dual_port_memory.vhd" in Library work.
+Entity <dual_port_memory_no_ck_read> compiled.
+Entity <dual_port_memory_no_ck_read> (Architecture <dual_port_memory>) compiled.
+Compiling vhdl file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/BYOC_Clock_driver.vhd" in Library work.
+Entity <Clock_Driver> compiled.
+Entity <Clock_Driver> (Architecture <clock_divider>) compiled.
+Compiling vhdl file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/Fetch_Unit.vhd" in Library work.
+Entity <Fetch_Unit> compiled.
+Entity <Fetch_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/GPR.vhd" in Library work.
+Entity <GPR> compiled.
+Entity <GPR> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/MIPS_ALU.vhd" in Library work.
+Entity <MIPS_ALU> compiled.
+Entity <MIPS_ALU> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/HW6_top.vhd" in Library work.
+Entity <HW6_top> compiled.
+Entity <HW6_top> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <HW6_top> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Clock_Driver> in library <work> (architecture <clock_divider>).
+
+Analyzing hierarchy for entity <Fetch_Unit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <GPR> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MIPS_ALU> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <dual_port_memory_no_CK_read> in library <work> (architecture <dual_port_memory>) with generics.
+	depth = 32
+	width = 32
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <HW6_top> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:2211 - "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/HW6_top.vhd" line 437: Instantiating black box module <BYOC_Host_intf>.
+WARNING:Xst:819 - "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/HW6_top.vhd" line 682: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Funct>
+Entity <HW6_top> analyzed. Unit <HW6_top> generated.
+
+Analyzing Entity <Clock_Driver> in library <work> (Architecture <clock_divider>).
+Entity <Clock_Driver> analyzed. Unit <Clock_Driver> generated.
+
+Analyzing Entity <Fetch_Unit> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/Fetch_Unit.vhd" line 154: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <opcode>
+Entity <Fetch_Unit> analyzed. Unit <Fetch_Unit> generated.
+
+Analyzing Entity <GPR> in library <work> (Architecture <Behavioral>).
+Entity <GPR> analyzed. Unit <GPR> generated.
+
+Analyzing generic Entity <dual_port_memory_no_CK_read> in library <work> (Architecture <dual_port_memory>).
+	depth = 32
+	width = 32
+Entity <dual_port_memory_no_CK_read> analyzed. Unit <dual_port_memory_no_CK_read> generated.
+
+Analyzing Entity <MIPS_ALU> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1561 - "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/MIPS_ALU.vhd" line 99: Mux is complete : default of case is discarded
+Entity <MIPS_ALU> analyzed. Unit <MIPS_ALU> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Fetch_Unit>.
+    Related source file is "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/Fetch_Unit.vhd".
+    Using one-hot encoding for signal <PC_Source>.
+    Found 32-bit adder for signal <branch_adrs>.
+    Found 32-bit adder for signal <PC_plus_4>.
+    Found 32-bit register for signal <PC_plus_4_pID>.
+    Found 32-bit register for signal <PC_reg>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <Fetch_Unit> synthesized.
+
+
+Synthesizing Unit <MIPS_ALU>.
+    Related source file is "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/MIPS_ALU.vhd".
+    Using one-hot encoding for signal <ALU_cmd>.
+    Found 8-bit 4-to-1 multiplexer for signal <ALU_cmd>.
+    Found 32-bit addsub for signal <ALU_output$addsub0000>.
+    Found 32-bit comparator less for signal <ALU_output$cmp_lt0000> created at line 96.
+    Found 32-bit xor2 for signal <ALU_output$xor0000> created at line 92.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <MIPS_ALU> synthesized.
+
+
+Synthesizing Unit <dual_port_memory_no_CK_read>.
+    Related source file is "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/dual_port_memory.vhd".
+    Found 32x32-bit dual-port RAM <Mram_Memory_array> for signal <Memory_array>.
+    Found 32x32-bit dual-port RAM <Mram_Memory_array_ren> for signal <Memory_array>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <dual_port_memory_no_CK_read> synthesized.
+
+
+Synthesizing Unit <Clock_Driver>.
+    Related source file is "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/BYOC_Clock_driver.vhd".
+    Found 1-bit register for signal <half_ck_signal>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Clock_Driver> synthesized.
+
+
+Synthesizing Unit <GPR>.
+    Related source file is "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/GPR.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <GPR_data_out1>.
+    Found 5-bit comparator equal for signal <GPR_data_out1$cmp_eq0001> created at line 83.
+    Found 32-bit 4-to-1 multiplexer for signal <GPR_data_out2>.
+    Found 5-bit comparator equal for signal <GPR_data_out2$cmp_eq0001> created at line 94.
+    Summary:
+	inferred   2 Comparator(s).
+	inferred  64 Multiplexer(s).
+Unit <GPR> synthesized.
+
+
+Synthesizing Unit <HW6_top>.
+    Related source file is "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Implementation/HW6_top.vhd".
+WARNING:Xst:646 - Signal <leds_out_from_host_intf<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16-bit tristate buffer for signal <Flash_data>.
+    Found 32-bit register for signal <A_reg>.
+    Found 32-bit 4-to-1 multiplexer for signal <A_reg_wt_fwd>.
+    Found 5-bit comparator equal for signal <A_reg_wt_fwd$cmp_eq0000> created at line 803.
+    Found 5-bit comparator equal for signal <A_reg_wt_fwd$cmp_eq0002> created at line 804.
+    Found 2-bit register for signal <ALUOP_pEX>.
+    Found 32-bit register for signal <ALUout_reg>.
+    Found 32-bit register for signal <ALUout_reg_pWB>.
+    Found 1-bit register for signal <ALUsrcB_pEX>.
+    Found 32-bit register for signal <B_reg>.
+    Found 32-bit register for signal <B_reg_pMEM>.
+    Found 32-bit 4-to-1 multiplexer for signal <B_reg_wt_fwd>.
+    Found 5-bit comparator equal for signal <B_reg_wt_fwd$cmp_eq0000> created at line 815.
+    Found 5-bit comparator equal for signal <B_reg_wt_fwd$cmp_eq0002> created at line 816.
+    Found 6-bit register for signal <Funct_pEX>.
+    Found 5-bit comparator equal for signal <GPR_rd_data1_wt_fwd$cmp_eq0000> created at line 639.
+    Found 5-bit comparator equal for signal <GPR_rd_data2_wt_fwd$cmp_eq0000> created at line 648.
+    Found 32-bit 4-to-1 multiplexer for signal <GPR_wr_data>.
+    Found 1-bit register for signal <JAL_pEX>.
+    Found 1-bit register for signal <JAL_pMEM>.
+    Found 1-bit register for signal <JAL_pWB>.
+    Found 1-bit register for signal <MemToReg_pEX>.
+    Found 1-bit register for signal <MemToReg_pMEM>.
+    Found 1-bit register for signal <MemToReg_pWB>.
+    Found 1-bit register for signal <MemWrite_pEX>.
+    Found 1-bit register for signal <MemWrite_pMEM>.
+    Found 32-bit register for signal <PC_plus_4_pEX>.
+    Found 32-bit register for signal <PC_plus_4_pMEM>.
+    Found 32-bit register for signal <PC_plus_4_pWB>.
+    Found 5-bit register for signal <Rd_pEX>.
+    Found 5-bit register for signal <Rd_pMEM>.
+    Found 5-bit register for signal <Rd_pWB>.
+    Found 1-bit register for signal <RegDst_pEX>.
+    Found 1-bit register for signal <RegWrite_pEX>.
+    Found 1-bit register for signal <RegWrite_pMEM>.
+    Found 1-bit register for signal <RegWrite_pWB>.
+    Found 32-bit comparator equal for signal <Rs_equals_Rt$cmp_eq0000> created at line 658.
+    Found 5-bit register for signal <Rs_pEX>.
+    Found 5-bit register for signal <Rt_pEX>.
+    Found 32-bit register for signal <sext_imm_reg>.
+    Summary:
+	inferred 334 D-type flip-flop(s).
+	inferred   7 Comparator(s).
+	inferred  96 Multiplexer(s).
+	inferred  16 Tristate(s).
+Unit <HW6_top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 32
+ 1-bit register                                        : 14
+ 2-bit register                                        : 1
+ 32-bit register                                       : 11
+ 5-bit register                                        : 5
+ 6-bit register                                        : 1
+# Comparators                                          : 10
+ 32-bit comparator equal                               : 1
+ 32-bit comparator less                                : 1
+ 5-bit comparator equal                                : 8
+# Multiplexers                                         : 6
+ 32-bit 4-to-1 multiplexer                             : 5
+ 8-bit 4-to-1 multiplexer                              : 1
+# Tristates                                            : 1
+ 16-bit tristate buffer                                : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <BYOC_Host_intf.ngc>.
+Loading core <BYOC_Host_intf> for timing and area information for instance <hostintf>.
+
+Synthesizing (advanced) Unit <dual_port_memory_no_CK_read>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Memory_array> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <wr_clk>        | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_address>    |          |
+    |     diA            | connected to signal <wr_data>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <rd1_address>   |          |
+    |     doB            | connected to signal <rd1_data>      |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Memory_array_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <wr_clk>        | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_address>    |          |
+    |     diA            | connected to signal <wr_data>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <rd2_address>   |          |
+    |     doB            | connected to signal <rd2_data>      |          |
+    -----------------------------------------------------------------------
+Unit <dual_port_memory_no_CK_read> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port distributed RAM                   : 2
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 399
+ Flip-Flops                                            : 399
+# Comparators                                          : 10
+ 32-bit comparator equal                               : 1
+ 32-bit comparator less                                : 1
+ 5-bit comparator equal                                : 8
+# Multiplexers                                         : 99
+ 1-bit 4-to-1 multiplexer                              : 96
+ 32-bit 4-to-1 multiplexer                             : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <HW6_top> ...
+
+Optimizing unit <MIPS_ALU> ...
+
+Optimizing unit <Fetch_Unit> ...
+
+Optimizing unit <GPR> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block HW6_top, actual ratio is 33.
+INFO:Xst:2260 - The FF/Latch <Flash_intf_in_host_intf/end_of_copy> in Unit <hostintf> is equivalent to the following FF/Latch : <Flash_intf_in_host_intf/end_of_copy_1> 
+INFO:Xst:2260 - The FF/Latch <Flash_intf_in_host_intf/end_of_copy> in Unit <hostintf> is equivalent to the following FF/Latch : <Flash_intf_in_host_intf/end_of_copy_1> 
+FlipFlop Rd_pWB_0 has been replicated 1 time(s)
+FlipFlop Rd_pWB_1 has been replicated 1 time(s)
+FlipFlop Rd_pWB_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 402
+ Flip-Flops                                            : 402
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : HW6_top.ngr
+Top Level Output File Name         : HW6_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 91
+
+Cell Usage :
+# BELS                             : 3816
+#      GND                         : 2
+#      INV                         : 36
+#      LUT1                        : 144
+#      LUT2                        : 142
+#      LUT2_D                      : 4
+#      LUT2_L                      : 38
+#      LUT3                        : 961
+#      LUT3_D                      : 14
+#      LUT3_L                      : 31
+#      LUT4                        : 1169
+#      LUT4_D                      : 104
+#      LUT4_L                      : 120
+#      MUXCY                       : 348
+#      MUXF5                       : 339
+#      MUXF6                       : 72
+#      MUXF7                       : 32
+#      VCC                         : 2
+#      XORCY                       : 258
+# FlipFlops/Latches                : 1119
+#      FD                          : 71
+#      FDC                         : 129
+#      FDCE                        : 579
+#      FDE                         : 236
+#      FDP                         : 2
+#      FDPE                        : 13
+#      FDR                         : 17
+#      FDRE                        : 62
+#      FDRS                        : 1
+#      FDS                         : 9
+# RAMS                             : 141
+#      RAM16X1D                    : 128
+#      RAMB16_S18_S18              : 4
+#      RAMB16_S36                  : 1
+#      RAMB16_S4_S4                : 8
+# Shift Registers                  : 3
+#      SRL16E                      : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 90
+#      IBUF                        : 16
+#      IOBUF                       : 16
+#      OBUF                        : 58
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                     1613  out of   4656    34%  
+ Number of Slice Flip Flops:           1119  out of   9312    12%  
+ Number of 4 input LUTs:               3022  out of   9312    32%  
+    Number used as logic:              2763
+    Number used as Shift registers:       3
+    Number used as RAMs:                256
+ Number of IOs:                          91
+ Number of bonded IOBs:                  91  out of    232    39%  
+ Number of BRAMs:                        13  out of     20    65%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock_divider/half_ck_signal       | BUFG                   | 1262  |
+CK_50MHz                           | BUFGP                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------+----------------------------------------------------------+-------+
+Control Signal                        | Buffer(FF name)                                          | Load  |
+--------------------------------------+----------------------------------------------------------+-------+
+RESET(RESET1:O)                       | NONE(ALUOP_pEX_0)                                        | 401   |
+hostintf/MIPS_reset(hostintf/RESET1:O)| NONE(hostintf/Flash_intf_in_host_intf/CrntState_FSM_FFd1)| 289   |
+buttons_in<3>                         | IBUF                                                     | 33    |
+--------------------------------------+----------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 20.256ns (Maximum Frequency: 49.368MHz)
+   Minimum input arrival time before clock: 15.433ns
+   Maximum output required time after clock: 11.986ns
+   Maximum combinational path delay: 6.744ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_divider/half_ck_signal'
+  Clock period: 20.256ns (frequency: 49.368MHz)
+  Total number of paths / destination ports: 2861672 / 3821
+-------------------------------------------------------------------------
+Delay:               20.256ns (Levels of Logic = 31)
+  Source:            hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2 (RAM)
+  Destination:       hostintf/Tx_data_reg_0 (FF)
+  Source Clock:      clock_divider/half_ck_signal rising
+  Destination Clock: clock_divider/half_ck_signal rising
+
+  Data Path: hostintf/IMem_in_host_intf/Regular_IMem/Mram_Memory_array2 to hostintf/Tx_data_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S18_S18:CLKA->DOA8    1   2.800   0.595  IMem_in_host_intf/Regular_IMem/Mram_Memory_array2 (IMem_in_host_intf/MIPS_IMem_rd_data_regular<26>)
+     LUT4:I0->O           16   0.704   1.209  IMem_in_host_intf/Mmux_MIPS_IMem_rd_data191 (MIPS_IMem_rd_data<26>)
+     end scope: 'hostintf'
+     LUT4_D:I0->O          6   0.704   0.673  fetch_unit_imp/sext_imm_0_mux00011_SW0 (N25)
+     LUT4:I3->O           66   0.704   1.273  Rs<2>1 (Rs<2>)
+     RAM16X1D:DPRA2->DPO    1   0.704   0.455  GPR_file/doul_port_memory/Mram_Memory_array4 (GPR_file/N11)
+     LUT4:I2->O            1   0.704   0.000  GPR_file/Mmux_GPR_data_out136_F (N1178)
+     MUXF5:I0->O           3   0.321   0.566  GPR_file/Mmux_GPR_data_out136 (GPR_rd_data1<1>)
+     LUT3:I2->O            1   0.704   0.595  GPR_rd_data1_wt_fwd<1>1 (GPR_rd_data1_wt_fwd<1>)
+     LUT4:I0->O            1   0.704   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_lut<0> (Mcompar_Rs_equals_Rt_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<0> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<1> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<2> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<3> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<4> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<5> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<6> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<7> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<8> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<9> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<10> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<12> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<14>)
+     MUXCY:CI->O           3   0.459   0.610  Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15> (Mcompar_Rs_equals_Rt_cmp_eq0000_cy<15>)
+     begin scope: 'hostintf'
+     LUT3:I1->O            1   0.704   0.000  Mmux_Host_RDBK_data_71 (Mmux_Host_RDBK_data_71)
+     MUXF5:I0->O           1   0.321   0.000  Mmux_Host_RDBK_data_5_f5_0 (Mmux_Host_RDBK_data_5_f51)
+     MUXF6:I1->O           1   0.521   0.000  Mmux_Host_RDBK_data_4_f6 (Mmux_Host_RDBK_data_4_f6)
+     MUXF7:I0->O           1   0.521   0.424  Mmux_Host_RDBK_data_2_f7 (Host_RDBK_data<0>)
+     LUT4_L:I3->LO         1   0.704   0.275  Host_MIPS_rd_data<0>_SW0_SW0 (N305)
+     LUT4:I0->O            1   0.704   0.000  Host_MIPS_rd_data<0> (Host_MIPS_rd_data<0>)
+     FDE:D                     0.308          Tx_data_reg_0
+    ----------------------------------------
+    Total                     20.256ns (13.581ns logic, 6.675ns route)
+                                       (67.0% logic, 33.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK_50MHz'
+  Clock period: 1.949ns (frequency: 513.084MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 0)
+  Source:            clock_divider/half_ck_signal (FF)
+  Destination:       clock_divider/half_ck_signal (FF)
+  Source Clock:      CK_50MHz rising
+  Destination Clock: CK_50MHz rising
+
+  Data Path: clock_divider/half_ck_signal to clock_divider/half_ck_signal
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.447  clock_divider/half_ck_signal (clock_divider/half_ck_signal)
+     FDR:R                     0.911          clock_divider/half_ck_signal
+    ----------------------------------------
+    Total                      1.949ns (1.502ns logic, 0.447ns route)
+                                       (77.1% logic, 22.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_divider/half_ck_signal'
+  Total number of paths / destination ports: 3991 / 734
+-------------------------------------------------------------------------
+Offset:              15.433ns (Levels of Logic = 14)
+  Source:            buttons_in<3> (PAD)
+  Destination:       hostintf/Tx_data_reg_16 (FF)
+  Destination Clock: clock_divider/half_ck_signal rising
+
+  Data Path: buttons_in<3> to hostintf/Tx_data_reg_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            51   1.218   1.443  buttons_in_3_IBUF (buttons_in_3_IBUF)
+     begin scope: 'hostintf'
+     LUT2:I0->O          306   0.704   1.428  RESET1 (MIPS_reset)
+     end scope: 'hostintf'
+     LUT2:I1->O          408   0.704   1.416  RESET1 (RESET)
+     LUT4_L:I2->LO         1   0.704   0.104  fetch_unit_imp/sext_imm_16_mux00012_SW0 (N19)
+     LUT4:I3->O           30   0.704   1.297  fetch_unit_imp/sext_imm_16_mux00012 (fetch_unit_imp/N4)
+     LUT3:I2->O            2   0.704   0.526  fetch_unit_imp/sext_imm_25_mux00011 (sext_imm<25>)
+     begin scope: 'hostintf'
+     LUT3:I1->O            1   0.704   0.000  Mmux_Host_RDBK_data_753 (Mmux_Host_RDBK_data_753)
+     MUXF5:I1->O           1   0.321   0.000  Mmux_Host_RDBK_data_6_f5_16 (Mmux_Host_RDBK_data_6_f517)
+     MUXF6:I0->O           1   0.521   0.000  Mmux_Host_RDBK_data_4_f6_16 (Mmux_Host_RDBK_data_4_f617)
+     MUXF7:I0->O           1   0.521   0.424  Mmux_Host_RDBK_data_2_f7_16 (Host_RDBK_data<25>)
+     LUT4_L:I3->LO         1   0.704   0.275  Host_MIPS_rd_data<25>_SW0_SW0 (N363)
+     LUT4:I0->O            1   0.704   0.000  Host_MIPS_rd_data<25> (Host_MIPS_rd_data<25>)
+     FDE:D                     0.308          Tx_data_reg_25
+    ----------------------------------------
+    Total                     15.433ns (8.521ns logic, 6.912ns route)
+                                       (55.2% logic, 44.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_divider/half_ck_signal'
+  Total number of paths / destination ports: 1431 / 64
+-------------------------------------------------------------------------
+Offset:              11.986ns (Levels of Logic = 8)
+  Source:            hostintf/DMem_in_host_intf/Host_adrs_is_20M_hex_dlyd (FF)
+  Destination:       Flash_data<6> (PAD)
+  Source Clock:      clock_divider/half_ck_signal rising
+
+  Data Path: hostintf/DMem_in_host_intf/Host_adrs_is_20M_hex_dlyd to Flash_data<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             33   0.591   1.342  DMem_in_host_intf/Host_adrs_is_20M_hex_dlyd (DMem_in_host_intf/Host_adrs_is_20M_hex_dlyd)
+     LUT3_D:I1->O         25   0.704   1.264  DMem_in_host_intf/Host_DMem_rd_data<0>11 (DMem_in_host_intf/N1)
+     LUT4_L:I3->LO         1   0.704   0.135  DMem_in_host_intf/Host_DMem_rd_data<22>_SW0 (N188)
+     LUT3:I2->O            2   0.704   0.622  DMem_in_host_intf/Host_DMem_rd_data<22> (Host_MIPS_DMem_rd_data<22>)
+     LUT3:I0->O            1   0.704   0.000  Flash_intf_in_host_intf/Flash_wr_data<6>101_SW0_G (N600)
+     MUXF5:I1->O           1   0.321   0.499  Flash_intf_in_host_intf/Flash_wr_data<6>101_SW0 (N533)
+     LUT4:I1->O            1   0.704   0.420  Flash_intf_in_host_intf/Flash_wr_data<6>101 (Flash_wr_data<6>)
+     end scope: 'hostintf'
+     IOBUF:I->IO               3.272          Flash_data_6_IOBUF (Flash_data<6>)
+    ----------------------------------------
+    Total                     11.986ns (7.704ns logic, 4.282ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               6.744ns (Levels of Logic = 3)
+  Source:            switches_in<4> (PAD)
+  Destination:       Flash_rp_n (PAD)
+
+  Data Path: switches_in<4> to Flash_rp_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.218   1.130  switches_in_4_IBUF (switches_in_4_IBUF)
+     LUT2:I1->O            1   0.704   0.420  Flash_rp_n1 (Flash_rp_n_OBUF)
+     OBUF:I->O                 3.272          Flash_rp_n_OBUF (Flash_rp_n)
+    ----------------------------------------
+    Total                      6.744ns (5.194ns logic, 1.550ns route)
+                                       (77.0% logic, 23.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 52.00 secs
+Total CPU time to Xst completion: 51.57 secs
+ 
+--> 
+
+Total memory usage is 458368 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

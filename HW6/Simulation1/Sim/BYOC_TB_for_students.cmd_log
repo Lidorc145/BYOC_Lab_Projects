@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_TB_for_students.xst" -ofn "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_TB_for_students.syr" 
+xst -intstyle ise -ifn "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_TB_for_students.xst" -ofn "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_TB_for_students.syr" 
+xst -intstyle ise -ifn "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_TB_for_students.xst" -ofn "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_TB_for_students.syr" 
+xst -intstyle ise -ifn "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_TB_for_students.xst" -ofn "C:/Users/Lidor Cohen/Desktop/BYOC-HW6-Lidor/HW6-Simulation/BYOC_TB_for_students.syr" 
